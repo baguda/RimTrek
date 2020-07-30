@@ -5,21 +5,20 @@
     <defName>NamerBorgUtility</defName>
     <rulePack>
       <rulesFiles>
-        <li>BorgNames->NameBanks/BorgNames</li>
-        <li>BorgFactionNames->NameBanks/BorgFactionNames</li>
-
+	  <li>BorgFirst->NameBanks/BorgNames</li>
+	  <li>BorgSecond->NameBanks/BorgNames2</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
 
-      <RulePackDef>
+  <RulePackDef>
     <defName>NamerFactionBorg</defName>
 	 <include>
       <li>NamerBorgUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=12)->[BorgFactionNames]</li>
+        <li>r_name(p=12)->Unimatrix [BorgFirst]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -31,13 +30,13 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=12)-># [BorgNames] of-[BorgNames]</li>
+        <li>r_name(p=12)->[BorgFirst] [BorgSecond]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
 
   
-  <RulePackDef>
+  <!--RulePackDef>
     <defName>NamerSettlementBorg</defName>
     <rulePack>
       <rulesStrings>
@@ -56,6 +55,6 @@
         <li>name-&gt;Borg Station Sigma</li>
       </rulesStrings>
     </rulePack>
-  </RulePackDef>
+  </RulePackDef-->
 
 </Defs>
