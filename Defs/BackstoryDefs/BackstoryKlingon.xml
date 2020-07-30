@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Klingon Adult-->
+   
+<AlienRace.BackstoryDef>
+			
+	<defName>Klingon_Warrior</defName>
+    <title>Klingon Warrior</title>
+    <titleShort>Warrior</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised as a Klingon Warrior . Being a child, [PAWN_pronoun] followed the traditions of the Klingon race and was a powerful warrior. </baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+			
+	<defName>Klingon_Coward</defName>
+    <title>Klingon Coward</title>
+    <titleShort>Coward</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised as a Klingon Warrior , however battle scared him. Luckily, [PAWN_pronoun] found work training Targs and other vicious beasts for battle. </baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Klingon_Politician</defName>
+    <title>Klingon Politician</title>
+    <titleShort>Politician</titleShort>
+    <baseDescription>[PAWN_nameDef] was the firstborn to a great house and as such had a seat on the High Council.</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Klingon_Schemer</defName>
+    <title>Klingon Schemer</title>
+    <titleShort>Schemer</titleShort>
+    <baseDescription>[PAWN_nameDef] preferred to disregard the traditions of their people and used subtlety. Poison and murder were chief among their list of accomplishments.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+   <!--Klingon Child-->	   
+<AlienRace.BackstoryDef>
+
+    <defName>Klingon_Colonykid</defName>
+    <title>Klingon Colony Child</title>
+    <titleShort>Colony Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on a remote world within the Klingon Empire.[PAWN_nameDef] was put to work as a farmer. </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Klingon_BabyWarrior</defName>
+    <title>Klingon Warrior-in-training</title>
+    <titleShort>Trainee</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on the homeworld of the Klingon Empire, Qo'NoS. [PAWN_nameDef] trained to be a true Klingon warrior. </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Klingon_Bastard</defName>
+    <title>Klingon Bastard</title>
+    <titleShort>Bastard</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Qo'NoS to an unknown father and his commoner mistress.[PAWN_nameDef] was shamed for being born out of wedlock. </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Klingon_bitchychild</defName>
+    <title>Klingon Noble Born</title>
+    <titleShort>Noble-born</titleShort>
+    <baseDescription>[PAWN_nameDef] was the firstborn to a Klingon Great House on the Klingon homeworl, Qo'NoS. [PAWN_nameDef] was groomed for leadership and combat since birth </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Klingon</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+</Defs>

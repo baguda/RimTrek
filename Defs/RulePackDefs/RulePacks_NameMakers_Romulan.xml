@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerRomulanUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>RomFirstMale->NameBanks/Names_First_Romulan_Male</li>
+        <li>RomFirstFemale->NameBanks/Names_First_Romulan_Female</li>
+		<li>Number->NameBanks/Names_Designations</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerRomulanMale</defName>
+    <include>
+      <li>NamerRomulanUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[RomFirstMale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerRomulanFemale</defName>
+    <include>
+      <li>NamerRomulanUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[RomFirstFemale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionRomulan</defName>
+	 <include>
+      <li>NamerRomulanUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->Cell: [Number]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

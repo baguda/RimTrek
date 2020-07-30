@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>O21_ST_RefinedDilithium</defName>
+		<label>dilithium</label>
+		<description>Dilithium is an element, a member of the hypersonic series, primarily occurring as a crystalline mineral. It was used to control the power of the warp drive systems of many starships by regulating the matter-antimatter reaction in a ship's warp core because of its ability to be rendered porous to light-element antimatter when exposed to high temperatures and electromagnetic pressures. It controlled the amount of power generated in the reaction chamber, channeling the energy released by mutual annihilation into a stream of electro-plasma.</description>
+		<graphicData>
+			<texPath>Things/Resource/Dilithium</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>100</stackLimit>
+		<statBases>
+			<MarketValue>30</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>0.9</Flammability>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

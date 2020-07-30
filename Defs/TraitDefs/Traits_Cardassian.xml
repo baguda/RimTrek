@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>CardPride</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Cardassian Pride</label>
+        <description>{PAWN_nameDef} is a Cardassian. {PAWN_nameDef} loves {PAWN_pronoun} people and culture. Cardassians like {PAWN_nameDef} are responsible for the holocaust of Bajor, which means that they must be erased as a species now.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MeleeWeaponKlingonBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>O21_ST_Melee_Batleth</defName>
+		<label>Bat'leth</label>
+		<description>The bat'leth, or "sword of honor", was a traditional Klingon bladed weapon. While Klingons often carried disruptors, they preferred to use bladed weapons in combat, with the two most common ones being the bat'leth and the mek'leth.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/Batleth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+				<MarketValue>400</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+
+		<techLevel>Spacer</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+
+    <weaponTags>
+      <li>Klingon</li>
+	  <li>Orion</li>
+    </weaponTags>
+	
+		<costList>
+			<Steel>30</Steel>
+			<Plasteel>70</Plasteel>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_KlingonBlades</researchPrerequisite>
+			<recipeUsers>
+                <li>O21_ST_MatterReplicator</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="MeleeWeaponKlingonBase">
+		<defName>O21_ST_Melee_Mekleth</defName>
+		<label>Mek'leth</label>
+		<description>A mek'leth was a traditional Klingon bladed weapon. While Klingons often carried disruptors, they prefered to use bladed weapons in combat, with the two most common ones being the mek'leth and the bat'leth.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/Mekleth</texPath>
+		</graphicData>
+
+		<tools Inherit="False">
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+<statBases>
+			      <MarketValue>700</MarketValue>
+</statBases>				  
+		<costList Inherit="False">
+			<Steel>15</Steel>
+			<Plasteel>50</Plasteel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="MeleeWeaponKlingonBase">
+		<defName>O21_ST_Melee_SwordOfKahless</defName>
+		<label>Bat'leth (Kahless)</label>
+		<description>The Sword of Kahless was the first bat'leth ever forged. It was designed and created by Kahless the Unforgettable and was dated to the 9th century AD. According to Klingon mythology, Kahless created the sword by dropping a lock of his hair into a river of lava from Kri'stak's summit, and then cooling the burning lock in the Lake of Lusor and forging it into a blade. This is merely designed after the original, a replica.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/SwordOfKahless</texPath>
+		</graphicData>
+
+		<tools Inherit="False">
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<statBases>
+			      <MarketValue>10000</MarketValue>	
+		</statBases>
+		<costList Inherit="False">
+			<Steel>30</Steel>
+			<Plasteel>70</Plasteel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="MeleeWeaponKlingonBase">
+		<defName>O21_ST_Melee_DkTahg</defName>
+		<label>D'k tahg</label>
+		<description>The d'k tahg (or Daqtagh) was the traditional Klingon warrior's knife. It consisted of a single, straight-edged primary blade and two curved secondary blades, which could be either fixed or hinged. It was commonly used in hand-to-hand combat, and had great ceremonial value in Klingon culture. The handle featured a rounded, spiked pommel and sometimes bore an emblem representing the members of its owner's house near the hilt of the blade.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/DkTahg</texPath>
+		</graphicData>
+		<statBases>
+			      <MarketValue>1000</MarketValue>
+		</statBases>
+		<tools Inherit="False">
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList Inherit="False">
+			<Steel>15</Steel>
+			<Plasteel>50</Plasteel>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="MeleeWeaponKlingonBase">
+		<defName>O21_ST_Melee_Gintak</defName>
+		<label>Gin'tak Spear</label>
+		<description>A gin'tak spear was a hand-weapon, a spear used by Klingons.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/GinTak</texPath>
+			<drawSize>1.5</drawSize>	
+		</graphicData>
+		<statBases>
+			      <MarketValue>1200</MarketValue>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>O21Toolbox.WeaponExt.Comp_OversizedWeapon</compClass>
+			</li>
+		</comps>
+
+		<tools Inherit="False">
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>26</power>
+                <armorPenetration>0.65</armorPenetration>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList Inherit="False">
+			<WoodLog>20</WoodLog>
+			<Steel>20</Steel>
+			<Plasteel>60</Plasteel>
+		</costList>
+	</ThingDef>
+
+</Defs>

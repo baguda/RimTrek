@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <!--Romulan-->	
+   
+   
+   <!--Romulan Adult-->
+<AlienRace.BackstoryDef>
+
+    <defName>Romulan_TalShiar</defName>
+    <title>Tal Shiar Agent</title>
+    <titleShort>Agent</titleShort>
+    <baseDescription>[PAWN_nameDef] was a Tal Shiar agent and trained in subtlety and covert operations.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Romulan_Tailor</defName>
+    <title>Exiled Tailor</title>
+    <titleShort>Exiled</titleShort>
+    <baseDescription>[PAWN_nameDef] was exiled from the Romulan Empire for an undisclosed crime, [PAWN_pronoun] decided to become a tailor.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Romulan_Rebel</defName>
+    <title>Rebel</title>
+    <titleShort>Rebel</titleShort>
+    <baseDescription>[PAWN_nameDef] strayed from the traditional ways of Romulan supremacism and devoted their life to building bridges between the Romulan and Vulcan races.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Romulan_Xenobiologist</defName>
+    <title>Xenobiologist</title>
+    <titleShort>Xenobiologist</titleShort>
+    <baseDescription>In contrast the the majority of the Romulan race, [PAWN_nameDef] developed a fascination with our lifeforms and wished to learn everything about them.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+   
+   <!--Romulan Child-->	   
+
+<AlienRace.BackstoryDef>
+			
+	<defName>Romulan_TraineeSpy</defName>
+    <title>Trainee Spy</title>
+    <titleShort>Trainee Spy</titleShort>
+    <baseDescription>[PAWN_nameDef] was inducted into the Tal Shiar at birth and trained rigorously every day, to become the best of the best. </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+			
+	<defName>Romulan_SenatorChild</defName>
+    <title>Senator's Child</title>
+    <titleShort>Senator's Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to a Romulan senator and his wife, who giving birth to [PAWN_nameDef]. The Senator devoted his life to his job and teaching [PAWN_nameDef] to eventually succeed him.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Romulan_Minechild</defName>
+    <title>Mine Child</title>
+    <titleShort>Mine Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Romulus to two traitors who where executed soon after [PAWN_nameDef]'s birth. [PAWN_pronoun] was sent to work in the mines of Remus as a slave.</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Romulan_PrisonChild</defName>
+    <title>Prison Child</title>
+    <titleShort>Prisoner</titleShort>
+    <baseDescription>[PAWN_nameDef]'s mother was arrested for treason shorting before [PAWN_nameDef]'s birth. This led to them being raised in prison.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Romulan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+</Defs>

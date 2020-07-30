@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================ Orion Base ========================== -->
+
+  <PawnKindDef Name="OrionBase" Abstract="True">
+    <defaultFactionType>OrionAlly</defaultFactionType>
+    <race>Alien_Orion</race>
+    <chemicalAddictionChance>0.2</chemicalAddictionChance>
+    <baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+    <backstoryCategories>
+	<li>Orion</li>
+	</backstoryCategories>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>Orion</li>
+    </apparelTags>
+    <weaponTags>
+      <li>Orion</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Orion Civilian Base ========================== -->
+
+  <PawnKindDef Name="OrionCivBase" ParentName="OrionBase" Abstract="True">
+    <combatPower>25</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>800</min>
+      <max>1500</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>Orion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>500</min>
+      <max>1000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>500</min>
+      <max>1000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>250</min>
+            <max>700</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Orion Military Base ========================== -->
+  
+  <PawnKindDef Name="OrionMilBase" ParentName="OrionBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>3800</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>2400</min>
+      <max>3000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>500</min>
+            <max>2000</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>  
+
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>PlayerMOrion</defName>
+    <label>colonist</label>
+    <race>Alien_Orion</race>
+		    <defaultFactionType>PlayerColony</defaultFactionType>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>PlayerFOrion</defName>
+    <label>colonist</label>
+    <race>Alien_FOrion</race>
+		    <defaultFactionType>PlayerColony</defaultFactionType>
+	<backstoryCategories>
+	<li>FOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!--Ally-->
+  
+  <!-- ============================ Orion Civilians ========================== -->
+  
+    <PawnKindDef ParentName="OrionCivBase">
+    <defName>AOrionSlave</defName>
+    <label>slave</label>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>AOrionColonist</defName>
+    <label>colonist</label>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>AOrionFemoid</defName>
+    <label>female</label>
+    <race>Alien_FOrion</race>
+	<backstoryCategories Inherit="False">
+		<li>FOrion</li>
+			<li>Orion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>500</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>AOrionRuler</defName>
+    <race>Alien_FOrion</race>
+    <label>ruler</label>
+    <labelPlural>rulers</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>2000</min>
+      <max>2500</max>
+    </weaponMoney>
+	<backstoryCategories Inherit="False">
+		<li>FOrion</li>
+			<li>Orion</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>AOrionTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>1500</min>
+      <max>2000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Orion Security ========================== -->
+  
+  <PawnKindDef Name="AOrionSecurityGuard" ParentName="OrionCivBase">
+    <defName>AOrionSecurityGuard</defName>
+    <label>security guard</label>
+    <race>Alien_Orion</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1300</min>
+      <max>1900</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+		<li>FOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1200</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>300</min>
+        <max>1000</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Orion Military ========================== -->
+  
+  <PawnKindDef ParentName="OrionMilBase">
+    <defName>AOrionRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="AOrionHunter" ParentName="OrionMilBase">
+    <defName>AOrionHunter</defName>
+    <label>hunter</label>
+    <race>Alien_Orion</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+  <skipChance>0.8</skipChance>
+  <subOptionsChooseOne>
+	<li>
+	  <thingDef>Silver</thingDef>
+	  <countRange>
+		<min>500</min>
+		<max>2000</max>
+	  </countRange>
+	</li>
+	<li>
+	  <thingDef>MedicineIndustrial</thingDef>
+	  <countRange>
+		<min>1</min>
+		<max>1</max>
+	  </countRange>
+	</li>
+  </subOptionsChooseOne>
+</inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="AOrionCommando" ParentName="OrionMilBase">
+    <defName>AOrionCommando</defName>
+    <label>commando</label>
+    <race>Alien_Orion</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2000</min>
+      <max>3600</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>2200</min>
+      <max>3000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>1180</min>
+            <max>1400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="AOrionCommandoElite" ParentName="AOrionCommando">
+     <defName>AOrionCommandoElite</defName>
+    <label>elite commando</label>
+    <race>Alien_Orion</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>1200</min>
+            <max>1480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!--Enemy-->
+  
+  <!-- ============================ Orion Civilians ========================== -->
+  
+    <PawnKindDef ParentName="OrionCivBase">
+    <defName>EOrionSlave</defName>
+	<defaultFactionType>OrionEnemy</defaultFactionType>
+    <label>slave</label>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>EOrionColonist</defName>
+    <label>colonist</label>
+	<defaultFactionType>OrionEnemy</defaultFactionType>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>EOrionFemoid</defName>
+    <label>female</label>
+	<defaultFactionType>OrionEnemy</defaultFactionType>
+    <race>Alien_FOrion</race>
+	<backstoryCategories Inherit="False">
+		<li>FOrion</li>
+			<li>Orion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>500</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>EOrionRuler</defName>
+    <race>Alien_FOrion</race>
+    <label>ruler</label>
+	<defaultFactionType>OrionEnemy</defaultFactionType>
+    <labelPlural>rulers</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>2000</min>
+      <max>2500</max>
+    </weaponMoney>
+	<backstoryCategories Inherit="False">
+		<li>FOrion</li>
+			<li>Orion</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="OrionCivBase">
+    <defName>EOrionTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+	<defaultFactionType>OrionEnemy</defaultFactionType>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>1500</min>
+      <max>2000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Orion Security ========================== -->
+  
+  <PawnKindDef Name="EOrionSecurityGuard" ParentName="OrionCivBase">
+    <defName>EOrionSecurityGuard</defName>
+    <label>security guard</label>
+    <race>Alien_Orion</race>
+		<defaultFactionType>OrionEnemy</defaultFactionType>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1300</min>
+      <max>1900</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+		<li>FOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1200</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>300</min>
+        <max>1000</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Orion Military ========================== -->
+  
+  <PawnKindDef ParentName="OrionMilBase">
+    <defName>EOrionRecruit</defName>
+    <label>recruit</label>
+		<defaultFactionType>OrionEnemy</defaultFactionType>
+    <combatPower>70</combatPower>
+    <race>Alien_Orion</race>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EOrionHunter" ParentName="OrionMilBase">
+    <defName>EOrionHunter</defName>
+    <label>hunter</label>
+		<defaultFactionType>OrionEnemy</defaultFactionType>
+    <race>Alien_Orion</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+  <skipChance>0.8</skipChance>
+  <subOptionsChooseOne>
+	<li>
+	  <thingDef>Silver</thingDef>
+	  <countRange>
+		<min>500</min>
+		<max>2000</max>
+	  </countRange>
+	</li>
+	<li>
+	  <thingDef>MedicineIndustrial</thingDef>
+	  <countRange>
+		<min>1</min>
+		<max>1</max>
+	  </countRange>
+	</li>
+  </subOptionsChooseOne>
+</inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="EOrionCommando" ParentName="OrionMilBase">
+    <defName>EOrionCommando</defName>
+    <label>commando</label>
+    <race>Alien_Orion</race>
+		<defaultFactionType>OrionEnemy</defaultFactionType>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2000</min>
+      <max>3600</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>2200</min>
+      <max>3000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>1180</min>
+            <max>1400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EOrionCommandoElite" ParentName="EOrionCommando">
+     <defName>EOrionCommandoElite</defName>
+    <label>elite commando</label>
+    <race>Alien_Orion</race>
+	<defaultFactionType>OrionEnemy</defaultFactionType>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+	<li>MOrion</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>1200</min>
+            <max>1480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>  
+  
+</Defs>

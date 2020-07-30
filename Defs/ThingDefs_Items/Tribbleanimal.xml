@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+    <defName>ST_Tribble</defName>
+    <label>tribble</label>
+    <description>Tribbles were small, non-intelligent lifeforms originating from Iota Geminorium IV. Known for their prodigious reproductive rate, these round, furry creatures emitted cooing sounds while touched, which had a tranquilizing effect on the Human nervous system. They make good pets but breed enough to nulify that bonus.</description>
+    <statBases>
+      <MoveSpeed>2.0</MoveSpeed>
+      <MarketValue>100</MarketValue>
+      <ComfyTemperatureMin>5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <MeatAmount>25</MeatAmount>
+      <LeatherAmount>50</LeatherAmount>
+    </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	  <race>
+      <herdAnimal>true</herdAnimal>
+      <body>Bird</body>
+      <baseHungerRate>0.65</baseHungerRate>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <wildness>1</wildness>
+      <lifeExpectancy>5</lifeExpectancy>
+      <trainability>Simple</trainability>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <leatherDef>tribble_fur</leatherDef>
+      <meatLabel>tribble meat</meatLabel>
+      <gestationPeriodDays>0.5</gestationPeriodDays>
+	    <wildBiomes>
+		    <AridShrubland>0.2</AridShrubland>
+		    <TemperateForest>0.1</TemperateForest>
+		    <TropicalRainforest>0.3</TropicalRainforest>
+		    <IceSheet>0</IceSheet>
+		    <BorealForest>0</BorealForest>
+		    <Tundra>0</Tundra>
+		    <Desert>0</Desert>
+	    </wildBiomes>
+	    <nuzzleMtbHours>10</nuzzleMtbHours>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+			<soundWounded>Pawn_Chick_Call</soundWounded>
+			<soundDeath>Pawn_Chick_Call</soundDeath>
+			<soundCall>Pawn_Chick_Call</soundCall>
+			<soundAngry>Pawn_Chick_Call</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>ST_Tribble</defName>
+    <label>tribble</label>
+    <race>ST_Tribble</race>
+    <combatPower>5</combatPower>
+    <ecoSystemWeight>0.30</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Animals/Tribble</texPath>
+          <drawSize>0.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Animals/Dessicated_Tribble</texPath>
+          <drawSize>0.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Animals/Tribble</texPath>
+          <drawSize>1.1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Animals/Dessicated_Tribble</texPath>
+          <drawSize>1.1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Animals/Tribble</texPath>
+          <drawSize>1.3</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Animals/Dessicated_Tribble</texPath>
+          <drawSize>1.3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+<ThingDef ParentName="LeatherBase">
+<defName>tribble_fur</defName>
+<label>tribble fur</label>
+<description>A soft furry pelt harvested from a tiny tribble. It insulates well against heat.</description>
+<graphicData>
+  <color>(60,60,60)</color>
+</graphicData>
+<statBases>
+  <MarketValue>3.0</MarketValue>
+  <StuffPower_Insulation_Heat>24</StuffPower_Insulation_Heat>
+</statBases>
+<stuffProps>
+  <color>(60,60,60)</color>
+  <commonality>0.075</commonality>
+</stuffProps>
+</ThingDef>
+  
+  
+</Defs>

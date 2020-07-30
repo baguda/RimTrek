@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--Misc Adult -->
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>FedHumAdult1</defName>
+    <title>Woke Viewer</title>
+    <titleShort>Woke</titleShort>
+    <baseDescription>[PAWN_nameDef] pays attention to the television and knows what the ruling class want from [PAWN_pronoun]. </baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+	      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>FedHum</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>FedHumAdult2</defName>
+    <title>Galaxy Traveler</title>
+    <titleShort>Traveler</titleShort>
+    <baseDescription>[PAWN_nameDef] is more than a mere human. [PAWN_pronoun] doesn't want to be tied down. [PAWN_pronoun] wants to travel the world and remain young forever!</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>FedHum</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>FedHumAdult3</defName>
+    <title>Fulltime Worker</title>
+    <titleShort>Worker</titleShort>
+    <baseDescription>[PAWN_nameDef] really enjoys buying stuff! [PAWN_pronoun] works every day so [PAWN_pronoun] can afford to buy the coolest new stuff.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>FedHum</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+
+ <!--Misc Child -->
+  
+<AlienRace.BackstoryDef>
+
+    <defName>FedHumChild1</defName>
+    <title>Rainbow Child</title>
+    <titleShort>Egg</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to special parents who taught him important things about life.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+	      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>FedHum</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>FedHumChild2</defName>
+    <title>First Generation</title>
+    <titleShort>1G</titleShort>
+    <baseDescription>[PAWN_nameDef]'s grandparents were from Africa. [PAWN_pronoun] didn't even bother to learn English until [PAWN_pronoun] was an adult.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+	      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>FedHum</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>FedHumChild3</defName>
+    <title>Castizo</title>
+    <titleShort>Scion</titleShort>
+    <baseDescription>[PAWN_nameDef] had wealthy parents who are well connected. It is rumored that [PAWN_nameDef] is part Vulcan.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>FedHum</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+</Defs>

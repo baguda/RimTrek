@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>PlayerVulcan</defName>
+    <label>civilian</label>
+    <race>Alien_Vulcan</race>
+	<defaultFactionType>PlayerColony</defaultFactionType>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>450</min>
+      <max>500</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <!-- Ally-->
+  <!-- ============================ Fed Civilians ========================== -->
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>AVulcanColonist</defName>
+    <label>colonist</label>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>AVulcanSlave</defName>
+    <label>slave</label>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>AVulcanElite</defName>
+    <race>Alien_Vulcan</race>
+    <label>elite</label>
+    <labelPlural>elites</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>AVulcanTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>600</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Fed Security ========================== -->
+  
+  <PawnKindDef Name="AVulcanSecurityGuard" ParentName="FedCivBase">
+    <defName>AVulcanSecurity</defName>
+    <label>security guard</label>
+    <race>Alien_Vulcan</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1300</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>130</min>
+        <max>300</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+    <!-- ============================ Fed Military ========================== -->
+  
+  <PawnKindDef ParentName="FedMilBase">
+    <defName>AVulcanRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="AVulcanHunter" ParentName="FedMilBase">
+    <defName>AVulcanHunter</defName>
+    <label>hunter</label>
+    <race>Alien_Vulcan</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>150</min>
+            <max>250</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="AVulcanCommando" ParentName="FedMilBase">
+    <defName>AVulcanCommando</defName>
+    <label>commando</label>
+    <race>Alien_Vulcan</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>280</min>
+            <max>600</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="AVulcanCommandoElite" ParentName="AVulcanCommando">
+     <defName>AVulcanCommandoElite</defName>
+    <label>elite commando</label>
+    <race>Alien_Vulcan</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>420</min>
+            <max>680</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- Enemy-->
+  <!-- ============================ Fed Civilians ========================== -->
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>EVulcanColonist</defName>
+    <label>colonist</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>EVulcanSlave</defName>
+    <label>slave</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>EVulcanElite</defName>
+    <race>Alien_Vulcan</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <label>elite</label>
+    <labelPlural>elites</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>EVulcanTrader</defName>
+    <label>colony trader</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <trader>true</trader>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+	<li>Vulcan</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>600</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Fed Security ========================== -->
+  
+  <PawnKindDef Name="EVulcanSecurityGuard" ParentName="FedCivBase">
+    <defName>EVulcanSecurity</defName>
+    <label>security guard</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Vulcan</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1300</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>130</min>
+        <max>300</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+    <!-- ============================ Fed Military ========================== -->
+  
+  <PawnKindDef ParentName="FedMilBase">
+    <defName>EVulcanRecruit</defName>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+    <race>Alien_Vulcan</race>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EVulcanHunter" ParentName="FedMilBase">
+    <defName>EVulcanHunter</defName>
+    <label>hunter</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Vulcan</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>150</min>
+            <max>250</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="EVulcanCommando" ParentName="FedMilBase">
+    <defName>EVulcanCommando</defName>
+    <label>commando</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Vulcan</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>280</min>
+            <max>600</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EVulcanCommandoElite" ParentName="EVulcanCommando">
+     <defName>EVulcanCommandoElite</defName>
+    <label>elite commando</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Vulcan</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Vulcan</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>420</min>
+            <max>680</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>  
+  
+</Defs>

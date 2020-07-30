@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>RomSus</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Romulan Suspicion</label>
+        <description>{PAWN_nameDef} is a Romulan. {PAWN_nameDef} is very careful about what [Pawn_pronoun] says in public. The thought police are always listening!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

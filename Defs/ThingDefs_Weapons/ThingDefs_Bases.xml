@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="PhaserGunBase" ParentName="BaseWeapon" Abstract="True">
+		<thingClass>O21Toolbox.Laser.LaserGun</thingClass>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<repairEffect>Repair</repairEffect>
+		<smeltable>True</smeltable>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<beamColor>RGB(230, 201, 117)</beamColor>
+		<recipeMaker>
+			<!-- researchPrerequisite>O21_Trek_Phasers</researchPrerequisite -->
+			<recipeUsers>
+				<li>FabricationBench</li>
+                <li>O21_ST_MatterReplicator</li>
+			</recipeUsers>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<!-- unfinishedThingDef>O21_Trek_UnfinishedGun</unfinishedThingDef -->
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="PulseGunBase" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<repairEffect>Repair</repairEffect>
+		<smeltable>True</smeltable>
+		<thingCategories>
+			<li>WeaponsRanged</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<recipeMaker>
+			<!-- researchPrerequisite>O21_Trek_Phasers</researchPrerequisite -->
+			<recipeUsers>
+				<li>FabricationBench</li>
+                <li>O21_ST_MatterReplicator</li>
+			</recipeUsers>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<!-- unfinishedThingDef>O21_Trek_UnfinishedGun</unfinishedThingDef -->
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="PhaserBeamGraphicBase">
+		<defName>O21_Trek_PhaserBeamGraphic</defName>
+		<thingClass>O21Toolbox.Laser.LaserBeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>phaser beam</label>
+		
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>O21_Trek_PulseShot</defName>
+		<label>pulse</label>
+        
+		<graphicData>
+			<texPath>Things/Projectiles/PulseShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>4</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>0.15</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Name="PhaserBeamProjectile" ParentName="BaseBullet" Abstract="True">
+		<thingClass>O21Toolbox.Laser.LaserBeam</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<beamGraphic>O21_Trek_PhaserBeamGraphic</beamGraphic>
+	 
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectiles/PhaserBeam</texPath>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+	
+		<explosionEffect>O21_Trek_PhaserImpact</explosionEffect>
+		<hitLivingEffect>O21_Trek_PhaserLivingImpact</hitLivingEffect>
+		
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<speed>10000</speed>
+		</projectile>
+		
+		<seam>0.25</seam>
+        <lifetime>60</lifetime>
+		<textures>
+			<li>Things/Projectiles/PhaserBeam</li>
+		</textures>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_ParticleBeam</defName>
+		<label>particle beam</label>
+	 
+		<graphicData>
+			<texPath>Things/Projectiles/LaserBeam</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectiles/LaserBeam</li>
+		</textures>
+		
+		<projectile>
+			<damageAmountBase>4</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_LaserBeam_Weak</defName>
+		<label>laser beam</label>
+	 
+		<graphicData>
+			<texPath>Things/Projectiles/LaserBeam</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectiles/LaserBeam</li>
+		</textures>
+		
+		<projectile>
+			<damageAmountBase>4</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_LaserBeam_Normal</defName>
+		<label>laser beam</label>
+	 
+		<graphicData>
+			<texPath>Things/Projectiles/LaserBeam</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectiles/LaserBeam</li>
+		</textures>
+		
+		<projectile>
+			<damageAmountBase>8</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_LaserBeam_Strong</defName>
+		<label>phaser beam</label>
+	 
+		<graphicData>
+			<texPath>Things/Projectiles/LaserBeam</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectiles/LaserBeam</li>
+		</textures>
+		
+		<projectile>
+			<damageAmountBase>16</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_PhaserBeam_Weak</defName>
+		<label>phaser beam</label>
+		
+		<projectile>
+			<damageAmountBase>6</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_PhaserBeam_Normal</defName>
+		<label>phaser beam</label>
+		
+		<projectile>
+			<damageAmountBase>10</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_PhaserBeam_Strong</defName>
+		<label>phaser beam</label>
+		
+		<projectile>
+			<damageAmountBase>18</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_Disruptor_Normal</defName>
+		<label>disruptor beam</label>
+	 
+		<graphicData>
+			<texPath>Things/Projectiles/DisruptorBeam</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectiles/DisruptorBeam</li>
+		</textures>
+		
+		<projectile>
+			<damageAmountBase>14</damageAmountBase>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_Disruptor_Strong</defName>
+		<label>disruptor beam</label>
+	 
+		<graphicData>
+			<texPath>Things/Projectiles/DisruptorBeam</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>Things/Projectiles/DisruptorBeam</li>
+		</textures>
+		
+		<projectile>
+			<damageAmountBase>22</damageAmountBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

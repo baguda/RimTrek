@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>O21_ST_Melee_UshaanTor</defName>
+		<label>Ushaan-tor</label>
+		<description>The ushaan-tor was an Andorian ice miner's tool that was also used as a weapon in Ushaan duels. Andorians played with them as children.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Andorian/UshaanTor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+						      <MarketValue>700</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+
+		<techLevel>Spacer</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>
+	
+		<costList>
+			<Steel>15</Steel>
+			<Plasteel>50</Plasteel>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_AndorianBlades</researchPrerequisite>
+			<recipeUsers>
+                <li>O21_ST_MatterReplicator</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PulseGunBase">
+		<defName>O21_Trek_EM33PlasmaPistol</defName>
+		<label>EM33 Plasma Pistol</label>
+		<description>Basic plasma pistol from Enterprise</description>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/LaserType2Mk1</texPath>
+		</graphicData>
+	
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+				      <MarketValue>700</MarketValue>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_PulseShot</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>38.9</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>	
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+            <O21_ST_RefinedDilithium>2</O21_ST_RefinedDilithium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_PulseWeapons</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

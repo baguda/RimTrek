@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PhaserGunBase" Name="PhaserTypeThreeBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_3_I</defName>
+		<label>Phaser Type 3 (Mk I)</label>
+		<description>Assault phaser, high rate of fire a great range but low damage.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/PhaserType3Mk1</texPath>
+		</graphicData>
+	
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+					      <MarketValue>1200</MarketValue>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+	
+	    <barrelLength>0.9</barrelLength>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_PhaserBeam_Weak</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>34</range>
+				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>O21_ST_Sound_PhaserRifleFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>	
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+            <O21_ST_RefinedDilithium>4</O21_ST_RefinedDilithium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_PhasersThree</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeThreeBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_3_II</defName>
+		<label>Phaser Type 3 (Mk II)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/PhaserType3Mk2</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1500</MarketValue>
+</statBases>				  
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeThreeBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_3_Vulcan</defName>
+		<label>Phaser Type 3 (Vulcan)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Vulcan/SMG</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1500</MarketValue>
+</statBases>
+    <weaponTags>
+      <li>Romulan</li>
+    </weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeThreeBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_3_Cardassian</defName>
+		<label>Phaser Type 3 (Cardassian)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Cardassian/PhaserRifle</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1500</MarketValue>
+</statBases>
+    <weaponTags>
+      <li>Cardassian</li>
+    </weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeThreeBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_3_Bajoran</defName>
+		<label>Phaser Type 3 (Bajoran)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Bajoran/PhaserRifle</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1500</MarketValue>
+</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeThreeBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_3_Andorian</defName>
+		<label>Phaser Type 3 (Andorian)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Andorian/PhaserCarbine</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1500</MarketValue>
+</statBases>
+	</ThingDef>
+
+</Defs>

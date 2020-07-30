@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	   <!--Orion Adult-->
+	   
+<AlienRace.BackstoryDef>
+
+    <defName>Orion_Dancer</defName>
+    <title>Orion Exotic Dancer</title>
+    <titleShort>Dancer</titleShort>
+    <baseDescription>[PAWN_nameDef] found [PAWN_pronoun] had an affinity for erotic dancing.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	   <li>FOrion</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Orion_Crimelord</defName>
+    <title>Orion Crimelord</title>
+    <titleShort>Crimelord</titleShort>
+    <baseDescription>[PAWN_nameDef] killed their master and started a new Criminal Empire.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Orion</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>	 
+
+<AlienRace.BackstoryDef>
+
+    <defName>Orion_Majordomo</defName>
+    <title>Orion Majordomo</title>
+    <titleShort>Majordomo</titleShort>
+    <baseDescription>[PAWN_nameDef] worked their way to the top and became their Master's right-hand man. [PAWN_nameDef] found [PAWN_pronoun] had an affinity for socialising.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Orion</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>	 
+
+<AlienRace.BackstoryDef>
+
+    <defName>Orion_Grunt</defName>
+    <title>Orion Grunt</title>
+    <titleShort>Grunt</titleShort>
+    <baseDescription>[PAWN_nameDef] is not brite, but he has a capacity for violence.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>MOrion</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>	 
+ 
+ 
+	   <!--Orion Child-->
+	   
+ <AlienRace.BackstoryDef>
+			
+	<defName>Orion_Slave</defName>
+    <title>Orion Slave</title>
+    <titleShort>Slave</titleShort>
+    <baseDescription>[PAWN_nameDef] was sold as a slave on the black market. Being a child, [PAWN_pronoun] was used as a maid this led to [PAWN_pronoun] receiving no education.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Orion</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+			
+	<defName>Orion_Outlaw</defName>
+    <title>Orion Outlaw</title>
+    <titleShort>Outlaw</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised to a life of crime. Being a child, [PAWN_pronoun] was able to get into places adults could not.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Orion</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+			
+	<defName>Orion_CChild</defName>
+    <title>Orion Crime-child</title>
+    <titleShort>Crime-child</titleShort>
+    <baseDescription>[PAWN_nameDef] was the only child to a very wealthy and powerful Crimelord.[PAWN_pronoun] was groomed to take over the 'family business'.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Orion</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+			
+	<defName>Orion_Refugee</defName>
+    <title>Orion Refugee</title>
+    <titleShort>Refugee</titleShort>
+    <baseDescription>[PAWN_nameDef] narrowly escaped raiding pirates due to the sacrifice of her mother. [PAWN_pronoun] swears revenge on the ones who destroyed their village.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Orion</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+</Defs>

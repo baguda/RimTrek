@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- projectiles -->
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Bullet_PulsePlasma"]</xpath>
+			<value>
+    <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_PulsePlasma</defName>
+	<graphicData>
+		<texPath>Things/Borg/Items/plasma3</texPath>
+	</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+			<stoppingPower>0.25</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+  </ThingDef>
+		</value>
+		</match>
+	</Operation>
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Bullet_PulsePlasmaX"]</xpath>
+		<value>
+	<ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_PulsePlasmaX</defName>
+		<graphicData>
+		<texPath>Things/Borg/Items/plasma</texPath>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+			<stoppingPower>0.15</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+  </ThingDef>
+ 		</value>
+		</match>
+	</Operation>
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Bullet_InfernoCannonBorg"]</xpath>
+		<value>
+		  <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_InfernoCannonBorg</defName>
+    <label>disruptor pulse</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <color>(254,189,58)</color>
+    </graphicData>
+    <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+	<projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bomb</damageDef>
+	  <damageAmountBase>30</damageAmountBase>
+      <speed>85</speed>
+      <explosionRadius>2.4</explosionRadius >
+    </projectile>
+  </ThingDef>
+ 		</value>
+		</match>
+	</Operation>
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Bullet_InjectorWhipPlayer"]</xpath>
+		<value> 
+  <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_InjectorWhipPlayer</defName>
+    <graphicData>
+      <texPath>Things/Borg/Items/plasma2</texPath>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>100</damageAmountBase>
+	  			<armorPenetrationBase>0.9</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+ 		</value>
+		</match>
+	</Operation>  
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Bullet_InjectorWhip"]</xpath>
+		<value> 
+  <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_InjectorWhip</defName>
+    <graphicData>
+      <texPath>Things/Borg/Items/plasma2</texPath>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+	  <armorPenetrationBase>0.9</armorPenetrationBase>
+      <damageAmountBase>100</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+ 		</value>
+		</match>
+	</Operation> 
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationReplace">
+		<xpath>*/ThingDef[@Name="Bullet_MiniTurret_Borg"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationReplace">
+		<xpath>*/ThingDef[@Name="Bullet_MiniTurret_Borg_kill"]/thingClass</xpath>
+		<value>
+			<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		</value>
+</match>
+</Operation>
+
+<!--Guns-->
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Borg_DroneBlaster"]</xpath>
+		<value> 
+  <ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_DroneBlaster</defName>
+    <label>charged-pulse attachment</label>
+    <description>Basic weapon of the Borg that is attached directly to the arm of the drone.</description>
+    <graphicData>
+      <texPath>Things/Borg/Items/armgun2</texPath>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2</Mass>
+	  <MarketValue>200</MarketValue>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+	  <SightsEfficiency>.9</SightsEfficiency>
+	  <ShotSpread>.02</ShotSpread>
+	  <SwayFactor>.53</SwayFactor>
+	  <Bulk>.5</Bulk>
+    </statBases>
+	<costList>
+	  <BorgOrgSub>150</BorgOrgSub>
+	</costList>
+    <weaponTags>
+      <li>BorgT1</li>
+    </weaponTags>
+    <verbs>
+	  <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PulsePlasmaX</defaultProjectile>
+        <warmupTime>.25</warmupTime>
+        <range>19</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Phaser_blast5</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+   		</value>
+		</match>
+	</Operation> 
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Borg_DroneZapper"]</xpath>
+		<value>
+		  <ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_DroneZapper</defName>
+    <label>advanced charged-pulse attachment</label>
+    <description>Advanced weapon of the Borg that is attached directly to the arm of the drone.</description>
+    <graphicData>
+      <texPath>Things/Borg/Items/armgun3</texPath>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+	  <MarketValue>600</MarketValue>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+	  <SightsEfficiency>2.0</SightsEfficiency>
+	  <ShotSpread>.05</ShotSpread>
+	  <SwayFactor>.53</SwayFactor>
+	  <Bulk>.5</Bulk>
+    </statBases>
+	<costList>
+	  <BorgOrgSub>350</BorgOrgSub>
+	</costList>
+    <weaponTags>
+      <li>BorgT3</li>
+    </weaponTags>
+    <verbs>
+	  <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PulsePlasma</defaultProjectile>
+        <warmupTime>.75</warmupTime>
+        <range>38</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		<recoilPattern>Mounted</recoilPattern>
+		<recoilAmount>1.23</recoilAmount>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Phaser_blast5</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+     		</value>
+		</match>
+	</Operation> 
+  
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Gun_InfernoCannonBorg"]</xpath>
+		<value>
+	   <ThingDef ParentName="BaseBorgGun">
+    <defName>Gun_InfernoCannonBorg</defName>    
+	<label>Borg disruptor cannon</label>
+    <description>An incendiary-shot mini-artillery device. It fires a large incendiary warhead.</description>
+    <graphicData>
+      <texPath>Things/Borg/Items/armgun1</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>8</Mass>
+	  <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+	  <SightsEfficiency>1.05</SightsEfficiency>
+	  <ShotSpread>.15</ShotSpread>
+	  <SwayFactor>1.8</SwayFactor>
+	  <Bulk>5</Bulk>
+	  <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <tools>
+      <li Class="CombatExtended.ToolCE">
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+        <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+        <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+      </li>
+    </tools>
+	<weaponTags>
+      <li>BorgT3</li>
+    </weaponTags>
+    <verbs>
+	  <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_InfernoCannonBorg</defaultProjectile>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <warmupTime>1.25</warmupTime>
+        <range>40</range>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<targetParams>
+    	    <canTargetLocations>true</canTargetLocations>
+    	</targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aimedBurstShotCount>2</aimedBurstShotCount>
+		<aiUseBurstMode>TRUE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+    </comps>
+  </ThingDef>
+     		</value>
+		</match>
+	</Operation> 
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Borg_InjectorWhipPlayer"]</xpath>
+		<value>
+		<ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_InjectorWhipPlayer</defName>
+    <label>Borg Nanoprobe Injector Whip</label>
+    <description>A borg arm-mounted weapon consisting of lengthy nanoprobe injectors. Designed for optimized harvesting and assimilation by specialized borg drones. [Long cast time and cooldown time]</description>
+    <graphicData>
+      <texPath>Things/Borg/Weapons/NaniteInjector</texPath>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>1.4</Mass>
+      <MarketValue>1900</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+	  <SightsEfficiency>.9</SightsEfficiency>
+	  <ShotSpread>.02</ShotSpread>
+	  <SwayFactor>.53</SwayFactor>
+	  <Bulk>.5</Bulk>
+    </statBases>
+    <costList>
+      <BorgOrgSub>150</BorgOrgSub>
+    </costList>
+    <weaponTags>
+      <li>BorgT1</li>
+    </weaponTags>
+    <verbs>
+	  <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_InjectorWhipPlayer</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <warmupTime>8.0</warmupTime>
+        <range>2</range>
+        <soundCast>Phaser_blast5</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+	<modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+       		</value>
+		</match>
+	</Operation> 
+	
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Borg_InjectorWhip"]</xpath>
+		<value>
+		<ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_InjectorWhip</defName>
+    <label>Borg Nanoprobe Injector Whip</label>
+    <description>A borg arm-mounted weapon consisting of lengthy nanoprobe injectors. Designed for optimized harvesting and assimilation by specialized borg drones. [Long cast time and cooldown time]</description>
+    <graphicData>
+      <texPath>Things/Borg/Weapons/NaniteInjector</texPath>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>1.4</Mass>
+      <MarketValue>1900</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+	  <SightsEfficiency>.9</SightsEfficiency>
+	  <ShotSpread>.02</ShotSpread>
+	  <SwayFactor>.53</SwayFactor>
+	  <Bulk>.5</Bulk>
+    </statBases>
+    <costList>
+      <BorgOrgSub>150</BorgOrgSub>
+    </costList>
+    <weaponTags>
+      <li>BorgT1</li>
+    </weaponTags>
+    <verbs>
+	  <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_InjectorWhip</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <warmupTime>8.0</warmupTime>
+        <range>2</range>
+        <soundCast>Phaser_blast5</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+	<modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.92,0.92</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+       		</value>
+		</match>
+	</Operation> 
+
+	<!--Turrets-->
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">	
+				<xpath>/Defs/ThingDef[defName="Bullet_MiniTurret_Borg_kill"]/projectile</xpath>
+		<value>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					  <damageDef>Bomb</damageDef>
+					  <armorPenetrationBase>100</armorPenetrationBase>
+					</projectile>
+		</value>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		<match Class="PatchOperationReplace">	
+				<xpath>/Defs/ThingDef[defName="Bullet_MiniTurret_Borg"]/projectile</xpath>
+		<value>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					  <damageDef>Bomb</damageDef>
+					  <armorPenetrationBase>100</armorPenetrationBase>
+					</projectile>
+		</value>
+</match>
+</Operation>
+
+<!--Gear-->
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Apparel_ShieldBeltBorg"]/statBases</xpath>
+		<value>
+			<Bulk>2</Bulk>
+    </value>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Apparel_BorgHelm"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+    </value>
+</match>
+</Operation>		
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Apparel_BorgArmor"]/statBases</xpath>
+		<value>
+			<Bulk>10</Bulk>
+			<WornBulk>5</WornBulk>
+    </value>
+</match>
+</Operation>
+
+<!--Race-->
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationAdd">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Borg_Base"]</xpath>
+				<value>
+					<comps />
+				</value>
+</match>
+</Operation>		
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Borg_Base"]/comps</xpath>
+		<value>
+			<li>
+			  <compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+		</value>
+</match>
+</Operation>		
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+    <match Class="PatchOperationReplace">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Borg_Base"]/tools</xpath>
+		<value>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>left fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.65</cooldownTime>
+					<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+					<armorPenetration>0.095</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>right fist</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>7</power>
+					<cooldownTime>1.65</cooldownTime>
+					<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+					<armorPenetration>0.095</armorPenetration>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>head</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>1.85</cooldownTime>
+					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+					<armorPenetration>0.079</armorPenetration>
+				</li>
+			</tools>
+		</value>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		    <match Class="PatchOperationAdd">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Borg_Base"]/statBases</xpath>
+    <value>
+      <MeleeDodgeChance>0.12</MeleeDodgeChance>
+      <MeleeCritChance>0.27</MeleeCritChance>
+      <MeleeParryChance>0.20</MeleeParryChance>
+    </value>
+</match>
+</Operation>
+
+<Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		    <match Class="PatchOperationAddModExtension">
+    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Borg_Base"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Humanoid</bodyShape>
+      </li>
+    </value>
+</match>
+</Operation>
+
+<!--Operation Class="PatchOperationFindMod">
+	<success>Always</success>
+    <mods><li>Combat Extended</li></mods>	
+		    <match Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef[defName="ShuttleHeavyRaceBorg"]</xpath>
+    <value>
+      <li Class="CombatExtended.RacePropertiesExtensionCE">
+        <bodyShape>Birdlike</bodyShape>
+      </li>
+    </value>
+</match>
+</Operation-->
+
+</Patch>

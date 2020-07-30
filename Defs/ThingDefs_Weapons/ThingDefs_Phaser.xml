@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PhaserGunBase" Name="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_I</defName>
+		<label>Phaser Type 2 (Mk I)</label>
+		<description>Standard phaser, high damage but otherwise pretty average stats</description>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/PhaserType2Mk1</texPath>
+		</graphicData>
+	
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>5.5</Mass>
+			<MarketValue>600</MarketValue>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+	
+	    <barrelLength>0.9</barrelLength>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_PhaserBeam_Strong</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>28</range>
+				<ticksBetweenBurstShots>80</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>O21_ST_Sound_PhaserFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>	
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+            <O21_ST_RefinedDilithium>2</O21_ST_RefinedDilithium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_PhasersTwo</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_II</defName>
+		<label>Phaser Type 2 (Mk II)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/PhaserType2Mk2</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1000</MarketValue>
+</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_III</defName>
+		<label>Phaser Type 2 (Mk III)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/PhaserType2Mk3</texPath>
+		</graphicData>
+<statBases>
+			      <MarketValue>1200</MarketValue>
+</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_Cardassian</defName>
+		<label>Phaser Type 2 (Cardassian)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Cardassian/Phaser</texPath>
+		</graphicData>
+	<statBases>
+			      <MarketValue>1200</MarketValue>
+</statBases>
+    <weaponTags>
+      <li>Cardassian</li>
+    </weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_Bajoran</defName>
+		<label>Phaser Type 2 (Bajoran)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Bajoran/Phaser</texPath>
+		</graphicData>
+	<statBases>
+			      <MarketValue>1200</MarketValue>
+</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_Andorian</defName>
+		<label>Phaser Type 2 (Andorian)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Andorian/Phaser</texPath>
+		</graphicData>
+	<statBases>
+			      <MarketValue>1200</MarketValue>
+</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="PhaserTypeTwoBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Phaser_2_Vulcan</defName>
+		<label>Phaser Type 2 (Vulcan)</label>
+		<graphicData>
+			<texPath>Things/Weapons/Vulcan/Phaser</texPath>
+		</graphicData>
+	<statBases>
+			      <MarketValue>1200</MarketValue>
+</statBases>
+    <weaponTags>
+      <li>Romulan</li>
+    </weaponTags>
+	</ThingDef>
+
+</Defs>

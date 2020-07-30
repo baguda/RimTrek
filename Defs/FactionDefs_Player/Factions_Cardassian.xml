@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>CardassianUnionPlayer</defName>
+    <label>A Proud Cardassian House</label>
+    <description>A Cardassian city.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>PlayerCardassian</basicMemberKind>
+    <pawnSingular>Cardassian</pawnSingular>
+    <pawnsPlural>Cardassians</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <backstoryCategories><li>Cardassian</li></backstoryCategories>
+    <factionIconPath>World/CardassianBaseIcon</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionCardassian</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>  
+	  <li>ShipRelated</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Rural</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+  <FactionDef>
+		<defName>CardassianAlly</defName>
+		<label>Cardassian Union</label>
+    <description>A stronghold of the Cardassian Union. They are a fiercely warlike species.</description>
+    <pawnsPlural>Cardassians</pawnsPlural>
+	<fixedName>The Cardassian Union</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Legate</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerCardassianUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionCardassian</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Cardassian</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Cardassian_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ACardassianColonist>5</ACardassianColonist>
+          <ACardassianSecurityGuard>9</ACardassianSecurityGuard>
+          <ACardassianRuler>10</ACardassianRuler>
+          <ACardassianRecruit>1</ACardassianRecruit>
+          <ACardassianHunter>5</ACardassianHunter>
+          <ACardassianCommando>5</ACardassianCommando>
+          <ACardassianCommandoElite>1</ACardassianCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <ACardassianTrader>1</ACardassianTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <ACardassianSecurityGuard>9</ACardassianSecurityGuard>
+          <ACardassianRecruit>1</ACardassianRecruit>
+          <ACardassianHunter>5</ACardassianHunter>
+          <ACardassianCommando>2</ACardassianCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ACardassianColonist>1</ACardassianColonist>
+          <ACardassianSecurityGuard>8</ACardassianSecurityGuard>
+          <ACardassianRuler>1</ACardassianRuler>
+          <ACardassianRecruit>1</ACardassianRecruit>
+          <ACardassianHunter>5</ACardassianHunter>
+          <ACardassianCommando>5</ACardassianCommando>
+          <ACardassianCommandoElite>2</ACardassianCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ACardassianColonist>2</ACardassianColonist>
+          <ACardassianSecurityGuard>5</ACardassianSecurityGuard>
+          <ACardassianRuler>1</ACardassianRuler>
+          <ACardassianRecruit>1</ACardassianRecruit>
+          <ACardassianHunter>5</ACardassianHunter>
+          <ACardassianCommando>3</ACardassianCommando>
+          <ACardassianCommandoElite>2</ACardassianCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/CardassianBaseIcon</settlementTexturePath>
+    <factionIconPath>World/CardassianBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+  <FactionDef>
+		<defName>CardassianEnemy</defName>
+		<label>Cardassian Union</label>
+    <description>A stronghold of the Cardassian Union. They are a fiercely warlike species.</description>
+    <pawnsPlural>Cardassians</pawnsPlural>
+	<fixedName>The Cardassian Union</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Legate</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerCardassianUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionCardassian</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Cardassian</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Cardassian_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ECardassianColonist>5</ECardassianColonist>
+          <ECardassianSecurityGuard>9</ECardassianSecurityGuard>
+          <ECardassianRuler>10</ECardassianRuler>
+          <ECardassianRecruit>1</ECardassianRecruit>
+          <ECardassianHunter>5</ECardassianHunter>
+          <ECardassianCommando>5</ECardassianCommando>
+          <ECardassianCommandoElite>1</ECardassianCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <ECardassianTrader>1</ECardassianTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <ECardassianSecurityGuard>9</ECardassianSecurityGuard>
+          <ECardassianRecruit>1</ECardassianRecruit>
+          <ECardassianHunter>5</ECardassianHunter>
+          <ECardassianCommando>2</ECardassianCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ECardassianColonist>1</ECardassianColonist>
+          <ECardassianSecurityGuard>8</ECardassianSecurityGuard>
+          <ECardassianRuler>1</ECardassianRuler>
+          <ECardassianRecruit>1</ECardassianRecruit>
+          <ECardassianHunter>5</ECardassianHunter>
+          <ECardassianCommando>5</ECardassianCommando>
+          <ECardassianCommandoElite>2</ECardassianCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ECardassianColonist>2</ECardassianColonist>
+          <ECardassianSecurityGuard>5</ECardassianSecurityGuard>
+          <ECardassianRuler>1</ECardassianRuler>
+          <ECardassianRecruit>1</ECardassianRecruit>
+          <ECardassianHunter>5</ECardassianHunter>
+          <ECardassianCommando>3</ECardassianCommando>
+          <ECardassianCommandoElite>2</ECardassianCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/CardassianBaseIcon</settlementTexturePath>
+    <factionIconPath>World/CardassianBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+</Defs>

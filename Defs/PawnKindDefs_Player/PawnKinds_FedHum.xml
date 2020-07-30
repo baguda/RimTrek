@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>PlayerFedHum</defName>
+    <label>civilian</label>
+    <race>FederationHuman</race>
+	<defaultFactionType>PlayerColony</defaultFactionType>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>450</min>
+      <max>500</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <!-- Ally-->
+  <!-- ============================ Fed Civilians ========================== -->
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>AFedHumColonist</defName>
+    <label>colonist</label>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>AFedHumSlave</defName>
+    <label>slave</label>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>AFedHumElite</defName>
+    <race>FederationHuman</race>
+    <label>elite</label>
+    <labelPlural>elites</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>AFedHumTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>600</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Fed Security ========================== -->
+  
+  <PawnKindDef Name="AFedHumSecurityGuard" ParentName="FedCivBase">
+    <defName>AFedHumSecurity</defName>
+    <label>security guard</label>
+    <race>FederationHuman</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1300</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>130</min>
+        <max>300</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+    <!-- ============================ Fed Military ========================== -->
+  
+  <PawnKindDef ParentName="FedMilBase">
+    <defName>AFedHumRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="AFedHumHunter" ParentName="FedMilBase">
+    <defName>AFedHumHunter</defName>
+    <label>hunter</label>
+    <race>FederationHuman</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>150</min>
+            <max>250</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="AFedHumCommando" ParentName="FedMilBase">
+    <defName>AFedHumCommando</defName>
+    <label>commando</label>
+    <race>FederationHuman</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>280</min>
+            <max>600</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="AFedHumCommandoElite" ParentName="AFedHumCommando">
+     <defName>AFedHumCommandoElite</defName>
+    <label>elite commando</label>
+    <race>FederationHuman</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>420</min>
+            <max>680</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- Enemy-->
+  <!-- ============================ Fed Civilians ========================== -->
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>EFedHumColonist</defName>
+    <label>colonist</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>EFedHumSlave</defName>
+    <label>slave</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>EFedHumElite</defName>
+    <race>FederationHuman</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <label>elite</label>
+    <labelPlural>elites</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>EFedHumTrader</defName>
+    <label>colony trader</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <trader>true</trader>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+	<li>FedHum</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>600</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Fed Security ========================== -->
+  
+  <PawnKindDef Name="EFedHumSecurityGuard" ParentName="FedCivBase">
+    <defName>EFedHumSecurity</defName>
+    <label>security guard</label>
+    <race>FederationHuman</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1300</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>130</min>
+        <max>300</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+    <!-- ============================ Fed Military ========================== -->
+  
+  <PawnKindDef ParentName="FedMilBase">
+    <defName>EFedHumRecruit</defName>
+    <label>recruit</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>70</combatPower>
+    <race>FederationHuman</race>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EFedHumHunter" ParentName="FedMilBase">
+    <defName>EFedHumHunter</defName>
+    <label>hunter</label>
+    <race>FederationHuman</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>150</min>
+            <max>250</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="EFedHumCommando" ParentName="FedMilBase">
+    <defName>EFedHumCommando</defName>
+    <label>commando</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>FederationHuman</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>280</min>
+            <max>600</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="EFedHumCommandoElite" ParentName="EFedHumCommando">
+     <defName>EFedHumCommandoElite</defName>
+    <label>elite commando</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>FederationHuman</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>FedHum</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>420</min>
+            <max>680</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>  
+  
+</Defs>

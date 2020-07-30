@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--Misc Adult -->
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>Fed_Adult</defName>
+    <title>Federation Adult</title>
+    <titleShort>Federation Adult</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in federation space and worked there.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Federation</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+
+ <!--Misc Child -->
+  
+<AlienRace.BackstoryDef>
+
+    <defName>Fed_Child</defName>
+    <title>Federation Child</title>
+    <titleShort>Federation Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born in federation space and attended their schools.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Federation</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+</Defs>

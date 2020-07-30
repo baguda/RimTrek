@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="MakeStoneBlocksBase">
+		<defName>O21_ST_MakeDilithiumFromStone</defName>
+		<label>refine dilithium from rock chunks</label>
+		<description>Refine the trace amounts of dilithium in rock chunks.</description>
+		<jobString>Refining dilithium.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>StoneChunks</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<O21_ST_RefinedDilithium>1</O21_ST_RefinedDilithium>
+		</products>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+        <researchPrerequisite>O21_ST_Dilithium</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

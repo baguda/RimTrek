@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <!-- ============================ Andorian Names ========================== -->
+  <RulePackDef>
+    <defName>NamerAndorianUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>AndFirstMale->NameBanks/Names_First_Andorian_Male</li>
+        <li>AndFirstFemale->NameBanks/Names_First_Andorian_Female</li>
+        <li>AndLast->NameBanks/Names_Last_Andorian</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerAndorianMale</defName>
+    <include>
+      <li>NamerAndorianUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[AndFirstMale] [AndLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerAndorianFemale</defName>
+    <include>
+      <li>NamerAndorianUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[AndFirstFemale] [AndLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+ 
+   <!-- ============================ Bajoran Names ========================== -->
+   
+  <RulePackDef>
+    <defName>NamerBajoranUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>BajFirstMale->NameBanks/Names_First_Bajoran_Male</li>
+        <li>BajFirstFemale->NameBanks/Names_First_Bajoran_Female</li>
+        <li>BajLast->NameBanks/Names_Last_Bajoran</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerBajoranMale</defName>
+    <include>
+      <li>NamerBajoranUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[BajLast] [BajFirstMale] </li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerBajoranFemale</defName>
+    <include>
+      <li>NamerBajoranUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[BajLast] [BajFirstFemale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+   <!-- ============================ Ferengi Names ========================== -->
+   
+  <RulePackDef>
+    <defName>NamerFerengiUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>FerFirstMale->NameBanks/Names_First_Ferengi_Male</li>
+        <li>FerFirstFemale->NameBanks/Names_First_Ferengi_Female</li>
+        <li>FerLast->NameBanks/Names_Last_Ferengi</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFerengiMale</defName>
+    <include>
+      <li>NamerFerengiUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FerFirstMale] [FerLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFerengiFemale</defName>
+    <include>
+      <li>NamerFerengiUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FerFirstFemale] [FerLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+   <!-- ============================ Ocampa Names ========================== -->
+   
+  <RulePackDef>
+    <defName>NamerOcampaUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>OcaFirstMale->NameBanks/Names_First_Ocampa_Male</li>
+        <li>OcaFirstFemale->NameBanks/Names_First_Ocampa_Female</li>
+        <li>OcaLast->NameBanks/Names_Last_Ocampa</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerOcampaMale</defName>
+    <include>
+      <li>NamerOcampaUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[OcaFirstMale] [OcaLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerOcampaFemale</defName>
+    <include>
+      <li>NamerOcampaUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[OcaFirstFemale] [OcaLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Bases-->
+<ThingDef Name="BaseBorgGun" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Spacer</techLevel>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <smeltable>true</smeltable>
+	<repairEffect>Repair</repairEffect>
+	<soundInteract>Interact_ChargeRifle</soundInteract>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+  </ThingDef>
+  
+<ThingDef ParentName="BaseBullet" Abstract="True" Name="BaseBorgBullet">  
+    <label>phased pulse</label>  
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>TransparentPostLight</shaderType>
+	</graphicData>
+	</ThingDef>
+	
+<!--Projectiles-->
+    <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_PulsePlasma</defName>
+	<graphicData>
+		<texPath>Things/Borg/Items/plasma3</texPath>
+	</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>0.25</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_PulsePlasmaX</defName>
+		<graphicData>
+		<texPath>Things/Borg/Items/plasma</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<stoppingPower>0.15</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_InfernoCannonBorg</defName>
+    <label>disruptor pulse</label>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <color>(254,189,58)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+	<projectile>
+      <damageDef>Bomb</damageDef>
+	  <damageAmountBase>30</damageAmountBase>
+      <speed>85</speed>
+      <explosionRadius>2.4</explosionRadius >
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_InjectorWhipPlayer</defName>
+    <graphicData>
+      <texPath>Things/Borg/Items/plasma2</texPath>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+		<projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>100</damageAmountBase>
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+  
+    <ThingDef ParentName="BaseBorgBullet">
+    <defName>Bullet_InjectorWhip</defName>
+    <graphicData>
+      <texPath>Things/Borg/Items/plasma2</texPath>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+		<projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>2000</damageAmountBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>	
+  
+    <!--Guns-->
+  
+  <ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_DroneBlaster</defName>
+    <label>charged-pulse attachment</label>
+    <description>Basic weapon of the Borg that is attached directly to the arm of the drone.</description>
+    <graphicData>
+      <texPath>Things/Borg/Items/armgun2</texPath>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>2</Mass>
+	  <MarketValue>200</MarketValue>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <BorgOrgSub>150</BorgOrgSub>
+	</costList>
+    <weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_Disruptor_Normal</defaultProjectile>
+        <warmupTime>.25</warmupTime>
+        <range>19</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+				<soundCast>O21_ST_Sound_DisruptorFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_DroneZapper</defName>
+    <label>advanced charged-pulse attachment</label>
+    <description>Advanced weapon of the Borg that is attached directly to the arm of the drone.</description>
+    <graphicData>
+      <texPath>Things/Borg/Items/armgun3</texPath>
+    </graphicData>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+	  <MarketValue>1000</MarketValue>
+      <Mass>2</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+    </statBases>
+	<costList>
+	  <BorgOrgSub>350</BorgOrgSub>
+	</costList>
+    <weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_Disruptor_Strong</defaultProjectile>
+        <warmupTime>.75</warmupTime>
+        <range>38</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+				<soundCast>O21_ST_Sound_DisruptorFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+   <ThingDef ParentName="BaseBorgGun">
+    <defName>Gun_InfernoCannonBorg</defName>    
+	<label>Borg disruptor cannon</label>
+    <description>An incendiary-shot mini-artillery device. It fires a large incendiary warhead.</description>
+    <graphicData>
+      <texPath>Things/Borg/Items/armgun1</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>8</Mass>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+	  <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <tools>
+      <li>
+        <label>muzzle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>1.54</cooldownTime>
+      </li>
+    </tools>
+	<weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_InfernoCannonBorg</defaultProjectile>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <warmupTime>1.25</warmupTime>
+        <range>40</range>
+		        <forcedMissRadius>3.5</forcedMissRadius>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+		<targetParams>
+    	    <canTargetLocations>true</canTargetLocations>
+    	</targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+<!--Injectors-->
+
+  <ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_InjectorWhipPlayer</defName>
+    <label>Borg Nanoprobe Injector Whip</label>
+    <description>A borg arm-mounted weapon consisting of lengthy nanoprobe injectors. Designed for optimized harvesting and assimilation by specialized borg drones. [Long cast time and cooldown time]</description>
+    <graphicData>
+      <texPath>Things/Borg/Weapons/NaniteInjector</texPath>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>1.4</Mass>
+      <MarketValue>100</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <BorgOrgSub>150</BorgOrgSub>
+    </costList>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_InjectorWhipPlayer</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <warmupTime>8.0</warmupTime>
+        <range>2</range>
+				<soundCast>O21_ST_Sound_DisruptorFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBorgGun">
+    <defName>Borg_InjectorWhip</defName>
+    <label>Borg Nanoprobe Injector Whip</label>
+    <description>A borg arm-mounted weapon consisting of lengthy nanoprobe injectors. Designed for optimized harvesting and assimilation by specialized borg drones. [Long cast time and cooldown time]</description>
+    <graphicData>
+      <texPath>Things/Borg/Weapons/NaniteInjector</texPath>
+    </graphicData>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <statBases>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>1.4</Mass>
+      <MarketValue>100</MarketValue>
+      <AccuracyTouch>0.95</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.5</AccuracyMedium>
+      <AccuracyLong>0.4</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <BorgOrgSub>150</BorgOrgSub>
+    </costList>
+    <weaponTags>
+	  <li>BorgAI</li>
+    </weaponTags>
+    <verbs>
+	  <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_InjectorWhip</defaultProjectile>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <warmupTime>1.0</warmupTime>
+        <range>4</range>
+				<soundCast>O21_ST_Sound_DisruptorFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <!--=============== Mini-turret ===============-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_BorgTurret</defName>
+    <label>pulsed disruptor turrent</label>
+    <description>A portable automatic turret. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>8</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>3.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>80</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>BorgOrgSub</li></thingDefs></fuelFilter>
+        <fuelCapacity>300</fuelCapacity>       <!-- 30 bursts -->
+        <fuelMultiplier>2</fuelMultiplier> <!-- 1.333 steel per burst, 80 per full rearm -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>BorgStuff</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+    <building>
+      <combatPower>45</combatPower>   <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_MiniTurret_Borg</turretGunDef>
+      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MiniTurret_Borg</defName>
+    <label>Borg mini-turret bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>TransparentPostLight</shaderType>
+      <color>(57,236,95)</color>
+    </graphicData>
+	<thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>3</damageAmountBase>
+      <speed>90</speed>
+      <explosionRadius>1</explosionRadius >
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_MiniTurret_Borg</defName>
+    <label>mini-turret gun</label>
+    <description>A simple automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+	    <forcedMissRadius>3.5</forcedMissRadius>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_MiniTurret_Borg</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>28.9</range>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+  </Defs>

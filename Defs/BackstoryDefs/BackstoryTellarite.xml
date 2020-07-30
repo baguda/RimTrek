@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--Misc Adult -->
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>TellariteA1</defName>
+    <title>Bigmouth Tellarite</title>
+    <titleShort>Federation Adult</titleShort>
+    <baseDescription>[PAWN_nameDef] has an opinion and wants everyone to know!</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+	  	      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Tellarite</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+
+    <defName>TellariteA2</defName>
+    <title>Edgy Troublemaker</title>
+    <titleShort>thoughtcriminal</titleShort>
+    <baseDescription>[PAWN_nameDef] likes to play devil's advocate. [PAWN_pronoun] pushes the limit and is often a racist.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+	  	      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Tellarite</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef>
+
+    <defName>TellariteA3</defName>
+    <title>Knower of Correct Opinions</title>
+    <titleShort>Ally</titleShort>
+    <baseDescription>[PAWN_nameDef] keeps up with the latest trends. [PAWN_pronoun] realizes that we must listen to the ruling class even when it doesn't make sense.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Tellarite</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+ <!--Misc Child -->
+  
+<AlienRace.BackstoryDef>
+
+    <defName>TellariteC1</defName>
+    <title>Contrarian</title>
+    <titleShort>Obnoxious</titleShort>
+    <baseDescription>[PAWN_nameDef] loved to argue as a child. [PAWN_pronoun] was always in trouble for talking too much.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+	      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Tellarite</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>TellariteC2</defName>
+    <title>Do Gooder</title>
+    <titleShort>Goody</titleShort>
+    <baseDescription>[PAWN_nameDef] really wants to help out. [PAWN_pronoun] he always makes sure everyone around is following the rules.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Tellarite</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>TellariteC3</defName>
+    <title>Absentminded Child</title>
+    <titleShort>Space cadet</titleShort>
+    <baseDescription>[PAWN_nameDef] was always comfortable as a child. [PAWN_pronoun] just plays video games and doesn't worry about the world around.</baseDescription>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <forcedHediffs>
+    </forcedHediffs>
+    <spawnCategories>
+      <li>Tellarite</li>
+    </spawnCategories>
+	
+ </AlienRace.BackstoryDef> 
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--Borg Base Pawn-->
+  <PawnKindDef Name="BorgBase" Abstract="True">
+  <defaultFactionType>BorgEnemy</defaultFactionType>
+  <race>Alien_Borg</race>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <backstoryCategories>
+		<li>Borg</li>
+	</backstoryCategories>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <isFighter>true</isFighter>
+	<weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Borg</li>
+    </apparelTags>
+    <techHediffsChance>0</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+	    <combatPower>30</combatPower>
+  </PawnKindDef>
+
+<!--Civ Borg-->  
+  <PawnKindDef ParentName="BorgBase">
+    <defName>PlayerBorgDrone</defName>
+    <label>assimilated human borg drone</label>
+    <defaultFactionType>BorgCollectivePlayer</defaultFactionType>
+    <apparelMoney>
+      <min>0</min>
+      <max>250</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>200</min>
+      <max>600</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Borg</li>
+    </apparelTags>
+  </PawnKindDef>  
+
+  <PawnKindDef ParentName="BorgBase">
+    <defName>LiberatedBorg</defName>
+    <label>freed human borg drone</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <apparelMoney>
+      <min>200</min>
+      <max>500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>250</min>
+      <max>700</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Borg</li>
+    </apparelTags>
+  </PawnKindDef>  
+  
+<!--Enemy Borg-->  
+  <PawnKindDef ParentName="BorgBase">
+    <defName>ABorgDrone</defName>
+    <label>assimilated borg drone</label>
+  <defaultFactionType>BorgAlly</defaultFactionType>
+    <apparelMoney>
+      <min>400</min>
+      <max>850</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>400</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Borg</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Borg</li>
+    </apparelTags>
+  </PawnKindDef>  
+
+    <PawnKindDef ParentName="BorgBase">
+    <defName>EBorgDrone</defName>
+    <label>assimilated borg drone</label>
+  <defaultFactionType>BorgEnemy</defaultFactionType>
+    <apparelMoney>
+      <min>400</min>
+      <max>850</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>150</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Borg</li>
+      <li>BorgAI</li>
+    </weaponTags>
+    <apparelTags>
+      <li>Borg</li>
+    </apparelTags>
+  </PawnKindDef>  
+  </Defs>

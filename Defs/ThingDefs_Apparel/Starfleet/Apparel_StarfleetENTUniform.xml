@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Uniform ====== -->
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_ENT_StarfleetBlue</defName>
+		<label>starfleet uniform (ent, science)</label>
+		<description>A full-body uniform worn by Starfleet, it's very lightly armoured underneath.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Starfleet/NX/NX_Sci_Male_south</texPath>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Starfleet/NX/NX_Sci</wornGraphicPath>
+			<tags Inherit="False">
+				<li>Federation</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_ENT_StarfleetRed</defName>
+		<label>starfleet uniform (ent, command)</label>
+		<description>A full-body uniform worn by Starfleet, it's very lightly armoured underneath.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Starfleet/NX/NX_Cmd_Male_south</texPath>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Starfleet/NX/NX_Cmd</wornGraphicPath>
+			<tags Inherit="False">
+				<li>Federation</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_ENT_StarfleetYellow</defName>
+		<label>starfleet uniform (ent, engineering)</label>
+		<description>A full-body uniform worn by Starfleet, it's very lightly armoured underneath.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Starfleet/NX/NX_Eng_Male_south</texPath>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Starfleet/NX/NX_Eng</wornGraphicPath>
+			<tags Inherit="False">
+				<li>Federation</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_ENT_StarfleetStuffed</defName>
+		<label>starfleet uniform (ent, stuffed)</label>
+		<description>A full-body uniform worn by Starfleet, it's very lightly armoured underneath. Note: This variant is stuffable purely for the colouring, the stats are unaffected.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Starfleet/NX/NX_Stuffed_Male_south</texPath>
+		</graphicData>
+
+		<costStuffCount>1</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+
+		<costList Inherit="False">
+			<Plasteel>10</Plasteel>
+			<Cloth>60</Cloth>
+		</costList>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Starfleet/NX/NX_Stuffed</wornGraphicPath>
+			<tags Inherit="False">
+			<li>Federation</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

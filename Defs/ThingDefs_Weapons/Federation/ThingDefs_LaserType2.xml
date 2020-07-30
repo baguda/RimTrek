@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PhaserGunBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Laser_2_I</defName>
+		<label>Hand Laser (Mk I)</label>
+		<description>Simple laser weapon, takes a long time to warmup and has a short range limitation.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Federation/LaserType2Mk1</texPath>
+		</graphicData>
+	
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			      <MarketValue>300</MarketValue>			
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+	
+	    <barrelLength>0.9</barrelLength>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_LaserBeam_Weak</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>24</range>
+				<ticksBetweenBurstShots>80</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>O21_ST_Sound_PhaserFireTOS</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>	
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList>
+			<Steel>10</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+            <O21_ST_RefinedDilithium>1</O21_ST_RefinedDilithium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_LaserWeapons</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+</Defs>

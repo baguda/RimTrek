@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PhaserGunBase" Name="DisruptorBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Disruptor_KlingonA</defName>
+		<label>Klingon Disruptor Type A</label>
+		<description>Disruptor weapon, high damage, low range.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/Disruptor</texPath>
+		</graphicData>
+	
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<MarketValue>400</MarketValue>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+	
+	    <barrelLength>0.9</barrelLength>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_Disruptor_Strong</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>24</range>
+				<soundCast>O21_ST_Sound_DisruptorFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+	
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+    <weaponTags>
+      <li>Klingon</li>
+	  <li>Orion</li>
+	  <li>Romulan</li>
+	  <li>Cardassian</li>
+    </weaponTags>	
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+            <O21_ST_RefinedDilithium>4</O21_ST_RefinedDilithium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_Disruptors</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DisruptorBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Disruptor_KlingonB</defName>
+		<label>Klingon Disruptor Type B</label>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/DisruptorAdv</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>1000</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="DisruptorBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Disruptor_KlingonC</defName>
+		<label>Klingon Disruptor Type C</label>
+		<graphicData>
+			<texPath>Things/Weapons/Klingon/DisruptorRealAdv</texPath>
+		</graphicData>
+		<statBases>
+		<MarketValue>1500</MarketValue>
+		</statBases>
+		</ThingDef>
+
+	<ThingDef ParentName="DisruptorBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Disruptor_RomulanA</defName>
+		<label>Romulan Disruptor Type A</label>
+		<graphicData>
+			<texPath>Things/Weapons/Romulan/DisruptorPistol</texPath>
+		</graphicData>
+			<statBases>
+		<MarketValue>1500</MarketValue>
+		</statBases>
+		    <weaponTags>
+      <li>Romulan</li>
+    </weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="DisruptorBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_Disruptor_RomulanB</defName>
+		<label>Romulan Disruptor Type B</label>
+		<graphicData>
+			<texPath>Things/Weapons/Romulan/DisruptorPistolAdv</texPath>
+		</graphicData>
+			<statBases>
+		<MarketValue>1500</MarketValue>
+		</statBases>
+		    <weaponTags>
+      <li>Romulan</li>
+    </weaponTags>
+	</ThingDef>
+
+</Defs>

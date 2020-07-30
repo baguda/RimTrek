@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PhaserGunBase" Name="DisruptorRifleBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_DisruptorRifle_Bajoran</defName>
+		<label>Bajoran Disruptor Rifle</label>
+		<description>Disruptor weapon, average damage, low range but high rate of fire.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bajoran/DisruptorRifle</texPath>
+		</graphicData>
+	
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>5.5</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+					<MarketValue>1000</MarketValue>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+	
+	    <barrelLength>0.9</barrelLength>
+
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_Disruptor_Normal</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>26</range>
+				<soundCast>O21_ST_Sound_DisruptorFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>	
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList>
+			<Plasteel>40</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+            <O21_ST_RefinedDilithium>4</O21_ST_RefinedDilithium>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_Disruptors</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="DisruptorRifleBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_DisruptorRifle_RomulanA</defName>
+		<label>Romulan Disruptor Rifle Type A</label>
+		<graphicData>
+			<texPath>Things/Weapons/Romulan/DisruptorRifle</texPath>
+		</graphicData>
+			<statBases>
+		<MarketValue>1000</MarketValue>
+		</statBases>
+	<weaponTags>
+      <li>Romulan</li>
+    </weaponTags>
+	</ThingDef>
+
+	<ThingDef ParentName="DisruptorRifleBase" Class="O21Toolbox.Laser.LaserGunDef">
+		<defName>O21_Trek_DisruptorRifle_RomulanB</defName>
+		<label>Romulan Disruptor Rifle Type B</label>
+		<graphicData>
+			<texPath>Things/Weapons/Romulan/DisruptorRifleAdv</texPath>
+		</graphicData>
+			<statBases>
+		<MarketValue>1500</MarketValue>
+		</statBases>
+	<weaponTags>
+      <li>Romulan</li>
+    </weaponTags>
+	</ThingDef>
+
+</Defs>

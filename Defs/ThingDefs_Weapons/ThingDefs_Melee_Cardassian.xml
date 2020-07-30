@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>O21_ST_Melee_CardassianBlade</defName>
+		<label>Cardassian blade</label>
+		<description>Simple Cardassian blade</description>
+		<graphicData>
+			<texPath>Things/Weapons/Cardassian/Blade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+					      <MarketValue>700</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+
+		<techLevel>Spacer</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+
+    <weaponTags>
+	  <li>Orion</li>
+      <li>Cardassian</li>
+    </weaponTags>
+	
+		<costList>
+			<Steel>15</Steel>
+			<Plasteel>50</Plasteel>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_CardassianBlades</researchPrerequisite>
+			<recipeUsers>
+                <li>O21_ST_MatterReplicator</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

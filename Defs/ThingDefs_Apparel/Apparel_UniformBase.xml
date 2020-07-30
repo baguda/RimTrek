@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="ApparelMakeableBase" Name="StarTrekUniformBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+
+		<techLevel>Spacer</techLevel>
+		<tradeability>Sellable</tradeability>
+
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+			<Mass>3</Mass>
+			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.44</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.65</ArmorRating_Heat>
+			<Insulation_Cold>45</Insulation_Cold>
+			<Insulation_Heat>35</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+
+		<costList>
+			<Plasteel>10</Plasteel>
+			<Cloth>60</Cloth>
+		</costList>
+
+		<apparel>
+			<bodyPartGroups Inherit="False">
+				<li>Arms</li>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers Inherit="False">
+				<li>OnSkin</li>
+			</layers>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_FedUniforms</researchPrerequisite>
+			<skillRequirements Inherit="False">
+				<Crafting>6</Crafting>
+			</skillRequirements>
+            <recipeUsers>
+                <li>O21_ST_MatterReplicator</li>
+            </recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

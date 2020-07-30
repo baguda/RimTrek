@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_RomulanOutfit</defName>
+		<label>romulan outfit</label>
+		<description>A uniform worn by Romulans, it's very lightly armoured underneath.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Romulan/Base/Base_Male_south</texPath>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Romulan/Base/Base</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>Orion</li>
+				<li>Romulan</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+		</apparel>
+		<statBases>
+		  <MarketValue>1000</MarketValue>	
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_RomulanUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_RomulanCloak</defName>
+		<label>romulan cloak</label>
+		<description>A Romulan cloak, purely decorative.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Romulan/Cloak/Cloak_Male_south</texPath>
+		</graphicData>
+
+		<statBases Inherit="False">
+			<MaxHitPoints>1000</MaxHitPoints>
+		  <MarketValue>1000</MarketValue>	
+			<WorkToMake>1800</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Romulan/Cloak/Cloak</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>Orion</li>
+				<li>Romulan</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Shell</li>
+			</layers>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_RomulanUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_RomulanCollar</defName>
+		<label>romulan rank collar (officer)</label>
+		<description>A Romulan rank insignia, purely decorative.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Romulan/Choker/Choker_Male_south</texPath>
+		</graphicData>
+
+		<statBases Inherit="False">
+			<MaxHitPoints>1000</MaxHitPoints>
+		  <MarketValue>1000</MarketValue>	
+			<WorkToMake>1800</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Romulan/Choker/Choker</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>Orion</li>
+				<li>Romulan</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Belt</li>
+			</layers>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_RomulanUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_RomulanCollarAlt</defName>
+		<label>romulan rank collar (captain)</label>
+		<description>A Romulan rank insignia, purely decorative.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Romulan/Choker2/Choker2_Male_south</texPath>
+		</graphicData>
+
+		<statBases Inherit="False">
+			<MaxHitPoints>1000</MaxHitPoints>
+		  <MarketValue>1000</MarketValue>	
+			<WorkToMake>1800</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Romulan/Choker2/Choker2</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>Orion</li>
+				<li>Romulan</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Belt</li>
+			</layers>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_RomulanUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

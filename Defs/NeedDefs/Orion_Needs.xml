@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <JobDef>
+    <defName>Orion_Mingle</defName>
+    <driverClass>JobDriver_PlayBilliards</driverClass>
+    <reportString>playing billiards.</reportString>
+    <joyDuration>6000</joyDuration>
+    <joyMaxParticipants>8</joyMaxParticipants>
+    <joySkill>Shooting</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>Orion_Social</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+    <JoyGiverDef>
+    <defName>Orion_Mingle</defName>
+    <giverClass>JoyGiver_PlayBilliards</giverClass>
+    <baseChance>10</baseChance>
+    <thingDefs>
+      <li>OrionSocialCenter</li>
+    </thingDefs>
+    <jobDef>Orion_Mingle</jobDef>
+    <joyKind>Orion_Social</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>OrionSocialCenter</defName>
+    <label>billiards table</label>
+    <description>A soft-topped bounded table for playing a variety of billiards-type games. It trains shooting ability.</description>
+    <graphicData>
+      <texPath>Things/Building/Orion/OrionHookah</texPath>
+      <graphicClass>Graphic_single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <staticSunShadowHeight>0.00</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <building>
+      <joyKind>Orion_Social</joyKind>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <JoyGainFactor>1.8</JoyGainFactor>
+    </statBases>
+    <size>(2,3)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <costList>
+      <Cloth>80</Cloth>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <pathCost>-10</pathCost>
+    <passability>Standable</passability>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+    </placeWorkers>
+	<modExtensions>
+	<li Class="Proximity.ProximityDefs">
+		<ProxSocialImpactOffSet>+1.2</ProxSocialImpactOffSet>
+		<ProxRange>3</ProxRange>
+		<ProxColonist>true</ProxColonist>
+	</li>
+	</modExtensions>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <JoyKindDef>
+    <defName>Orion_Social</defName>
+    <label>Orion social mingling</label>
+  </JoyKindDef>
+  
+  	
+	<NeedDef>
+		<defName>Orion_NeedCulture</defName>
+		<needClass>OrionMingle.Need_Culture_Orion</needClass>
+		<label>Mingle</label>
+		<description>Klingon Culture is based on Honor. A Klingon’s honor is determined by how they handle themselves on the battlefield.(Honor is gained by downing humanlike and mechanoids in battle, killing humanlike and mechanoids in battle, and hunting game. Attacking or killing a foe while they are down, falling in combat, and poaching animals will lose honor.)</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<freezeWhileSleeping>true</freezeWhileSleeping>
+		<major>true</major>
+		<listPriority>600</listPriority>
+	</NeedDef>
+
+	<ThoughtDef>
+		<defName>Orion_NeedCulture</defName>
+		<workerClass>OrionMingle.ThoughtWorker_NeedCulture_Orion</workerClass>
+		<stages>
+
+			<li>
+				<label>"gotta get me that green goo"</label>
+				<description>"gotta get me that green goo"</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>No green makes me mean!</label>
+				<description>No green makes me mean!</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>need to find a good time</label>
+				<description>need to find a good time...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>wants to go green</label>
+				<description>A Klingon of no renown.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>A tingle to mingle</label>
+				<description>A disgraced coward among Klingons.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	</Defs>

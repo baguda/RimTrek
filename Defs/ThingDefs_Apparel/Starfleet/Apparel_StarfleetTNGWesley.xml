@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Shut Up Wesley! ====== -->
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_WesleyOutfit</defName>
+		<label>wesley outfit</label>
+		<description>Outfit worn by Wesley in Star Trek TNG.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Starfleet/Wesley/Wesley_Male_south</texPath>
+		</graphicData>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Starfleet/Wesley/Wesley</wornGraphicPath>
+			<tags Inherit="False">
+			<li>Federation</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

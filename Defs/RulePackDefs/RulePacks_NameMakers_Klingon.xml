@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerKlingonUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>KliFirstMale->NameBanks/Names_First_Klingon_Male</li>
+        <li>KliFirstFemale->NameBanks/Names_First_Klingon_Female</li>
+        <li>KliLast->NameBanks/Names_Last_Klingon</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerKlingonMale</defName>
+    <include>
+      <li>NamerKlingonUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[KliFirstMale] [KliLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerKlingonFemale</defName>
+    <include>
+      <li>NamerKlingonUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[KliFirstFemale] [KliLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionKlingon</defName>
+	 <include>
+      <li>NamerKlingonUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->House of [KliLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

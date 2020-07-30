@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>KlingonEmpirePlayer</defName>
+    <label>A Proud Klingon House</label>
+    <description>A Klingon city.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>PlayerKlingon</basicMemberKind>
+    <pawnSingular>Klingon</pawnSingular>
+    <pawnsPlural>Klingon</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <backstoryCategories><li>Klingon</li></backstoryCategories>
+    <factionIconPath>World/KlingonBaseIcon</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionKlingon</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>  
+	  <li>ShipRelated</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Klingon</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+  <FactionDef>
+		<defName>KlingonAlly</defName>
+		<label>klingon Empire</label>
+    <description>A stronghold of the Klingon Empire. They are a fiercely warlike species.</description>
+    <pawnsPlural>klingon</pawnsPlural>
+	<fixedName>The Klingon Empire</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Chancellor</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerKlingonUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionKlingon</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Klingon</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Klingon_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <AKlingonColonist>5</AKlingonColonist>
+          <AKlingonSecurityGuard>9</AKlingonSecurityGuard>
+          <AKlingonRuler>10</AKlingonRuler>
+          <AKlingonRecruit>1</AKlingonRecruit>
+          <AKlingonHunter>5</AKlingonHunter>
+          <AKlingonCommando>5</AKlingonCommando>
+          <AKlingonCommandoElite>1</AKlingonCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <AKlingonTrader>1</AKlingonTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <AKlingonSecurityGuard>9</AKlingonSecurityGuard>
+          <AKlingonRecruit>1</AKlingonRecruit>
+          <AKlingonHunter>5</AKlingonHunter>
+          <AKlingonCommando>2</AKlingonCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <AKlingonColonist>1</AKlingonColonist>
+          <AKlingonSecurityGuard>8</AKlingonSecurityGuard>
+          <AKlingonRuler>1</AKlingonRuler>
+          <AKlingonRecruit>1</AKlingonRecruit>
+          <AKlingonHunter>5</AKlingonHunter>
+          <AKlingonCommando>5</AKlingonCommando>
+          <AKlingonCommandoElite>2</AKlingonCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <AKlingonColonist>2</AKlingonColonist>
+          <AKlingonSecurityGuard>5</AKlingonSecurityGuard>
+          <AKlingonRuler>1</AKlingonRuler>
+          <AKlingonRecruit>1</AKlingonRecruit>
+          <AKlingonHunter>5</AKlingonHunter>
+          <AKlingonCommando>3</AKlingonCommando>
+          <AKlingonCommandoElite>2</AKlingonCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/KlingonBaseIcon</settlementTexturePath>
+    <factionIconPath>World/KlingonBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+    <FactionDef>
+		<defName>KlingonEnemy</defName>
+		<label>klingon Empire</label>
+    <description>A stronghold of the Klingon Empire. They are a fiercely warlike species.</description>
+    <pawnsPlural>klingon</pawnsPlural>
+	<fixedName>The Klingon Empire</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Chancellor</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerKlingonUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionKlingon</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Klingon</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Klingon_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EKlingonColonist>5</EKlingonColonist>
+          <EKlingonSecurityGuard>9</EKlingonSecurityGuard>
+          <EKlingonRuler>10</EKlingonRuler>
+          <EKlingonRecruit>1</EKlingonRecruit>
+          <EKlingonHunter>5</EKlingonHunter>
+          <EKlingonCommando>5</EKlingonCommando>
+          <EKlingonCommandoElite>1</EKlingonCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <EKlingonTrader>1</EKlingonTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <EKlingonSecurityGuard>9</EKlingonSecurityGuard>
+          <EKlingonRecruit>1</EKlingonRecruit>
+          <EKlingonHunter>5</EKlingonHunter>
+          <EKlingonCommando>2</EKlingonCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <EKlingonColonist>1</EKlingonColonist>
+          <EKlingonSecurityGuard>8</EKlingonSecurityGuard>
+          <EKlingonRuler>1</EKlingonRuler>
+          <EKlingonRecruit>1</EKlingonRecruit>
+          <EKlingonHunter>5</EKlingonHunter>
+          <EKlingonCommando>5</EKlingonCommando>
+          <EKlingonCommandoElite>2</EKlingonCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EKlingonColonist>2</EKlingonColonist>
+          <EKlingonSecurityGuard>5</EKlingonSecurityGuard>
+          <EKlingonRuler>1</EKlingonRuler>
+          <EKlingonRecruit>1</EKlingonRecruit>
+          <EKlingonHunter>5</EKlingonHunter>
+          <EKlingonCommando>3</EKlingonCommando>
+          <EKlingonCommandoElite>2</EKlingonCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/KlingonBaseIcon</settlementTexturePath>
+    <factionIconPath>World/KlingonBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+  
+</Defs>

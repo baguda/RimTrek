@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerFedHumUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>FedHumFirstMale->NameBanks/Names_First_FedHum_Male</li>
+        <li>FedHumFirstFemale->NameBanks/Names_First_FedHum_Female</li>
+        <li>FedHumLast->NameBanks/Names_Last_FedHum</li>
+		<li>Number->NameBanks/Names_Designations</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFedHumMale</defName>
+    <include>
+      <li>NamerFedHumUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FedHumFirstMale] [FedHumLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFedHumFemale</defName>
+    <include>
+      <li>NamerFedHumUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FedHumFirstFemale] [FedHumLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionFederation</defName>
+	 <include>
+      <li>NamerFedHumUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->Outpost: [Number]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

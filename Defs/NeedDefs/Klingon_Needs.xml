@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<NeedDef>
+		<defName>RH_TET_Klingon_NeedViolence</defName>
+		<needClass>KlingonHonor.Need_Violence</needClass>
+		<label>Battle Satiated</label>
+		<description>Klingons have a natural yearning for combat with a worthy foe.</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<listPriority>100</listPriority>
+		<freezeWhileSleeping>true</freezeWhileSleeping>
+	</NeedDef>
+
+	<ThoughtDef>
+		<defName>RH_TET_Klingon_NeedViolence</defName>
+		<workerClass>KlingonHonor.ThoughtWorker_NeedViolence</workerClass>
+		<stages>
+			<li>
+				<label>obsessed with honor</label>
+				<description>My life brings dishonor to my family and to my people. I am not worthy of the family’s title until I redeem my honor in combat.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+			<li>
+				<label>requires honor</label>
+				<description>My avoidance of battle is a disgrace to my ancestors and to my family! I must redeem my Klingon Honor. I must prove myself in combat immediately!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+			<li>
+				<label>craves honor</label>
+				<description>I haven't tasted of combat in so long that I feel I am weak and a shameful example of a Klingon Warrior. I need to partake in glorious combat!.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+			<li>
+				<label>desires honor</label>
+				<description>It's been too long since I've had a good battle and bathed myself in glory...</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+			<li>
+				<label>wants honor</label>
+				<description>I'd like to feel the rush of battle once again.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+	
+	<NeedDef>
+		<defName>Klingon_NeedCulture</defName>
+		<needClass>KlingonHonor.Need_Culture_Klingon</needClass>
+		<label>Honor</label>
+		<description>Klingon Culture is based on Honor. A Klingon’s honor is determined by how they handle themselves on the battlefield.(Honor is gained by downing humanlike and mechanoids in battle, killing humanlike and mechanoids in battle, and hunting game. Attacking or killing a foe while they are down, falling in combat, and poaching animals will lose honor.)</description>
+		<minIntelligence>Humanlike</minIntelligence>
+		<colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+		<freezeWhileSleeping>true</freezeWhileSleeping>
+		<major>true</major>
+		<listPriority>1100</listPriority>
+	</NeedDef>
+
+	<ThoughtDef>
+		<defName>Klingon_NeedCulture</defName>
+		<workerClass>KlingonHonor.ThoughtWorker_NeedCulture_Klingon</workerClass>
+		<stages>
+			<li>
+				<label>Exalted Klingon Warrior</label>
+				<description>A proud Klingon warrior exalted by other Klingons</description>
+				<baseMoodEffect>15</baseMoodEffect>
+			</li>
+			<li>
+				<label>Revered Klingon Warrior</label>
+				<description>A proud Klingon warrior revered by other Klingons</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+			<li>
+				<label>Honored Klingon Warrior</label>
+				<description>A proud Klingon warrior Honored by other Klingons.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+			<li>
+				<label>Klingon Warrior</label>
+				<description>A proud Klingon warrior respected by other Klingons</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+			<li>
+				<label>Klingon</label>
+				<description>A Klingon of no renown.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+			<li>
+				<label>Klingon Craven</label>
+				<description>A disgraced coward among Klingons.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+	<!--  	=================================		-->
+	<JobDef>
+    <defName>KlingonRitual</defName>
+    <driverClass>KlingonHonor.JobDriver_KlingonRitual</driverClass>
+    <reportString>Practicing Ritual Combat</reportString>
+    <joyDuration>6000</joyDuration>
+    <joyMaxParticipants>8</joyMaxParticipants>
+    <joySkill>Melee</joySkill>
+    <joyXpPerTick>0.008</joyXpPerTick>
+    <joyKind>Klingon_Ritual</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+    <JoyGiverDef>
+    <defName>Klingon_Ritual</defName>
+    <giverClass>KlingonHonor.JoyGiver_KlingonRitual</giverClass>
+    <baseChance>10</baseChance>
+    <thingDefs>
+      <li>KlingonRitualSite</li>
+    </thingDefs>
+    <jobDef>KlingonRitual</jobDef>
+    <joyKind>Klingon_Ritual</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+	  <li>BloodPumping</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>KlingonRitualSite</defName>
+    <label>Klingon Ritual Site new</label>
+    <description>A site for Klingon Rituals new.</description>
+    <graphicData>
+      <texPath>Things/Building/Klingon/provingGround</texPath>
+      <graphicClass>Graphic_single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,5)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <staticSunShadowHeight>0.00</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <fillPercent>0.05</fillPercent>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <building>
+      <joyKind>Klingon_Ritual</joyKind>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <JoyGainFactor>1.8</JoyGainFactor>
+    </statBases>
+    <size>(1,1)</size>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>80</costStuffCount>
+    <costList>
+      <Steel>80</Steel>
+      <WoodLog>30</WoodLog>
+    </costList>
+	<uiIconPath>Things/Building/Klingon/provingGroundIcon</uiIconPath>
+    <pathCost>-10</pathCost>
+    <passability>Standable</passability>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc3</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+    </placeWorkers>
+
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <JoyKindDef>
+    <defName>Klingon_Ritual</defName>
+    <label>Orion social mingling</label>
+  </JoyKindDef>
+
+  
+</Defs>

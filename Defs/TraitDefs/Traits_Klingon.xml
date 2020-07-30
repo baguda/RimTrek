@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>Braklul</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Klingon Braklul</label>
+        <description>{PAWN_nameDef} is a Klingon. {PAWN_pronoun} has a redundant liver, lung, and stomachs, which enables {PAWN_pronoun} to survive otherwise fatal wounds and digest raw food. {PAWN_pronoun} has a strong need for honorable combat!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

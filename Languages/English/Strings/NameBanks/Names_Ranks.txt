@@ -1,0 +1,13 @@
+Crewman
+Yeoman
+Petty Officer
+Chief Petty Officer
+Ensign
+Lieutenant junior grade
+Lieutenant
+Lieutenant-Commander
+Commander
+Captain
+Rear Admiral
+Vice Admiral
+Admiral

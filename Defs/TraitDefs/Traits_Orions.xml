@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>OFPheremones</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Orion Pheremones</label>
+        <description>{PAWN_nameDef} is a female Orion. She releases pheremones that make nearby males vulnerable to her wiles.</description>
+      		<statOffsets>
+          <SocialImpact>0.8</SocialImpact>
+		  <TradePriceImprovement>.20</TradePriceImprovement>
+        </statOffsets>
+		</li>
+    </degreeDatas>
+  </TraitDef>
+  
+    <TraitDef>
+    <defName>OMBrute</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Orion Brute</label>
+        <description>{PAWN_nameDef} is a male Orion. He is very strong and fierce in defense of his property.</description>
+		<statOffsets>
+          <PainShockThreshold>0.8</PainShockThreshold>
+		  <MentalBreakThreshold>.20</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerOrionUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>OriFirstMale->NameBanks/Names_First_Orion_Male</li>
+        <li>OriFirstFemale->NameBanks/Names_First_Orion_Female</li>
+		<li>OriTitles->NameBanks/Names_Title_Orion</li>
+	    <li>OriLast->NameBanks/Names_Last_Orion</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerOrionMale</defName>
+    <include>
+      <li>NamerOrionUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[OriFirstMale] [OriTitles]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerOrionFemale</defName>
+    <include>
+      <li>NamerOrionUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[OriFirstFemale] [OriLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+      <RulePackDef>
+    <defName>NamerFactionOrion</defName>
+	 <include>
+      <li>NamerOrionUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[OriLast] Cartel</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>  
+
+</Defs>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Tellarite">
+	<defName>Alien_Tellarite</defName>
+	<label>Tellarite</label>
+	<description>The Tellarites were a humanoid species that originated from the alpha quadrant.</description>
+	<alienRace>
+		<generalSettings>
+		<maleGenderProbability>0.5</maleGenderProbability>
+		<immuneToAge>false</immuneToAge>
+		<humanRecipeImport>true</humanRecipeImport>
+		<forcedRaceTraitEntries>
+		  <li>
+			 <defName>TellLib</defName>
+			 <chance>100</chance>
+		  </li>
+		</forcedRaceTraitEntries>
+		<disallowedTraits />
+		<chemicalSettings />
+		<factionRelations />	
+		<notXenophobistTowards />
+		<immuneToXenophobia>false</immuneToXenophobia>
+		<alienPartGenerator>
+		<aliencrowntypes Inherit="False">
+			<li>Average_Normal</li>
+			<li>Average_Wide</li>
+			<li>Narrow_Wide</li>
+		</aliencrowntypes>
+		  <alienbodytypes>
+			<li>Male</li>
+		  </alienbodytypes>
+	  <headOffset>(0.0, 0.00)</headOffset>
+	  <useGenderedBodies>false</useGenderedBodies>
+	  <useGenderedHeads>true</useGenderedHeads>
+		<alienskincolorgen Class="ColorGenerator_Options">
+		<options>
+			<li>
+			<weight>5</weight>
+			<only>RGB(111, 73, 52)</only>
+		</li>
+		<li>
+			<weight>5</weight>
+			<only>RGB(132, 84, 64)</only>
+		</li>
+		 <li>
+			<weight>5</weight>
+			<only>RGB(104, 71, 52)</only>
+		</li>
+		<li>
+			<weight>5</weight>
+			<only>RGB(171, 122, 92)</only>
+		</li>
+		<li>
+			<weight>5</weight>
+			<only>RGB(158, 105, 71)</only>
+		</li>
+		</options>
+		</alienskincolorgen>	
+	  <customDrawSize>(1.0, 1.0)</customDrawSize>
+	  <customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+	  <customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+	  <customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+	  <bodyAddons>
+		<li>
+		  <path>Things/Pawn/Tellarite/Beards/Beard</path>
+		  <bodyPart>Head</bodyPart>
+		  <drawSize>1</drawSize>
+		  <inFrontOfBody>true</inFrontOfBody>
+		  <layerOffset>-.27</layerOffset>
+		  <!--<layerOffset>.35</layerOffset><layerOffset>0</layerOffset> TOO MUCH - IN FRONT OF HELMET -->
+		  <!--<layerOffset>-.20</layerOffset><layerOffset>0</layerOffset> TOO LITTLE - BEHIND SHIRT  -->
+		  <drawForMale>true</drawForMale>
+		  <drawForFemale>false</drawForFemale>
+		  <offsets>
+		  <south>
+			<bodyTypes>
+				<Male>(-0.43,0.5155)</Male>
+			</bodyTypes>
+			<crownTypes>
+				<Normal_Average>(-0.43,0.5155)</Normal_Average>
+			</crownTypes>
+		  </south>
+		  <north>
+			<bodyTypes>
+				<Male>(-0.43,0.5155)</Male>
+			</bodyTypes>
+			<crownTypes>
+				<Normal_Average>(-0.43,0.5155)</Normal_Average>
+			</crownTypes>
+		  </north>
+		  <east>
+			<bodyTypes>
+				<Male>(-0.43,0.5155)</Male>
+			</bodyTypes>
+			<crownTypes>
+				<Normal_Average>(-0.43,0.5155)</Normal_Average>
+			</crownTypes>
+		  </east>
+		  </offsets>
+		  <useSkinColor>false</useSkinColor>
+		</li>
+	  </bodyAddons>				
+			</alienPartGenerator>
+		</generalSettings>
+		<graphicPaths Inherit="False">
+			<li>
+				<head>Things/Pawn/Tellarite/Head/</head>
+			</li>
+		</graphicPaths>
+		<hairSettings>
+			<hasHair>true</hasHair>
+			<getsGreyAt>50</getsGreyAt>
+			<hairTags>
+				<li>Klingon</li>
+			</hairTags>
+		</hairSettings>
+		<raceRestriction>
+	<whiteTraitList>
+	<li>SpeedOffset</li>
+	<li>DrugDesire</li>
+	<li>NaturalMood</li>
+	<li>Nerves</li>
+	<li>Neurotic</li>
+	<li>Industriousness</li>
+	<li>PsychicSensitivity</li>	
+	<li>ShootingAccuracy</li>
+	<li>Beauty</li>
+	<li>Nudist</li>
+	<li>Immunity</li>
+	<li>Bloodlust</li>
+	<li>Kind</li>
+	<li>Psychopath</li>
+	<li>Cannibal</li>
+	<li>Abrasive</li>
+	<li>TooSmart</li>
+	<li>Brawler</li>
+	<li>Masochist</li>
+	<li>NightOwl</li>
+	<li>Jealous</li>
+	<li>Ascetic</li>
+	<li>Gay</li>
+	<li>Bisexual</li>
+	<li>Asexual</li>
+	<li>AnnoyingVoice</li>
+	<li>CreepyBreathing</li>
+	<li>Pyromaniac</li>
+	<li>Wimp</li>
+	<li>Nimble</li>
+	<li>FastLearner</li>
+	<li>SlowLearner</li>
+	<li>Undergrounder</li>
+	<li>Transhumanist</li>
+	<li>BodyPurist</li>
+	<li>DislikesMen</li>
+	<li>DislikesWomen</li>
+	<li>GreatMemory</li>
+	<li>Tough</li>
+	<li>TorturedArtist</li>
+	<li>Gourmand</li>
+	<li>QuickSleeper</li>
+	</whiteTraitList>
+        <onlyGetRaceRestrictedTraits>true</onlyGetRaceRestrictedTraits>
+      </raceRestriction>
+			<relationSettings>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+            <cannotReceiveThoughts>
+                <li>Slighted</li>
+				<li>Insulted</li>
+				<li>InsultedMood</li>
+				<li>HadAngeringFight</li>
+            </cannotReceiveThoughts>
+			</thoughtSettings>
+		</alienRace>
+		<statBases>
+            <MarketValue>1750</MarketValue>
+            <MoveSpeed>4.6</MoveSpeed>
+            <ComfyTemperatureMin>16</ComfyTemperatureMin>
+            <ComfyTemperatureMax>26</ComfyTemperatureMax>
+            <LeatherAmount>50</LeatherAmount>
+            <RoyalFavorValue>5</RoyalFavorValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>10.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>150</lifeExpectancy>
+			<leatherDef>Leather_Tellarite</leatherDef>
+		  <nameGenerator>NamerTellariteMale</nameGenerator>
+		  <nameGeneratorFemale>NamerTellariteFemale</nameGeneratorFemale>
+            <body>Tellarite</body>
+            <baseBodySize>1.2</baseBodySize>
+            <baseHealthScale>1.8</baseHealthScale>
+            <foodType>VegetableOrFruit</foodType>
+            <gestationPeriodDays>45</gestationPeriodDays>
+            <meatMarketValue>0.8</meatMarketValue>
+            <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0.02)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(14,0)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>BabyTellariteStage</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>ChildTellariteStage</def>
+					<minAge>3</minAge>
+				</li>
+				<li>
+					<def>TeenTellariteStage</def>
+					<minAge>11</minAge>
+				</li>
+				<li>
+					<def>AdultTellariteStage</def>
+					<minAge>18</minAge>
+				</li>
+				<li>
+					<def>ElderTellariteStage</def>
+					<minAge>80</minAge>
+				</li>
+				<li>
+					<def>AncestorTellariteStage</def>
+					<minAge>120</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+<recipes>
+	<li>InstallArchotechEye</li>
+	<li>InstallArchotechArm</li>
+	<li>InstallArchotechLeg</li>
+	<li>InstallPowerClaw</li>
+	<li>InstallBionicEye</li>
+	<li>InstallBionicArm</li>
+	<li>InstallBionicLeg</li>
+	<li>InstallBionicSpine</li>
+	<li>InstallBionicHeart</li>
+	<li>InstallBionicStomach</li>
+	<li>InstallBionicEar</li>
+	<li>InstallSimpleProstheticArm</li>
+	<li>InstallSimpleProstheticLeg</li>
+	<li>InstallSimpleProstheticHeart</li>
+	<li>InstallCochlearImplant</li>
+	<li>InstallPegLeg</li>
+	<li>InstallWoodenFoot</li>
+	<li>InstallDenture</li>
+	<li>InstallJoywire</li>
+	<li>InstallPainstopper</li>
+	<li>InstallNaturalHeart</li>
+	<li>InstallNaturalLung</li>
+	<li>InstallNaturalKidney</li>
+	<li>InstallNaturalLiver</li>
+	<li>ExciseCarcinoma</li>
+	<li>AdministerMechSerumHealer</li>
+	<li>RemoveBodyPart</li>
+	<li>Euthanize</li>
+	<li>Anesthetize</li>
+</recipes>
+	</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.RaceSettings>
+<defName>TellariteRaceSettings</defName>
+<pawnKindSettings>
+<alienslavekinds>
+	<li>
+		<kindDefs>
+			<li>ATellariteSlave</li>
+		</kindDefs>
+		<chance>50.0</chance>
+	</li>
+</alienslavekinds>
+<alienrefugeekinds>
+	<li>
+		<kindDefs>
+					<li>ATellariteCommandoElite</li>
+					<li>ATellariteCommando</li>
+					<li>ATellariteHunter</li>
+					<li>ATellariteRecruit</li>
+					<li>ATellariteRuler</li>
+					<li>ATellariteSecurityGuard</li>
+		</kindDefs>
+				<chance>45.0</chance>
+	</li>
+</alienrefugeekinds>
+<alienwandererkinds>
+	<li>
+	<pawnKindEntries>
+	<li>
+	<kindDefs>
+					<li>ATellariteCommandoElite</li>
+					<li>ATellariteCommando</li>
+					<li>ATellariteHunter</li>
+					<li>ATellariteRecruit</li>
+					<li>ATellariteRuler</li>
+					<li>ATellariteSecurityGuard</li>
+	</kindDefs>
+		<chance>45.0</chance>
+	</li>
+	</pawnKindEntries>
+	<factionDefs>
+		<li>FederationPlayer</li> 
+	</factionDefs>
+	</li>
+</alienwandererkinds>
+<startingColonists>
+<li>
+<pawnKindEntries>
+	<li>
+		<kindDefs>
+			<li>PlayerTellarite</li>
+		</kindDefs>
+				<chance>45.0</chance>
+	</li>
+</pawnKindEntries>
+<factionDefs>
+	<li>FederationPlayer</li> 
+</factionDefs>
+</li>
+</startingColonists>
+</pawnKindSettings>
+</AlienRace.RaceSettings>			
+	
+</Defs>

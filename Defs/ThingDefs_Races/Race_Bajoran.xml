@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Bajoran">
+		<defName>O21_Alien_Bajoran</defName>
+		<label>Bajoran</label>
+		<description>The Bajorans (also known as the "Bajora") were a humanoid species native to the planet Bajor in the Alpha Quadrant. The Bajorans had one of the oldest and richest cultures in the quadrant, though in the 24th century, they suffered greatly at the hands of the Cardassian Union. With their liberation from the Cardassians and the discovery of the Bajoran wormhole in 2369, the Bajorans were thrust onto the interstellar stage.</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.5</maleGenderProbability>
+				<immuneToAge>false</immuneToAge>
+				<humanRecipeImport>true</humanRecipeImport>
+				<forcedRaceTraitEntries />
+				<disallowedTraits />
+				<chemicalSettings />
+				<factionRelations />	
+				<notXenophobistTowards />
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<alienPartGenerator>
+					<aliencrowntypes Inherit="False">
+						<li>Average_Normal</li>
+						<li>Average_Wide</li>
+						<li>Average_Pointy</li>
+						<li>Narrow_Normal</li>
+						<li>Narrow_Pointy</li>
+						<li>Narrow_Wide</li>
+					</aliencrowntypes>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Pawn/Bajoran/</head>
+				</li>
+			</graphicPaths>
+			<relationSettings>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings />
+			<raceRestriction />
+		</alienRace>
+		<statBases>
+            <MarketValue>1750</MarketValue>
+            <MoveSpeed>4.6</MoveSpeed>
+            <ComfyTemperatureMin>16</ComfyTemperatureMin>
+            <ComfyTemperatureMax>26</ComfyTemperatureMax>
+            <LeatherAmount>50</LeatherAmount>
+            <RoyalFavorValue>3</RoyalFavorValue>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>80</lifeExpectancy>
+			<leatherDef>Leather_Bajoran</leatherDef>
+            <nameCategory>HumanStandard</nameCategory>
+            <body>Human</body>
+            <baseBodySize>1</baseBodySize>
+            <baseHealthScale>1</baseHealthScale>
+            <foodType>OmnivoreHuman</foodType>
+            <gestationPeriodDays>45</gestationPeriodDays>
+            <meatMarketValue>0.8</meatMarketValue>
+            <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0.02)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(14,0)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>BabyBajoranStage</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>ChildBajoranStage</def>
+					<minAge>3</minAge>
+				</li>
+				<li>
+					<def>TeenBajoranStage</def>
+					<minAge>11</minAge>
+				</li>
+				<li>
+					<def>AdultBajoranStage</def>
+					<minAge>18</minAge>
+				</li>
+				<li>
+					<def>ElderBajoranStage</def>
+					<minAge>80</minAge>
+				</li>
+				<li>
+					<def>AncestorBajoranStage</def>
+					<minAge>120</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

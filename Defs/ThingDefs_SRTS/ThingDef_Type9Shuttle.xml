@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+    
+    <ThingDef ParentName="NECShipBase">
+        <defName>O21SRTSSTType9Shuttle</defName>
+        <label>Type-9 Shuttlecraft</label>
+        <description>he Type-9 shuttlecraft had been introduced into service by the year 2371. It later became the standard shuttlecraft design incorporated into many starship classes, including the Intrepid-class and the Sovereign-class.
+
+Passenger cap: 1 - 6
+Space flight: Yes
+----------------------------
+Speed: Normal
+Fuel cap: 500L
+Fuel efficiency: Great
+----------------------------
+Cargo cap: 400kg
+Internal power plant: 1800w</description>
+        <graphicData>
+            <texPath>Shuttles/Starfleet/SF_Shuttle_Type9</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(8,8)</drawSize>
+        </graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+        <size>(4,7)</size>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>8100</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>22</Mass>
+            <Beauty>25</Beauty>
+        </statBases>
+        <costList>
+            <Steel>800</Steel>
+            <Plasteel>200</Plasteel>
+            <Gold>50</Gold>
+            <ComponentSpacer>12</ComponentSpacer>
+            <O21_ST_RefinedDilithium>50</O21_ST_RefinedDilithium>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <restEffectiveness>0.95</restEffectiveness>
+                <massCapacity>400</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>3</travelSpeed>
+                <fuelPerTile>1.0</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>6</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>true</shuttleBayLanding>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>500</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>500</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0.25</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1800</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable" />
+        </comps>
+        <researchPrerequisites>
+            <li>O21_ST_FederationShuttlesSmall</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <uiIconScale>0.9</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>5</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+</Defs>

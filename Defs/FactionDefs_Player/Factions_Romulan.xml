@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>RomulanEmpirePlayer</defName>
+    <label>A Proud Romulan House</label>
+    <description>A Romulan city.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>PlayerRomulan</basicMemberKind>
+    <pawnSingular>Romulan</pawnSingular>
+    <pawnsPlural>Romulans</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <backstoryCategories><li>Romulan</li></backstoryCategories>
+    <factionIconPath>World/RomulanBaseIcon</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionRomulan</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>  
+	  <li>ShipRelated</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Rural</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+  <FactionDef>
+		<defName>RomulanAlly</defName>
+		<label>Romulan Empire</label>
+    <description>A stronghold of the Romulan Empire. They are a fiercely warlike species.</description>
+    <pawnsPlural>Romulans</pawnsPlural>
+	<fixedName>The Romulan Empire</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Chancellor</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerRomulanUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionRomulan</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Romulan</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Romulan_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ARomulanColonist>5</ARomulanColonist>
+          <ARomulanSecurityGuard>9</ARomulanSecurityGuard>
+          <ARomulanRuler>10</ARomulanRuler>
+          <ARomulanRecruit>1</ARomulanRecruit>
+          <ARomulanHunter>5</ARomulanHunter>
+          <ARomulanCommando>5</ARomulanCommando>
+          <ARomulanCommandoElite>1</ARomulanCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <ARomulanTrader>1</ARomulanTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <ARomulanSecurityGuard>9</ARomulanSecurityGuard>
+          <ARomulanRecruit>1</ARomulanRecruit>
+          <ARomulanHunter>5</ARomulanHunter>
+          <ARomulanCommando>2</ARomulanCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ARomulanColonist>1</ARomulanColonist>
+          <ARomulanSecurityGuard>8</ARomulanSecurityGuard>
+          <ARomulanRuler>1</ARomulanRuler>
+          <ARomulanRecruit>1</ARomulanRecruit>
+          <ARomulanHunter>5</ARomulanHunter>
+          <ARomulanCommando>5</ARomulanCommando>
+          <ARomulanCommandoElite>2</ARomulanCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ARomulanColonist>2</ARomulanColonist>
+          <ARomulanSecurityGuard>5</ARomulanSecurityGuard>
+          <ARomulanRuler>1</ARomulanRuler>
+          <ARomulanRecruit>1</ARomulanRecruit>
+          <ARomulanHunter>5</ARomulanHunter>
+          <ARomulanCommando>3</ARomulanCommando>
+          <ARomulanCommandoElite>2</ARomulanCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/RomulanBaseIcon</settlementTexturePath>
+    <factionIconPath>World/RomulanBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+  <FactionDef>
+		<defName>RomulanEnemy</defName>
+		<label>Romulan Empire</label>
+    <description>A stronghold of the Romulan Empire. They are a fiercely warlike species.</description>
+    <pawnsPlural>Romulans</pawnsPlural>
+	<fixedName>The Romulan Empire</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Chancellor</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerRomulanUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionRomulan</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Romulan</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Romulan_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ERomulanColonist>5</ERomulanColonist>
+          <ERomulanSecurityGuard>9</ERomulanSecurityGuard>
+          <ERomulanRuler>10</ERomulanRuler>
+          <ERomulanRecruit>1</ERomulanRecruit>
+          <ERomulanHunter>5</ERomulanHunter>
+          <ERomulanCommando>5</ERomulanCommando>
+          <ERomulanCommandoElite>1</ERomulanCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <ERomulanTrader>1</ERomulanTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <ERomulanSecurityGuard>9</ERomulanSecurityGuard>
+          <ERomulanRecruit>1</ERomulanRecruit>
+          <ERomulanHunter>5</ERomulanHunter>
+          <ERomulanCommandoElite>2</ERomulanCommandoElite>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ERomulanColonist>1</ERomulanColonist>
+          <ERomulanSecurityGuard>8</ERomulanSecurityGuard>
+          <ERomulanRuler>1</ERomulanRuler>
+          <ERomulanRecruit>1</ERomulanRecruit>
+          <ERomulanHunter>5</ERomulanHunter>
+          <ERomulanCommando>5</ERomulanCommando>
+          <ERomulanCommandoElite>2</ERomulanCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ERomulanColonist>2</ERomulanColonist>
+          <ERomulanSecurityGuard>5</ERomulanSecurityGuard>
+          <ERomulanRuler>1</ERomulanRuler>
+          <ERomulanRecruit>1</ERomulanRecruit>
+          <ERomulanHunter>5</ERomulanHunter>
+          <ERomulanCommando>3</ERomulanCommando>
+          <ERomulanCommandoElite>2</ERomulanCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/RomulanBaseIcon</settlementTexturePath>
+    <factionIconPath>World/RomulanBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+</Defs>

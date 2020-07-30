@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ============================ Cardassian Base ========================== -->
+
+  <PawnKindDef Name="CardassianBase" Abstract="True">
+    <defaultFactionType>CardassianAlly</defaultFactionType>
+    <race>Alien_Cardassian</race>
+    <chemicalAddictionChance>0.035</chemicalAddictionChance>
+    <baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+    <backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>Cardassian</li>
+    </apparelTags>
+    <weaponTags>
+      <li>Cardassian</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Cardassian Civilian Base ========================== -->
+
+  <PawnKindDef Name="CardassianCivBase" ParentName="CardassianBase" Abstract="True">
+    <combatPower>25</combatPower>
+    <itemQuality>Poor</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>0</min>
+      <max>250</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- ============================ Cardassian Military Base ========================== -->
+  
+  <PawnKindDef Name="CardassianMilBase" ParentName="CardassianBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2800</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>400</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>  
+
+    <PawnKindDef ParentName="CardassianCivBase">
+    <defName>PlayerCardassian</defName>
+    <label>House Cardassian</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>90</combatPower>
+    <weaponMoney>
+      <min>450</min>
+      <max>500</max>
+    </weaponMoney>
+
+  </PawnKindDef>
+  
+  <!--Ally-->
+  <!-- ============================ Cardassian Civilians ========================== -->  
+  
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ACardassianColonist</defName>
+    <label>colonist</label>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ACardassianSlave</defName>
+    <label>colonist</label>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ACardassianRuler</defName>
+    <race>Alien_Cardassian</race>
+    <label>ruler</label>
+    <labelPlural>rulers</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>400</min>
+      <max>800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ACardassianTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>800</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Cardassian Security ========================== -->
+  
+  <PawnKindDef Name="ACardassianSecurityGuard" ParentName="CardassianCivBase">
+    <defName>ACardassianSecurityGuard</defName>
+    <label>security guard</label>
+    <race>Alien_Cardassian</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>1500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>400</min>
+      <max>1500</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Cardassian Military ========================== -->
+  
+  <PawnKindDef ParentName="CardassianMilBase">
+    <defName>ACardassianRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ACardassianHunter" ParentName="CardassianMilBase">
+    <defName>ACardassianHunter</defName>
+    <label>hunter</label>
+    <race>Alien_Cardassian</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="ACardassianCommando" ParentName="CardassianMilBase">
+    <defName>ACardassianCommando</defName>
+    <label>commando</label>
+    <race>Alien_Cardassian</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>180</min>
+            <max>400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ACardassianCommandoElite" ParentName="ACardassianCommando">
+     <defName>ACardassianCommandoElite</defName>
+    <label>elite commando</label>
+    <race>Alien_Cardassian</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!--Enemy-->
+  <!-- ============================ Cardassian Civilians ========================== -->  
+  
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ECardassianColonist</defName>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <label>colonist</label>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ECardassianSlave</defName>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <label>colonist</label>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ECardassianRuler</defName>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <race>Alien_Cardassian</race>
+    <label>ruler</label>
+    <labelPlural>rulers</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>400</min>
+      <max>800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="CardassianCivBase">
+    <defName>ECardassianTrader</defName>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>	
+    <label>colony trader</label>
+    <trader>true</trader>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>800</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Cardassian Security ========================== -->
+  
+  <PawnKindDef Name="ECardassianSecurityGuard" ParentName="CardassianCivBase">
+    <defName>ECardassianSecurityGuard</defName>
+    <label>security guard</label>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <race>Alien_Cardassian</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>1500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>400</min>
+      <max>1500</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Cardassian Military ========================== -->
+  
+  <PawnKindDef ParentName="CardassianMilBase">
+    <defName>ECardassianRecruit</defName>
+    <label>recruit</label>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <combatPower>70</combatPower>
+    <race>Alien_Cardassian</race>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ECardassianHunter" ParentName="CardassianMilBase">
+    <defName>ECardassianHunter</defName>
+    <label>hunter</label>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <race>Alien_Cardassian</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="ECardassianCommando" ParentName="CardassianMilBase">
+    <defName>ECardassianCommando</defName>
+    <label>commando</label>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <race>Alien_Cardassian</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>180</min>
+            <max>400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ECardassianCommandoElite" ParentName="ECardassianCommando">
+     <defName>ECardassianCommandoElite</defName>
+    <label>elite commando</label>
+	<defaultFactionType>CardassianEnemy</defaultFactionType>
+    <race>Alien_Cardassian</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Cardassian</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SRTS Expanded</li>
+		</mods>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="O21SRTSSTType9Shuttle"]</xpath>
+                </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTType9Shuttle_Incoming"]</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTType9Shuttle_BomberRun"]</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTType9Shuttle_Leaving"]</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTType9Shuttle_Active"]</xpath>
+                    </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[defName="O21SRTSSTFedFighter"]</xpath>
+                </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTFedFighter_Incoming"]</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTFedFighter_BomberRun"]</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTFedFighter_Leaving"]</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>/Defs/ThingDef[defName="O21SRTSSTFedFighter_Active"]</xpath>
+                    </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchProjectDef[defName="O21_ST_FederationShuttlesSmall"]</xpath>
+                </li>
+			</operations>
+		</nomatch>
+	</Operation>
+
+
+</Patch>

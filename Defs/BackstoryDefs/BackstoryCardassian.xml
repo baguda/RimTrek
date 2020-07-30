@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <!--Cardassian-->	
+   
+   
+   <!--Cardassian Adult-->
+<AlienRace.BackstoryDef>
+
+    <defName>Cardassian_ObsidOrder</defName>
+    <title>Obsidian Order Agent</title>
+    <titleShort>Agent</titleShort>
+    <baseDescription>[PAWN_nameDef] was an Obsidian Order agent and trained in subtlety and covert operations.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Cardassian_Tailor</defName>
+    <title>Exiled Tailor</title>
+    <titleShort>Exiled</titleShort>
+    <baseDescription>[PAWN_nameDef] was exiled from the Cardassian Union for an undisclosed crime, [PAWN_pronoun] decided to become a tailor.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Cardassian_Rebel</defName>
+    <title>Rebel</title>
+    <titleShort>Rebel</titleShort>
+    <baseDescription>[PAWN_nameDef] strayed from the traditional ways of Cardassian supremacism and devoted their life to building bridges between the Cardassian and Bajoran races.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Cardassian_Xenobiologist</defName>
+    <title>Xenobiologist</title>
+    <titleShort>Xenobiologist</titleShort>
+    <baseDescription>In contrast the the majority of the Cardassian race, [PAWN_nameDef] developed a fascination with our lifeforms and wished to learn everything about them.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+   
+   <!--Cardassian Child-->	   
+
+<AlienRace.BackstoryDef>
+			
+	<defName>Cardassian_TraineeSpy</defName>
+    <title>Trainee Spy</title>
+    <titleShort>Trainee Spy</titleShort>
+    <baseDescription>[PAWN_nameDef] was inducted into the Obsidian Order at birth and trained rigorously every day, to become the best of the best. </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+			
+	<defName>Cardassian_SenatorChild</defName>
+    <title>Senator's Child</title>
+    <titleShort>Senator's Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born to a Cardassian senator and his wife, who giving birth to [PAWN_nameDef]. The Senator devoted his life to his job and teaching [PAWN_nameDef] to eventually succeed him.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Cardassian_Minechild</defName>
+    <title>Mine Child</title>
+    <titleShort>Mine Child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Cardassia Prime to two traitors who where executed soon after [PAWN_nameDef]'s birth. [PAWN_pronoun] was sent to work in the mines as a slave.</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Cardassian_PrisonChild</defName>
+    <title>Prison Child</title>
+    <titleShort>Prisoner</titleShort>
+    <baseDescription>[PAWN_nameDef]'s mother was arrested for treason shorting before [PAWN_nameDef]'s birth. This led to them being raised in prison.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Cardassian</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+</Defs>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+    
+    <ThingDef ParentName="NECShipBase">
+        <defName>O21SRTSSTFedFighter</defName>
+        <label>Federation Attack Fighter</label>
+        <description>The Federation attack fighter was a type of small Federation starship employed by Starfleet as an attack fighter during the Dominion War.
+
+Passenger cap: 1 - 2
+Space flight: Yes
+
+--Military--
+Bombs: 3/1
+Accuracy: Normal
+Build: Assault Fighter
+----------------------------
+Speed: Normal
+Fuel cap: 300L
+Fuel efficiency: Great
+----------------------------
+Cargo cap: 150kg
+Internal power plant: 300w</description>
+        <graphicData>
+            <texPath>Shuttles/Starfleet/SF_Fighter</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(8,8)</drawSize>
+        </graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+        <size>(4,7)</size>
+        <statBases>
+            <MaxHitPoints>1200</MaxHitPoints>
+            <WorkToBuild>9800</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>22</Mass>
+            <Beauty>25</Beauty>
+        </statBases>
+        <costList>
+            <Steel>1000</Steel>
+            <Plasteel>350</Plasteel>
+            <Gold>50</Gold>
+            <ComponentSpacer>16</ComponentSpacer>
+            <O21_ST_RefinedDilithium>65</O21_ST_RefinedDilithium>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <restEffectiveness>0.55</restEffectiveness>
+                <massCapacity>150</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>3</travelSpeed>
+                <fuelPerTile>1.0</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>2</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>true</shuttleBayLanding>
+            </li>
+            <li Class="SRTS.CompProperties_BombsAway">
+                <numberBombs>3</numberBombs>
+                <precisionBombingNumBombs>1</precisionBombingNumBombs>
+                <radiusOfDrop>3</radiusOfDrop>
+                <speed>1</speed>
+                <distanceBetweenDrops>3</distanceBetweenDrops>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>300</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>300</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0.25</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-300</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable" />
+        </comps>
+        <researchPrerequisites>
+            <li>O21_ST_FederationShuttlesSmall</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <uiIconScale>0.9</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>5</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+</Defs>

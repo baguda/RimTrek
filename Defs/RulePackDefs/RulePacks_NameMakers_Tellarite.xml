@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerTellariteUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>TelFirstMale->NameBanks/Names_First_Tellarite_Male</li>
+        <li>TelFirstFemale->NameBanks/Names_First_Tellarite_Female</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerTellariteMale</defName>
+    <include>
+      <li>NamerTellariteUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[TelFirstMale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerTellariteFemale</defName>
+    <include>
+      <li>NamerTellariteUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[TelFirstFemale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

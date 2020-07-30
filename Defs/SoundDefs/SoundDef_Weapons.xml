@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>O21_ST_Sound_DisruptorFireTNG</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>3</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+					<clipFolderPath>Phaser/TNGDisruptorFire</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>25.0</min>        
+					<max>40.0</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>O21_ST_Sound_PhaserFireTOS</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>3</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+					<clipFolderPath>Phaser/TOSPhaserFire</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>10.0</min>        
+					<max>30.0</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>O21_ST_Sound_PhaserFireTNG</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>3</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+					<clipFolderPath>Phaser/TNGPhaserFire</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>25.0</min>        
+					<max>40.0</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>O21_ST_Sound_PhaserRifleFireTNG</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>3</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+					<clipFolderPath>Phaser/TNG_PhaserRifleFire</clipFolderPath>
+					</li>
+				</grains>      
+				<volumeRange>
+					<min>25.0</min>        
+					<max>40.0</max>
+				</volumeRange>      
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

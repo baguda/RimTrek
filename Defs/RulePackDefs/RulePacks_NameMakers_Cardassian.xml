@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerCardassianUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>CardFirstMale->NameBanks/Names_First_Cardassian_Male</li>
+        <li>CardFirstFemale->NameBanks/Names_First_Cardassian_Female</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerCardassianMale</defName>
+    <include>
+      <li>NamerCardassianUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[CardFirstMale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerCardassianFemale</defName>
+    <include>
+      <li>NamerCardassianUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[CardFirstFemale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionCardassian</defName>
+	 <include>
+      <li>NamerCardassianUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->House of [CardFirstMale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

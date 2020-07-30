@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <BodyPartTagDef>
+    <defName>RomRidges</defName>
+  </BodyPartTagDef>
+   <BodyPartTagDef>
+    <defName>CardCRidges</defName>
+  </BodyPartTagDef>
+  <BodyPartTagDef>
+     <defName>KliRidges</defName>
+  </BodyPartTagDef>
+  <BodyPartTagDef>
+     <defName>Antenna</defName>
+  </BodyPartTagDef>
+ 
+<BodyPartDef> 
+	<defName>Antenna</defName>
+    <label>Andorian antenna</label>
+    <hitPoints>50</hitPoints>
+    <bleedRate>2</bleedRate>
+    <skinCovered>false</skinCovered>
+    <frostbiteVulnerability>3</frostbiteVulnerability>
+    <canSuggestAmputation>true</canSuggestAmputation>
+    <tags>
+      <li>Antenna</li>
+    </tags>
+  </BodyPartDef>
+	
+	<BodyPartDef>
+    <defName>KliRidges</defName>
+    <label>Klingon Cranial Ridges</label>
+    <hitPoints>50</hitPoints>
+    <bleedRate>2</bleedRate>
+    <skinCovered>true</skinCovered>
+    <frostbiteVulnerability>3</frostbiteVulnerability>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>KliRidges</li>
+    </tags>
+  </BodyPartDef>
+  
+    <BodyPartDef>
+    <defName>RomRidges</defName>
+    <label>Romulan Cranial Ridges</label>
+    <hitPoints>10</hitPoints>
+    <bleedRate>2</bleedRate>
+    <skinCovered>true</skinCovered>
+    <frostbiteVulnerability>3</frostbiteVulnerability>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>RomRidges</li>
+    </tags>
+  </BodyPartDef>
+  
+    <BodyPartDef>
+    <defName>CardCRidges</defName>
+    <label>Cardassian Cranial Ridges</label>
+    <hitPoints>10</hitPoints>
+    <bleedRate>2</bleedRate>
+    <skinCovered>true</skinCovered>
+    <frostbiteVulnerability>3</frostbiteVulnerability>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>CardCRidges</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Vulcan</defName>
+		<label>Vulcan leather</label>
+		<description>Tanned, dried, scraped Vulcan skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Romulan</defName>
+		<label>Romulan leather</label>
+		<description>Tanned, dried, scraped Romulan skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Andorian</defName>
+		<label>Andorian leather</label>
+		<description>Tanned, dried, scraped Andorian skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Klingon</defName>
+		<label>Klingon leather</label>
+		<description>Tanned, dried, scraped Klingon skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Trill</defName>
+		<label>Trill leather</label>
+		<description>Tanned, dried, scraped Trill skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Bajoran</defName>
+		<label>Bajoran leather</label>
+		<description>Tanned, dried, scraped Bajoran skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Bolian</defName>
+		<label>Bolian leather</label>
+		<description>Tanned, dried, scraped Bolian skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Cardassian</defName>
+		<label>Cardassian leather</label>
+		<description>Tanned, dried, scraped Cardassian skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Orion</defName>
+		<label>Orion leather</label>
+		<description>Tanned, dried, scraped Orion skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Tellarite</defName>
+		<label>Tellarite leather</label>
+		<description>Tanned, dried, scraped Tellarite skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>	
+	
+</Defs>

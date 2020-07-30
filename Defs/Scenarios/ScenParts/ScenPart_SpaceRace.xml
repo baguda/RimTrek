@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>Rule_LandShip</defName>
+    <label>land ship</label>
+    <scenPartClass>saveourship.ScenLand</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>999</summaryPriority>
+  </ScenPartDef>
+  
+    <ScenPartDef>
+    <defName>Rule_LandShipSpace</defName>
+    <label>land ship space</label>
+    <scenPartClass>ScenLandSpace</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>999</summaryPriority>
+  </ScenPartDef>
+  
+      <ScenPartDef>
+    <defName>BorgCube</defName>
+    <label>A small Borg Scout</label>
+    <scenPartClass>ScenRimTrekRaceStart</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>999</summaryPriority>
+  </ScenPartDef>
+  
+  <ScenPartDef>
+    <defName>FleetShip</defName>
+    <label>A small Federation Ship</label>
+    <scenPartClass>ScenRimTrekRaceStart</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>999</summaryPriority>
+  </ScenPartDef>
+  
+    <ScenPartDef>
+    <defName>OrionCorvette</defName>
+    <label>A small Orion Corvette</label>
+    <scenPartClass>ScenRimTrekRaceStart</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>1.0</selectionWeight>
+    <summaryPriority>999</summaryPriority>
+  </ScenPartDef>
+  
+</Defs>

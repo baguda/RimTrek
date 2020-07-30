@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerVulcanUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>VulFirstMale->NameBanks/Names_First_Vulcan_Male</li>
+        <li>VulFirstFemale->NameBanks/Names_First_Vulcan_Female</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerVulcanMale</defName>
+    <include>
+      <li>NamerVulcanUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[VulFirstMale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerVulcanFemale</defName>
+    <include>
+      <li>NamerVulcanUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[VulFirstFemale]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

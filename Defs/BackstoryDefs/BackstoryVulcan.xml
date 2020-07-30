@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <!--Vulcan-->
+   
+   
+   <!--Vulcan Adult-->
+<AlienRace.BackstoryDef>
+
+    <defName>Vulcan_RenownedScientist</defName>
+    <title>Renowned Scientist</title>
+    <titleShort>Renowned</titleShort>
+    <baseDescription>[PAWN_nameDef] became an expert in the field of shielding. [PAWN_pronoun] even taught at the Daystrom Institute from time to time.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Vulcan_Monk</defName>
+    <title>Monk</title>
+    <titleShort>Monk</titleShort>
+    <baseDescription>[PAWN_nameDef] decided to devote themselves to logic and became a resident at a monastery.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Vulcan_Diplomat</defName>
+    <title>Diplomat</title>
+    <titleShort>Diplomat</titleShort>
+    <baseDescription>[PAWN_nameDef] was an established and accomplished diplomat for the Federation. Their work immersed them to many different cultures but [PAWN_nameDef] never strayed from logic.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Vulcan_Chef</defName>
+    <title>Unexpected Chef</title>
+    <titleShort>Chef</titleShort>
+    <baseDescription>[PAWN_nameDef] defied all expectations and became a skilled Chef. Many people doubted that a Vulcan could make food with such taste, but they soon dropped that expectation.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+   
+   <!--Vulcan Child-->	   
+
+<AlienRace.BackstoryDef>
+			
+	<defName>Vulcan_ChildofLogic</defName>
+    <title>Child of Logic</title>
+    <titleShort>Child of Logic</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Vulcan, to two Vulcan parents and a normal Vulcan life. They were taught to repress their strong Vulcan emotions since birth.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <AlienRace.BackstoryDef>
+			
+	<defName>Vulcan_AspiringScientist</defName>
+    <title>Aspiring Scientist</title>
+    <titleShort>Aspirant</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised on Vulcan by his Scientist parents. [PAWN_pronoun] was raised to follow in their footsteps.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Vulcan_ChildGenius</defName>
+    <title>Aristic Genius</title>
+    <titleShort>Genius</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Vulcan and quickly realised [PAWN_pronoun] has an aptitude for art and focused on building this skill, at the cost of a social life.</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+	
+<AlienRace.BackstoryDef>
+			
+	<defName>Vulcan_MartialArtsChamp</defName>
+    <title>Martial Arts Champion</title>
+    <titleShort>Champion</titleShort>
+    <baseDescription>[PAWN_nameDef] found a passion for hand-to-hand combat during their youth, [PAWN_pronoun] went on to win many competitions.</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Vulcan</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+</Defs>

@@ -1,0 +1,4415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RWShip>
+	<meta>
+		<gameVersion>1.1.2654 rev672</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>ludeon.rimworld.royalty</li>
+			<li>doctorvangogh.modswitch</li>
+			<li>unlimitedhugs.hugslib</li>
+			<li>co.uk.epicguru.ingamewiki</li>
+			<li>jecrell.jecstools</li>
+			<li>neronix17.toolbox</li>
+			<li>erdelf.humanoidalienraces</li>
+			<li>kentington.saveourship2</li>
+			<li>notooshabby.restartrimworld</li>
+			<li>dubwise.dubsperformanceanalyzer</li>
+			<li>brrainz.achtung</li>
+			<li>brrainz.cameraplus</li>
+			<li>mehni.pickupandhaul</li>
+			<li>nolabritt.borgracefork</li>
+		</modIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Royalty</li>
+			<li>ModSwitch</li>
+			<li>HugsLib</li>
+			<li>In-game wiki</li>
+			<li>JecsTools</li>
+			<li>[O21] Toolbox</li>
+			<li>Humanoid Alien Races 2.0</li>
+			<li>Save Our Ship 2</li>
+			<li>Restart RimWorld</li>
+			<li>Dubs Performance Analyzer</li>
+			<li>Achtung!</li>
+			<li>Camera+</li>
+			<li>Pick Up And Haul</li>
+			<li>Borg Race (Revisited)</li>
+		</modNames>
+	</meta>
+	<buildings>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95751</id>
+			<map>1</map>
+			<pos>(105, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_CustomShipComputerCore">
+			<def>Ship_ComputerCore</def>
+			<id>Ship_ComputerCore103924</id>
+			<map>1</map>
+			<pos>(105, 0, 181)</pos>
+			<health>150</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95750</id>
+			<map>1</map>
+			<pos>(105, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_ShipBridge">
+			<def>ShipPilotSeatMini</def>
+			<id>ShipPilotSeatMini95790</id>
+			<map>1</map>
+			<pos>(105, 0, 179)</pos>
+			<rot>3</rot>
+			<health>120</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<ShipName>Unnamed Ship</ShipName>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95494</id>
+			<map>1</map>
+			<pos>(106, 0, 180)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95749</id>
+			<map>1</map>
+			<pos>(105, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95495</id>
+			<map>1</map>
+			<pos>(106, 0, 181)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95496</id>
+			<map>1</map>
+			<pos>(106, 0, 182)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95528</id>
+			<map>1</map>
+			<pos>(105, 0, 182)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95738</id>
+			<map>1</map>
+			<pos>(104, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Bed">
+			<def>BorgBedLow</def>
+			<id>BorgBedLow95761</id>
+			<map>1</map>
+			<pos>(104, 0, 182)</pos>
+			<rot>2</rot>
+			<health>250</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<assignedPawns />
+			<parentThing>Thing_Ship_Beam_Borg95528</parentThing>
+			<glowOn>True</glowOn>
+			<alreadySetDefaultMed>True</alreadySetDefaultMed>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95722</id>
+			<map>1</map>
+			<pos>(103, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Bed">
+			<def>BorgBedLow</def>
+			<id>BorgBedLow95762</id>
+			<map>1</map>
+			<pos>(103, 0, 182)</pos>
+			<rot>2</rot>
+			<health>250</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<assignedPawns />
+			<parentThing>Thing_Ship_Beam_Borg95479</parentThing>
+			<glowOn>True</glowOn>
+			<alreadySetDefaultMed>True</alreadySetDefaultMed>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95721</id>
+			<map>1</map>
+			<pos>(103, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95720</id>
+			<map>1</map>
+			<pos>(103, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95719</id>
+			<map>1</map>
+			<pos>(103, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95718</id>
+			<map>1</map>
+			<pos>(103, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95717</id>
+			<map>1</map>
+			<pos>(103, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_LifeSupport</def>
+			<id>Ship_LifeSupport120098</id>
+			<map>1</map>
+			<pos>(102, 0, 175)</pos>
+			<health>100</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>Thing_Ship_Beam_Borg112040</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95716</id>
+			<map>1</map>
+			<pos>(103, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95723</id>
+			<map>1</map>
+			<pos>(103, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95480</id>
+			<map>1</map>
+			<pos>(104, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95481</id>
+			<map>1</map>
+			<pos>(105, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95737</id>
+			<map>1</map>
+			<pos>(104, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95736</id>
+			<map>1</map>
+			<pos>(104, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95748</id>
+			<map>1</map>
+			<pos>(105, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95747</id>
+			<map>1</map>
+			<pos>(105, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Battery">
+			<def>BorgBattery</def>
+			<id>BorgBattery95793</id>
+			<map>1</map>
+			<pos>(105, 0, 176)</pos>
+			<health>150</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<storedPower>4754.635</storedPower>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95490</id>
+			<map>1</map>
+			<pos>(106, 0, 176)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95489</id>
+			<map>1</map>
+			<pos>(106, 0, 175)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95488</id>
+			<map>1</map>
+			<pos>(106, 0, 174)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95744</id>
+			<map>1</map>
+			<pos>(105, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Battery">
+			<def>BorgBattery</def>
+			<id>BorgBattery95794</id>
+			<map>1</map>
+			<pos>(105, 0, 174)</pos>
+			<health>150</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<storedPower>4754.635</storedPower>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95743</id>
+			<map>1</map>
+			<pos>(105, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_WorkTable_HeatPush">
+			<def>BorgAlcove</def>
+			<id>BorgAlcove95795</id>
+			<map>1</map>
+			<pos>(104, 0, 173)</pos>
+			<rot>1</rot>
+			<health>180</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+			<fuel>15.27372</fuel>
+			<allowAutoRefuel>True</allowAutoRefuel>
+			<billStack>
+				<bills />
+			</billStack>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95728</id>
+			<map>1</map>
+			<pos>(104, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95729</id>
+			<map>1</map>
+			<pos>(104, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95742</id>
+			<map>1</map>
+			<pos>(105, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95487</id>
+			<map>1</map>
+			<pos>(106, 0, 173)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95745</id>
+			<map>1</map>
+			<pos>(105, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95491</id>
+			<map>1</map>
+			<pos>(106, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95746</id>
+			<map>1</map>
+			<pos>(105, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95492</id>
+			<map>1</map>
+			<pos>(106, 0, 178)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95493</id>
+			<map>1</map>
+			<pos>(106, 0, 179)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95735</id>
+			<map>1</map>
+			<pos>(104, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95734</id>
+			<map>1</map>
+			<pos>(104, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95707</id>
+			<map>1</map>
+			<pos>(102, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Bed">
+			<def>BorgBedLow</def>
+			<id>BorgBedLow95763</id>
+			<map>1</map>
+			<pos>(102, 0, 182)</pos>
+			<rot>2</rot>
+			<health>250</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<assignedPawns />
+			<parentThing>Thing_Ship_Beam_Borg95478</parentThing>
+			<glowOn>True</glowOn>
+			<alreadySetDefaultMed>True</alreadySetDefaultMed>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95693</id>
+			<map>1</map>
+			<pos>(101, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95678</id>
+			<map>1</map>
+			<pos>(100, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Bed">
+			<def>BorgBedLow</def>
+			<id>BorgBedLow95766</id>
+			<map>1</map>
+			<pos>(100, 0, 182)</pos>
+			<rot>2</rot>
+			<health>250</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<assignedPawns />
+			<parentThing>Thing_Ship_Beam_Borg95476</parentThing>
+			<glowOn>True</glowOn>
+			<alreadySetDefaultMed>True</alreadySetDefaultMed>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95662</id>
+			<map>1</map>
+			<pos>(99, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95647</id>
+			<map>1</map>
+			<pos>(98, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95764</id>
+			<map>1</map>
+			<pos>(98, 0, 181)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95632</id>
+			<map>1</map>
+			<pos>(97, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHeatsink</def>
+			<id>ShipHeatsink95802</id>
+			<map>1</map>
+			<pos>(96, 0, 181)</pos>
+			<health>800</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95617</id>
+			<map>1</map>
+			<pos>(96, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95633</id>
+			<map>1</map>
+			<pos>(97, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95631</id>
+			<map>1</map>
+			<pos>(97, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95630</id>
+			<map>1</map>
+			<pos>(97, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95615</id>
+			<map>1</map>
+			<pos>(96, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg111983</id>
+			<map>1</map>
+			<pos>(96, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg111999</id>
+			<map>1</map>
+			<pos>(96, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112042</id>
+			<map>1</map>
+			<pos>(96, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg111998</id>
+			<map>1</map>
+			<pos>(96, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_ShipTurret">
+			<def>ShipTurret_Plasma</def>
+			<id>ShipTurret_Plasma112053</id>
+			<map>1</map>
+			<pos>(95, 0, 175)</pos>
+			<health>1000</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastAttackedTarget>(0, 0, 0)</lastAttackedTarget>
+			<stunner />
+			<gun Class="ThingWithComps">
+				<def>ShipTurret_PlasmaTop</def>
+				<id>ShipTurret_PlasmaTop112054</id>
+				<questTags IsNull="True" />
+				<verbTracker>
+					<verbs>
+						<li Class="Verb_LaunchProjectileShip">
+							<loadID>CompEquippable_ShipTurret_PlasmaTop112054_0</loadID>
+							<currentTarget>(0, 0, 0)</currentTarget>
+							<currentDestination>(0, 0, 0)</currentDestination>
+							<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+						</li>
+					</verbs>
+				</verbTracker>
+			</gun>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg111997</id>
+			<map>1</map>
+			<pos>(96, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95645</id>
+			<map>1</map>
+			<pos>(98, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Door">
+			<def>ShipAirlock_Borg</def>
+			<id>ShipAirlock_Borg112063</id>
+			<map>1</map>
+			<pos>(98, 0, 179)</pos>
+			<rot>1</rot>
+			<health>500</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastFriendlyTouchTick>-9999</lastFriendlyTouchTick>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95660</id>
+			<map>1</map>
+			<pos>(99, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg111985</id>
+			<map>1</map>
+			<pos>(99, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112001</id>
+			<map>1</map>
+			<pos>(99, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112045</id>
+			<map>1</map>
+			<pos>(99, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95657</id>
+			<map>1</map>
+			<pos>(99, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipCombatShieldGenerator</def>
+			<id>ShipCombatShieldGenerator95769</id>
+			<map>1</map>
+			<pos>(98, 0, 175)</pos>
+			<health>600</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<lastIntercepted>-69</lastIntercepted>
+			<parentThing>null</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95656</id>
+			<map>1</map>
+			<pos>(99, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95644</id>
+			<map>1</map>
+			<pos>(98, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112052</id>
+			<map>1</map>
+			<pos>(98, 0, 178)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95629</id>
+			<map>1</map>
+			<pos>(97, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95648</id>
+			<map>1</map>
+			<pos>(98, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95765</id>
+			<map>1</map>
+			<pos>(98, 0, 182)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95474</id>
+			<map>1</map>
+			<pos>(98, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95475</id>
+			<map>1</map>
+			<pos>(99, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95646</id>
+			<map>1</map>
+			<pos>(98, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112051</id>
+			<map>1</map>
+			<pos>(98, 0, 180)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95661</id>
+			<map>1</map>
+			<pos>(99, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95676</id>
+			<map>1</map>
+			<pos>(100, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95691</id>
+			<map>1</map>
+			<pos>(101, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95690</id>
+			<map>1</map>
+			<pos>(101, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95689</id>
+			<map>1</map>
+			<pos>(101, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95663</id>
+			<map>1</map>
+			<pos>(99, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95476</id>
+			<map>1</map>
+			<pos>(100, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95677</id>
+			<map>1</map>
+			<pos>(100, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95477</id>
+			<map>1</map>
+			<pos>(101, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95478</id>
+			<map>1</map>
+			<pos>(102, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95692</id>
+			<map>1</map>
+			<pos>(101, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95479</id>
+			<map>1</map>
+			<pos>(103, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95708</id>
+			<map>1</map>
+			<pos>(102, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95706</id>
+			<map>1</map>
+			<pos>(102, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95705</id>
+			<map>1</map>
+			<pos>(102, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>BorgSpawner</def>
+			<id>BorgSpawner128134</id>
+			<map>1</map>
+			<pos>(102, 0, 179)</pos>
+			<health>300</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95704</id>
+			<map>1</map>
+			<pos>(102, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95733</id>
+			<map>1</map>
+			<pos>(104, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95703</id>
+			<map>1</map>
+			<pos>(102, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95732</id>
+			<map>1</map>
+			<pos>(104, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95702</id>
+			<map>1</map>
+			<pos>(102, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112031</id>
+			<map>1</map>
+			<pos>(101, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112032</id>
+			<map>1</map>
+			<pos>(101, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95687</id>
+			<map>1</map>
+			<pos>(101, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95700</id>
+			<map>1</map>
+			<pos>(102, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95701</id>
+			<map>1</map>
+			<pos>(102, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95715</id>
+			<map>1</map>
+			<pos>(103, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95684</id>
+			<map>1</map>
+			<pos>(101, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112030</id>
+			<map>1</map>
+			<pos>(100, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112038</id>
+			<map>1</map>
+			<pos>(100, 0, 173)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95668</id>
+			<map>1</map>
+			<pos>(100, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112037</id>
+			<map>1</map>
+			<pos>(100, 0, 172)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95653</id>
+			<map>1</map>
+			<pos>(99, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_ShipTurret">
+			<def>ShipTurret_Plasma</def>
+			<id>ShipTurret_Plasma112055</id>
+			<map>1</map>
+			<pos>(98, 0, 172)</pos>
+			<health>1000</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastAttackedTarget>(0, 0, 0)</lastAttackedTarget>
+			<stunner />
+			<gun Class="ThingWithComps">
+				<def>ShipTurret_PlasmaTop</def>
+				<id>ShipTurret_PlasmaTop112056</id>
+				<questTags IsNull="True" />
+				<verbTracker>
+					<verbs>
+						<li Class="Verb_LaunchProjectileShip">
+							<loadID>CompEquippable_ShipTurret_PlasmaTop112056_0</loadID>
+							<currentTarget>(0, 0, 0)</currentTarget>
+							<currentDestination>(0, 0, 0)</currentDestination>
+							<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+						</li>
+					</verbs>
+				</verbTracker>
+			</gun>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112026</id>
+			<map>1</map>
+			<pos>(97, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95608</id>
+			<map>1</map>
+			<pos>(96, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipShuttleBay</def>
+			<id>ShipShuttleBay112033</id>
+			<map>1</map>
+			<pos>(94, 0, 172)</pos>
+			<health>500</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>HeavyShuttleBorg</def>
+			<id>HeavyShuttleBorg120099</id>
+			<map>1</map>
+			<pos>(94, 0, 172)</pos>
+			<health>1500</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<groupID>-1</groupID>
+			<innerContainer Class="Verse.ThingOwner`1[Verse.Thing]">
+				<innerList />
+			</innerContainer>
+			<leftToLoad IsNull="True" />
+			<allowAutoRefuel>True</allowAutoRefuel>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95545</id>
+			<map>1</map>
+			<pos>(92, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95544</id>
+			<map>1</map>
+			<pos>(92, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95498</id>
+			<map>1</map>
+			<pos>(92, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95606</id>
+			<map>1</map>
+			<pos>(96, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112021</id>
+			<map>1</map>
+			<pos>(95, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95592</id>
+			<map>1</map>
+			<pos>(95, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95591</id>
+			<map>1</map>
+			<pos>(95, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95580</id>
+			<map>1</map>
+			<pos>(94, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95579</id>
+			<map>1</map>
+			<pos>(94, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95578</id>
+			<map>1</map>
+			<pos>(94, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95577</id>
+			<map>1</map>
+			<pos>(94, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95576</id>
+			<map>1</map>
+			<pos>(94, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95565</id>
+			<map>1</map>
+			<pos>(93, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95564</id>
+			<map>1</map>
+			<pos>(93, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95563</id>
+			<map>1</map>
+			<pos>(93, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112020</id>
+			<map>1</map>
+			<pos>(93, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95561</id>
+			<map>1</map>
+			<pos>(93, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95550</id>
+			<map>1</map>
+			<pos>(92, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95549</id>
+			<map>1</map>
+			<pos>(92, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95548</id>
+			<map>1</map>
+			<pos>(92, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95547</id>
+			<map>1</map>
+			<pos>(92, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95546</id>
+			<map>1</map>
+			<pos>(92, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95593</id>
+			<map>1</map>
+			<pos>(95, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112023</id>
+			<map>1</map>
+			<pos>(96, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95607</id>
+			<map>1</map>
+			<pos>(96, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112025</id>
+			<map>1</map>
+			<pos>(97, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95637</id>
+			<map>1</map>
+			<pos>(98, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95636</id>
+			<map>1</map>
+			<pos>(98, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95651</id>
+			<map>1</map>
+			<pos>(99, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95666</id>
+			<map>1</map>
+			<pos>(100, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95681</id>
+			<map>1</map>
+			<pos>(101, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Door">
+			<def>ShipAirlock_Borg</def>
+			<id>ShipAirlock_Borg112062</id>
+			<map>1</map>
+			<pos>(101, 0, 170)</pos>
+			<rot>1</rot>
+			<health>500</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastFriendlyTouchTick>-9999</lastFriendlyTouchTick>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95682</id>
+			<map>1</map>
+			<pos>(101, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95752</id>
+			<map>1</map>
+			<pos>(101, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95697</id>
+			<map>1</map>
+			<pos>(102, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95753</id>
+			<map>1</map>
+			<pos>(102, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95698</id>
+			<map>1</map>
+			<pos>(102, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95712</id>
+			<map>1</map>
+			<pos>(103, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Door">
+			<def>ShipAirlock_Borg</def>
+			<id>ShipAirlock_Borg112065</id>
+			<map>1</map>
+			<pos>(103, 0, 171)</pos>
+			<health>500</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastFriendlyTouchTick>-9999</lastFriendlyTouchTick>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95711</id>
+			<map>1</map>
+			<pos>(103, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95726</id>
+			<map>1</map>
+			<pos>(104, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95740</id>
+			<map>1</map>
+			<pos>(105, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Bed">
+			<def>BorgOpTable</def>
+			<id>BorgOpTable95759</id>
+			<map>1</map>
+			<pos>(105, 0, 170)</pos>
+			<rot>2</rot>
+			<health>150</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<assignedPawns />
+			<quality>Normal</quality>
+			<medical>True</medical>
+			<alreadySetDefaultMed>True</alreadySetDefaultMed>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95483</id>
+			<map>1</map>
+			<pos>(106, 0, 169)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95482</id>
+			<map>1</map>
+			<pos>(106, 0, 168)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95529</id>
+			<map>1</map>
+			<pos>(105, 0, 168)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95724</id>
+			<map>1</map>
+			<pos>(104, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95709</id>
+			<map>1</map>
+			<pos>(103, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95694</id>
+			<map>1</map>
+			<pos>(102, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_WorkTable">
+			<def>BorgTableButcher</def>
+			<id>BorgTableButcher95760</id>
+			<map>1</map>
+			<pos>(102, 0, 168)</pos>
+			<rot>2</rot>
+			<health>180</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<billStack>
+				<bills />
+			</billStack>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95679</id>
+			<map>1</map>
+			<pos>(101, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95757</id>
+			<map>1</map>
+			<pos>(101, 0, 168)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95664</id>
+			<map>1</map>
+			<pos>(100, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Engine</def>
+			<id>Ship_Engine95767</id>
+			<map>1</map>
+			<pos>(99, 0, 168)</pos>
+			<health>1500</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<fuel>1000</fuel>
+			<allowAutoRefuel>True</allowAutoRefuel>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95619</id>
+			<map>1</map>
+			<pos>(97, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Engine_Small</def>
+			<id>Ship_Engine_Small112014</id>
+			<map>1</map>
+			<pos>(96, 0, 168)</pos>
+			<health>1000</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<fuel>500</fuel>
+			<allowAutoRefuel>True</allowAutoRefuel>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95604</id>
+			<map>1</map>
+			<pos>(96, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95620</id>
+			<map>1</map>
+			<pos>(97, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95634</id>
+			<map>1</map>
+			<pos>(98, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95649</id>
+			<map>1</map>
+			<pos>(99, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95507</id>
+			<map>1</map>
+			<pos>(101, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95695</id>
+			<map>1</map>
+			<pos>(102, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95508</id>
+			<map>1</map>
+			<pos>(102, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95509</id>
+			<map>1</map>
+			<pos>(103, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95510</id>
+			<map>1</map>
+			<pos>(104, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95511</id>
+			<map>1</map>
+			<pos>(105, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95484</id>
+			<map>1</map>
+			<pos>(106, 0, 170)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95485</id>
+			<map>1</map>
+			<pos>(106, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95739</id>
+			<map>1</map>
+			<pos>(105, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95725</id>
+			<map>1</map>
+			<pos>(104, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95710</id>
+			<map>1</map>
+			<pos>(103, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95696</id>
+			<map>1</map>
+			<pos>(102, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95680</id>
+			<map>1</map>
+			<pos>(101, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95758</id>
+			<map>1</map>
+			<pos>(101, 0, 169)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95665</id>
+			<map>1</map>
+			<pos>(100, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95650</id>
+			<map>1</map>
+			<pos>(99, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95635</id>
+			<map>1</map>
+			<pos>(98, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95638</id>
+			<map>1</map>
+			<pos>(98, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95652</id>
+			<map>1</map>
+			<pos>(99, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95667</id>
+			<map>1</map>
+			<pos>(100, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112036</id>
+			<map>1</map>
+			<pos>(100, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95683</id>
+			<map>1</map>
+			<pos>(101, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95699</id>
+			<map>1</map>
+			<pos>(102, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95714</id>
+			<map>1</map>
+			<pos>(103, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95730</id>
+			<map>1</map>
+			<pos>(104, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95731</id>
+			<map>1</map>
+			<pos>(104, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95688</id>
+			<map>1</map>
+			<pos>(101, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>BorgWaystation</def>
+			<id>BorgWaystation95797</id>
+			<map>1</map>
+			<pos>(101, 0, 177)</pos>
+			<health>50</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>Thing_ShipCombatShieldGenerator95769</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112004</id>
+			<map>1</map>
+			<pos>(100, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112041</id>
+			<map>1</map>
+			<pos>(100, 0, 176)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112003</id>
+			<map>1</map>
+			<pos>(100, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112040</id>
+			<map>1</map>
+			<pos>(100, 0, 175)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112002</id>
+			<map>1</map>
+			<pos>(100, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112039</id>
+			<map>1</map>
+			<pos>(100, 0, 174)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95727</id>
+			<map>1</map>
+			<pos>(104, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95755</id>
+			<map>1</map>
+			<pos>(104, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95741</id>
+			<map>1</map>
+			<pos>(105, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95756</id>
+			<map>1</map>
+			<pos>(105, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95486</id>
+			<map>1</map>
+			<pos>(106, 0, 172)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95713</id>
+			<map>1</map>
+			<pos>(103, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95618</id>
+			<map>1</map>
+			<pos>(96, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95616</id>
+			<map>1</map>
+			<pos>(96, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95601</id>
+			<map>1</map>
+			<pos>(95, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95586</id>
+			<map>1</map>
+			<pos>(94, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95571</id>
+			<map>1</map>
+			<pos>(93, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95556</id>
+			<map>1</map>
+			<pos>(92, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95542</id>
+			<map>1</map>
+			<pos>(91, 0, 180)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95524</id>
+			<map>1</map>
+			<pos>(90, 0, 180)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95525</id>
+			<map>1</map>
+			<pos>(90, 0, 181)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95526</id>
+			<map>1</map>
+			<pos>(90, 0, 182)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95527</id>
+			<map>1</map>
+			<pos>(91, 0, 182)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95467</id>
+			<map>1</map>
+			<pos>(91, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95468</id>
+			<map>1</map>
+			<pos>(92, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95469</id>
+			<map>1</map>
+			<pos>(93, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95470</id>
+			<map>1</map>
+			<pos>(94, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95471</id>
+			<map>1</map>
+			<pos>(95, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95588</id>
+			<map>1</map>
+			<pos>(94, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHeatsink</def>
+			<id>ShipHeatsink95803</id>
+			<map>1</map>
+			<pos>(94, 0, 181)</pos>
+			<health>800</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95573</id>
+			<map>1</map>
+			<pos>(93, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHeatsink</def>
+			<id>ShipHeatsink95804</id>
+			<map>1</map>
+			<pos>(92, 0, 181)</pos>
+			<health>800</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95558</id>
+			<map>1</map>
+			<pos>(92, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95523</id>
+			<map>1</map>
+			<pos>(90, 0, 179)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95522</id>
+			<map>1</map>
+			<pos>(90, 0, 178)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95540</id>
+			<map>1</map>
+			<pos>(91, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95554</id>
+			<map>1</map>
+			<pos>(92, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95569</id>
+			<map>1</map>
+			<pos>(93, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95584</id>
+			<map>1</map>
+			<pos>(94, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95583</id>
+			<map>1</map>
+			<pos>(94, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112047</id>
+			<map>1</map>
+			<pos>(94, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95568</id>
+			<map>1</map>
+			<pos>(93, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Door">
+			<def>ShipAirlock_Borg</def>
+			<id>ShipAirlock_Borg112064</id>
+			<map>1</map>
+			<pos>(93, 0, 177)</pos>
+			<health>500</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastFriendlyTouchTick>-9999</lastFriendlyTouchTick>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95567</id>
+			<map>1</map>
+			<pos>(93, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95552</id>
+			<map>1</map>
+			<pos>(92, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95538</id>
+			<map>1</map>
+			<pos>(91, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Door">
+			<def>ShipAirlock_Borg</def>
+			<id>ShipAirlock_Borg95813</id>
+			<map>1</map>
+			<pos>(90, 0, 176)</pos>
+			<rot>1</rot>
+			<health>500</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastFriendlyTouchTick>-9999</lastFriendlyTouchTick>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95519</id>
+			<map>1</map>
+			<pos>(90, 0, 175)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95518</id>
+			<map>1</map>
+			<pos>(90, 0, 174)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95517</id>
+			<map>1</map>
+			<pos>(90, 0, 173)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95516</id>
+			<map>1</map>
+			<pos>(90, 0, 172)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95515</id>
+			<map>1</map>
+			<pos>(90, 0, 171)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95514</id>
+			<map>1</map>
+			<pos>(90, 0, 170)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95513</id>
+			<map>1</map>
+			<pos>(90, 0, 169)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95512</id>
+			<map>1</map>
+			<pos>(90, 0, 168)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95537</id>
+			<map>1</map>
+			<pos>(91, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95553</id>
+			<map>1</map>
+			<pos>(92, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112050</id>
+			<map>1</map>
+			<pos>(92, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95539</id>
+			<map>1</map>
+			<pos>(91, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112049</id>
+			<map>1</map>
+			<pos>(91, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95521</id>
+			<map>1</map>
+			<pos>(90, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95543</id>
+			<map>1</map>
+			<pos>(91, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_SensorCluster</def>
+			<id>Ship_SensorCluster103925</id>
+			<map>1</map>
+			<pos>(91, 0, 181)</pos>
+			<health>100</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95541</id>
+			<map>1</map>
+			<pos>(91, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95557</id>
+			<map>1</map>
+			<pos>(92, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95555</id>
+			<map>1</map>
+			<pos>(92, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95572</id>
+			<map>1</map>
+			<pos>(93, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95570</id>
+			<map>1</map>
+			<pos>(93, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95587</id>
+			<map>1</map>
+			<pos>(94, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95585</id>
+			<map>1</map>
+			<pos>(94, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95473</id>
+			<map>1</map>
+			<pos>(97, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95472</id>
+			<map>1</map>
+			<pos>(96, 0, 183)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95603</id>
+			<map>1</map>
+			<pos>(95, 0, 182)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95602</id>
+			<map>1</map>
+			<pos>(95, 0, 181)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95600</id>
+			<map>1</map>
+			<pos>(95, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95599</id>
+			<map>1</map>
+			<pos>(95, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112000</id>
+			<map>1</map>
+			<pos>(97, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112043</id>
+			<map>1</map>
+			<pos>(97, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95598</id>
+			<map>1</map>
+			<pos>(95, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112048</id>
+			<map>1</map>
+			<pos>(95, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95627</id>
+			<map>1</map>
+			<pos>(97, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95597</id>
+			<map>1</map>
+			<pos>(95, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112022</id>
+			<map>1</map>
+			<pos>(95, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95595</id>
+			<map>1</map>
+			<pos>(95, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg111996</id>
+			<map>1</map>
+			<pos>(96, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95626</id>
+			<map>1</map>
+			<pos>(97, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95582</id>
+			<map>1</map>
+			<pos>(94, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95581</id>
+			<map>1</map>
+			<pos>(94, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95675</id>
+			<map>1</map>
+			<pos>(100, 0, 179)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95674</id>
+			<map>1</map>
+			<pos>(100, 0, 178)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112005</id>
+			<map>1</map>
+			<pos>(100, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112046</id>
+			<map>1</map>
+			<pos>(100, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95643</id>
+			<map>1</map>
+			<pos>(98, 0, 177)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg112044</id>
+			<map>1</map>
+			<pos>(98, 0, 177)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95642</id>
+			<map>1</map>
+			<pos>(98, 0, 176)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95625</id>
+			<map>1</map>
+			<pos>(97, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95640</id>
+			<map>1</map>
+			<pos>(98, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95641</id>
+			<map>1</map>
+			<pos>(98, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95655</id>
+			<map>1</map>
+			<pos>(99, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112027</id>
+			<map>1</map>
+			<pos>(97, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112028</id>
+			<map>1</map>
+			<pos>(98, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112029</id>
+			<map>1</map>
+			<pos>(99, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95560</id>
+			<map>1</map>
+			<pos>(93, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95575</id>
+			<map>1</map>
+			<pos>(94, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_ShipTurret">
+			<def>ShipTurret_Kinetic</def>
+			<id>ShipTurret_Kinetic112057</id>
+			<map>1</map>
+			<pos>(94, 0, 168)</pos>
+			<health>1000</health>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<lastAttackedTarget>(0, 0, 0)</lastAttackedTarget>
+			<stunner />
+			<gun Class="ThingWithComps">
+				<def>ShipTurret_KineticTop</def>
+				<id>ShipTurret_KineticTop112058</id>
+				<questTags IsNull="True" />
+				<verbTracker>
+					<verbs>
+						<li Class="Verb_LaunchProjectileShip">
+							<loadID>CompEquippable_ShipTurret_KineticTop112058_0</loadID>
+							<currentTarget>(0, 0, 0)</currentTarget>
+							<currentDestination>(0, 0, 0)</currentDestination>
+							<canHitNonTargetPawnsNow>True</canHitNonTargetPawnsNow>
+						</li>
+					</verbs>
+				</verbTracker>
+			</gun>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95500</id>
+			<map>1</map>
+			<pos>(94, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95574</id>
+			<map>1</map>
+			<pos>(94, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95590</id>
+			<map>1</map>
+			<pos>(95, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95605</id>
+			<map>1</map>
+			<pos>(96, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg112024</id>
+			<map>1</map>
+			<pos>(97, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95566</id>
+			<map>1</map>
+			<pos>(93, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95551</id>
+			<map>1</map>
+			<pos>(92, 0, 175)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95536</id>
+			<map>1</map>
+			<pos>(91, 0, 174)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95535</id>
+			<map>1</map>
+			<pos>(91, 0, 173)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95534</id>
+			<map>1</map>
+			<pos>(91, 0, 172)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Battery">
+			<def>BorgBattery</def>
+			<id>BorgBattery95792</id>
+			<map>1</map>
+			<pos>(91, 0, 171)</pos>
+			<health>150</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<storedPower>4754.635</storedPower>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95533</id>
+			<map>1</map>
+			<pos>(91, 0, 171)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95532</id>
+			<map>1</map>
+			<pos>(91, 0, 170)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li Class="Building_Battery">
+			<def>BorgBattery</def>
+			<id>BorgBattery95791</id>
+			<map>1</map>
+			<pos>(91, 0, 169)</pos>
+			<health>150</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<storedPower>4754.635</storedPower>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95531</id>
+			<map>1</map>
+			<pos>(91, 0, 169)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95559</id>
+			<map>1</map>
+			<pos>(93, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95530</id>
+			<map>1</map>
+			<pos>(91, 0, 168)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95499</id>
+			<map>1</map>
+			<pos>(93, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95497</id>
+			<map>1</map>
+			<pos>(91, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+		<li>
+			<def>ShipHullTile_Borg</def>
+			<id>ShipHullTile_Borg95589</id>
+			<map>1</map>
+			<pos>(95, 0, 168)</pos>
+			<health>200</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+		</li>
+		<li>
+			<def>Ship_Beam_Borg</def>
+			<id>Ship_Beam_Borg95501</id>
+			<map>1</map>
+			<pos>(95, 0, 167)</pos>
+			<health>1000</health>
+			<stuff>BorgOrgSub</stuff>
+			<faction>Faction_12</faction>
+			<questTags IsNull="True" />
+			<parentThing>null</parentThing>
+			<glowOn>True</glowOn>
+		</li>
+	</buildings>
+	<researchManager>
+		<progress>
+			<keys>
+				<li>PsychoidBrewing</li>
+				<li>TreeSowing</li>
+				<li>Brewing</li>
+				<li>ComplexFurniture</li>
+				<li>PassiveCooler</li>
+				<li>Stonecutting</li>
+				<li>ComplexClothing</li>
+				<li>DrugProduction</li>
+				<li>Cocoa</li>
+				<li>Devilstrand</li>
+				<li>CarpetMaking</li>
+				<li>Pemmican</li>
+				<li>Smithing</li>
+				<li>RecurveBow</li>
+				<li>PsychiteRefining</li>
+				<li>WakeUpProduction</li>
+				<li>GoJuiceProduction</li>
+				<li>PenoxycylineProduction</li>
+				<li>LongBlades</li>
+				<li>PlateArmor</li>
+				<li>Greatbow</li>
+				<li>Electricity</li>
+				<li>Batteries</li>
+				<li>BiofuelRefining</li>
+				<li>WatermillGenerator</li>
+				<li>NutrientPaste</li>
+				<li>SolarPanels</li>
+				<li>AirConditioning</li>
+				<li>Autodoors</li>
+				<li>Hydroponics</li>
+				<li>TubeTelevision</li>
+				<li>PackagedSurvivalMeal</li>
+				<li>Firefoam</li>
+				<li>IEDs</li>
+				<li>GeothermalPower</li>
+				<li>SterileMaterials</li>
+				<li>ColoredLights</li>
+				<li>Machining</li>
+				<li>SmokepopBelt</li>
+				<li>Prosthetics</li>
+				<li>Gunsmithing</li>
+				<li>FlakArmor</li>
+				<li>Mortars</li>
+				<li>BlowbackOperation</li>
+				<li>GasOperation</li>
+				<li>GunTurrets</li>
+				<li>MicroelectronicsBasics</li>
+				<li>FlatscreenTelevision</li>
+				<li>MoisturePump</li>
+				<li>HospitalBed</li>
+				<li>DeepDrilling</li>
+				<li>GroundPenetratingScanner</li>
+				<li>TransportPod</li>
+				<li>MedicineProduction</li>
+				<li>LongRangeMineralScanner</li>
+				<li>ShieldBelt</li>
+				<li>PrecisionRifling</li>
+				<li>HeavyTurrets</li>
+				<li>MultibarrelWeapons</li>
+				<li>MultiAnalyzer</li>
+				<li>VitalsMonitor</li>
+				<li>Fabrication</li>
+				<li>AdvancedFabrication</li>
+				<li>Cryptosleep</li>
+				<li>ReconArmor</li>
+				<li>PoweredArmor</li>
+				<li>ChargedShot</li>
+				<li>Bionics</li>
+				<li>SniperTurret</li>
+				<li>NobleApparel</li>
+				<li>RoyalApparel</li>
+				<li>CataphractArmor</li>
+				<li>BrainWiring</li>
+				<li>SpecializedLimbs</li>
+				<li>CompactWeaponry</li>
+				<li>VenomSynthesis</li>
+				<li>ArtificialMetabolism</li>
+				<li>NeuralComputation</li>
+				<li>SkinHardening</li>
+				<li>HealingFactors</li>
+				<li>FleshShaping</li>
+				<li>MolecularAnalysis</li>
+				<li>CircadianInfluence</li>
+				<li>Harp</li>
+				<li>Harpsichord</li>
+				<li>Piano</li>
+				<li>ShipBasics</li>
+				<li>ShipReactor</li>
+				<li>ShipEngine</li>
+				<li>SoSJTDrive</li>
+				<li>ShipComputerCore</li>
+				<li>ShipSensorCluster</li>
+				<li>ShipPilotSeat</li>
+				<li>ShipShuttleBay</li>
+				<li>ShipLifeSupport</li>
+				<li>ShipSpaceSuits</li>
+				<li>ShipSpaceSuitsHeavy</li>
+				<li>Crittersleep</li>
+				<li>ShipCapacitor</li>
+				<li>ShipCryptosleep</li>
+				<li>ShuttlePersonal</li>
+				<li>ShuttleCargo</li>
+				<li>ShuttleHeavy</li>
+				<li>ShipSalvageBay</li>
+				<li>ShipTurretLaser</li>
+				<li>ShipTurretPlasma</li>
+				<li>ShipTurretKinetic</li>
+				<li>ShipHeatsink</li>
+				<li>ShipTurretMedium</li>
+				<li>ShipShields</li>
+				<li>ShipTurretLarge</li>
+				<li>ShipTorpedoes</li>
+				<li>HullFoam</li>
+				<li>PBC</li>
+				<li>PBC1</li>
+				<li>PBC2</li>
+				<li>PBC3</li>
+				<li>PBC4</li>
+				<li>NPCBC</li>
+				<li>NPCBC1</li>
+				<li>NPCBC2</li>
+				<li>NPCBC3</li>
+				<li>NPCBC4</li>
+				<li>NPCBC5</li>
+				<li>NPCBC6</li>
+				<li>PBC5</li>
+				<li>RTAlpha</li>
+				<li>RTAlpha1</li>
+				<li>RTAlpha2</li>
+				<li>RTAlpha3</li>
+				<li>RTAlpha4</li>
+				<li>RTFed</li>
+				<li>RTFedTech</li>
+				<li>RTFedWorld</li>
+				<li>RTFedRaces</li>
+				<li>RTFedTech1</li>
+				<li>RTFedTech2</li>
+				<li>RTFedTech3</li>
+				<li>RTFedTech4</li>
+				<li>RTFedTech5</li>
+				<li>RTFedRaces1</li>
+				<li>RTFedRaces2</li>
+				<li>RTFedRaces3</li>
+				<li>RTFedWorld1</li>
+				<li>RTFedWorld2</li>
+				<li>RTFedWorld3</li>
+				<li>RTFedWorld4</li>
+				<li>RTDom</li>
+				<li>RTDom1</li>
+				<li>RTDom2</li>
+			</keys>
+			<values>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>300</li>
+				<li>400</li>
+				<li>300</li>
+				<li>600</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>1600</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>400</li>
+				<li>0</li>
+				<li>500</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+				<li>0</li>
+			</values>
+		</progress>
+		<techprints>
+			<keys />
+			<values />
+		</techprints>
+	</researchManager>
+	<taleManager>
+		<tales />
+	</taleManager>
+	<uniqueIDsManager>
+		<nextThingID>128135</nextThingID>
+		<nextFactionID>13</nextFactionID>
+		<nextLordID>3</nextLordID>
+		<nextTaleID>3</nextTaleID>
+		<nextWorldObjectID>154</nextWorldObjectID>
+		<nextMapID>3</nextMapID>
+		<nextCaravanID>1</nextCaravanID>
+		<nextAreaID>15</nextAreaID>
+		<nextTransporterGroupID>1</nextTransporterGroupID>
+		<nextAncientCryptosleepCasketGroupID>2</nextAncientCryptosleepCasketGroupID>
+		<nextJobID>18500</nextJobID>
+		<nextSignalTagID>2</nextSignalTagID>
+		<nextWorldFeatureID>75</nextWorldFeatureID>
+		<nextHediffID>194</nextHediffID>
+		<nextLogID>1</nextLogID>
+		<nextLetterID>14</nextLetterID>
+		<nextArchivedDialogID>3</nextArchivedDialogID>
+		<nextMessageID>34</nextMessageID>
+		<nextQuestID>1</nextQuestID>
+	</uniqueIDsManager>
+	<drugPolicyDatabase>
+		<policies>
+			<li>
+				<uniqueId>1</uniqueId>
+				<label>Social drugs</label>
+				<drugs>
+					<li>
+						<drug>Beer</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>SmokeleafJoint</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>Ambrosia</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Yayo</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Flake</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>PsychiteTea</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>GoJuice</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>WakeUp</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Penoxycyline</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Luciferium</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+				</drugs>
+			</li>
+			<li>
+				<uniqueId>2</uniqueId>
+				<label>No drugs</label>
+				<drugs>
+					<li>
+						<drug>Beer</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>SmokeleafJoint</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Ambrosia</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Yayo</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Flake</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>PsychiteTea</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>GoJuice</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>WakeUp</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Penoxycyline</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Luciferium</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+				</drugs>
+			</li>
+			<li>
+				<uniqueId>3</uniqueId>
+				<label>Unrestricted</label>
+				<drugs>
+					<li>
+						<drug>Beer</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>SmokeleafJoint</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>Ambrosia</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>Yayo</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>Flake</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>PsychiteTea</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>GoJuice</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>WakeUp</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>Penoxycyline</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Luciferium</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+				</drugs>
+			</li>
+			<li>
+				<uniqueId>4</uniqueId>
+				<label>One drink per day</label>
+				<drugs>
+					<li>
+						<drug>Beer</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+						<allowScheduled>True</allowScheduled>
+						<takeToInventory>1</takeToInventory>
+					</li>
+					<li>
+						<drug>SmokeleafJoint</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+						<allowedForJoy>True</allowedForJoy>
+					</li>
+					<li>
+						<drug>Ambrosia</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Yayo</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Flake</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>PsychiteTea</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>GoJuice</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>WakeUp</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Penoxycyline</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+					<li>
+						<drug>Luciferium</drug>
+						<allowedForAddiction>True</allowedForAddiction>
+					</li>
+				</drugs>
+			</li>
+		</policies>
+	</drugPolicyDatabase>
+	<outfitDatabase>
+		<outfits>
+			<li>
+				<uniqueId>1</uniqueId>
+				<label>Anything</label>
+				<filter>
+					<disallowedSpecialFilters />
+					<allowedDefs>
+						<li>Apparel_SmokepopBelt</li>
+						<li>Apparel_TribalA</li>
+						<li>Apparel_Parka</li>
+						<li>Apparel_Pants</li>
+						<li>Apparel_BasicShirt</li>
+						<li>Apparel_CollarShirt</li>
+						<li>Apparel_Duster</li>
+						<li>Apparel_Jacket</li>
+						<li>Apparel_PsyfocusShirt</li>
+						<li>Apparel_PsyfocusVest</li>
+						<li>Apparel_PsyfocusRobe</li>
+						<li>Apparel_SpaceSuitBody</li>
+						<li>Apparel_SpaceSuitBodyHeavy</li>
+						<li>Apparel_BorgArmor</li>
+						<li>Apparel_CowboyHat</li>
+						<li>Apparel_BowlerHat</li>
+						<li>Apparel_TribalHeaddress</li>
+						<li>Apparel_Tuque</li>
+						<li>Apparel_WarMask</li>
+						<li>Apparel_WarVeil</li>
+						<li>Apparel_PsychicFoilHelmet</li>
+						<li>Apparel_PsyfocusHelmet</li>
+						<li>Apparel_SpaceSuitHelmet</li>
+						<li>Apparel_BorgHelm</li>
+						<li>Apparel_ShieldBelt</li>
+						<li>Apparel_PlateArmor</li>
+						<li>Apparel_FlakVest</li>
+						<li>Apparel_FlakPants</li>
+						<li>Apparel_FlakJacket</li>
+						<li>Apparel_PowerArmor</li>
+						<li>Apparel_ArmorRecon</li>
+						<li>Apparel_ArmorReconPrestige</li>
+						<li>Apparel_ArmorMarinePrestige</li>
+						<li>Apparel_ArmorCataphract</li>
+						<li>Apparel_ArmorCataphractPrestige</li>
+						<li>Apparel_SpaceSurvivalBelt</li>
+						<li>Apparel_ShieldBeltBorg</li>
+						<li>Apparel_SimpleHelmet</li>
+						<li>Apparel_AdvancedHelmet</li>
+						<li>Apparel_PowerArmorHelmet</li>
+						<li>Apparel_ArmorHelmetRecon</li>
+						<li>Apparel_ArmorHelmetReconPrestige</li>
+						<li>Apparel_ArmorMarineHelmetPrestige</li>
+						<li>Apparel_ArmorHelmetCataphract</li>
+						<li>Apparel_ArmorHelmetCataphractPrestige</li>
+						<li>Apparel_SpaceSuitHelmetHeavy</li>
+						<li>Apparel_ShirtRuffle</li>
+						<li>Apparel_Corset</li>
+						<li>Apparel_VestRoyal</li>
+						<li>Apparel_RobeRoyal</li>
+						<li>Apparel_HatLadies</li>
+						<li>Apparel_HatTop</li>
+						<li>Apparel_Coronet</li>
+						<li>Apparel_Crown</li>
+					</allowedDefs>
+					<allowedHitPointsPercents>0~1</allowedHitPointsPercents>
+					<allowedQualityLevels>Awful~Legendary</allowedQualityLevels>
+				</filter>
+			</li>
+			<li>
+				<uniqueId>2</uniqueId>
+				<label>Worker</label>
+				<filter>
+					<disallowedSpecialFilters>
+						<li>AllowDeadmansApparel</li>
+					</disallowedSpecialFilters>
+					<allowedDefs>
+						<li>Apparel_CowboyHat</li>
+						<li>Apparel_BowlerHat</li>
+						<li>Apparel_TribalHeaddress</li>
+						<li>Apparel_Tuque</li>
+						<li>Apparel_Parka</li>
+						<li>Apparel_Pants</li>
+						<li>Apparel_BasicShirt</li>
+						<li>Apparel_CollarShirt</li>
+						<li>Apparel_Duster</li>
+						<li>Apparel_Jacket</li>
+					</allowedDefs>
+					<allowedHitPointsPercents>0~1</allowedHitPointsPercents>
+					<allowedQualityLevels>Awful~Legendary</allowedQualityLevels>
+				</filter>
+			</li>
+			<li>
+				<uniqueId>3</uniqueId>
+				<label>Soldier</label>
+				<filter>
+					<disallowedSpecialFilters>
+						<li>AllowDeadmansApparel</li>
+					</disallowedSpecialFilters>
+					<allowedDefs>
+						<li>Apparel_Tuque</li>
+						<li>Apparel_WarMask</li>
+						<li>Apparel_WarVeil</li>
+						<li>Apparel_SimpleHelmet</li>
+						<li>Apparel_AdvancedHelmet</li>
+						<li>Apparel_PowerArmorHelmet</li>
+						<li>Apparel_ArmorHelmetRecon</li>
+						<li>Apparel_Parka</li>
+						<li>Apparel_Pants</li>
+						<li>Apparel_BasicShirt</li>
+						<li>Apparel_CollarShirt</li>
+						<li>Apparel_PlateArmor</li>
+						<li>Apparel_FlakVest</li>
+						<li>Apparel_FlakPants</li>
+						<li>Apparel_FlakJacket</li>
+						<li>Apparel_PowerArmor</li>
+						<li>Apparel_ArmorRecon</li>
+						<li>Apparel_PsyfocusHelmet</li>
+						<li>Apparel_PsyfocusShirt</li>
+						<li>Apparel_PsyfocusVest</li>
+						<li>Apparel_PsyfocusRobe</li>
+						<li>Apparel_ArmorReconPrestige</li>
+						<li>Apparel_ArmorHelmetReconPrestige</li>
+						<li>Apparel_ArmorMarinePrestige</li>
+						<li>Apparel_ArmorMarineHelmetPrestige</li>
+						<li>Apparel_ArmorCataphract</li>
+						<li>Apparel_ArmorHelmetCataphract</li>
+						<li>Apparel_ArmorCataphractPrestige</li>
+						<li>Apparel_ArmorHelmetCataphractPrestige</li>
+					</allowedDefs>
+					<allowedHitPointsPercents>0~1</allowedHitPointsPercents>
+					<allowedQualityLevels>Awful~Legendary</allowedQualityLevels>
+				</filter>
+			</li>
+			<li>
+				<uniqueId>4</uniqueId>
+				<label>Nudist</label>
+				<filter>
+					<disallowedSpecialFilters>
+						<li>AllowDeadmansApparel</li>
+					</disallowedSpecialFilters>
+					<allowedDefs>
+						<li>Apparel_ShieldBelt</li>
+						<li>Apparel_SmokepopBelt</li>
+						<li>Apparel_CowboyHat</li>
+						<li>Apparel_BowlerHat</li>
+						<li>Apparel_TribalHeaddress</li>
+						<li>Apparel_Tuque</li>
+						<li>Apparel_WarMask</li>
+						<li>Apparel_WarVeil</li>
+						<li>Apparel_SimpleHelmet</li>
+						<li>Apparel_AdvancedHelmet</li>
+						<li>Apparel_PowerArmorHelmet</li>
+						<li>Apparel_ArmorHelmetRecon</li>
+						<li>Apparel_PsychicFoilHelmet</li>
+						<li>Apparel_PsyfocusHelmet</li>
+						<li>Apparel_HatLadies</li>
+						<li>Apparel_HatTop</li>
+						<li>Apparel_Coronet</li>
+						<li>Apparel_Crown</li>
+						<li>Apparel_ArmorHelmetReconPrestige</li>
+						<li>Apparel_ArmorMarineHelmetPrestige</li>
+						<li>Apparel_ArmorHelmetCataphract</li>
+						<li>Apparel_ArmorHelmetCataphractPrestige</li>
+						<li>Apparel_SpaceSuitHelmet</li>
+						<li>Apparel_SpaceSuitHelmetHeavy</li>
+						<li>Apparel_SpaceSurvivalBelt</li>
+						<li>Apparel_SpaceSurvivalBeltDummy</li>
+						<li>Apparel_BorgHelm</li>
+						<li>Apparel_ShieldBeltBorg</li>
+					</allowedDefs>
+					<allowedHitPointsPercents>0~1</allowedHitPointsPercents>
+					<allowedQualityLevels>Awful~Legendary</allowedQualityLevels>
+				</filter>
+			</li>
+		</outfits>
+	</outfitDatabase>
+	<playLog>
+		<entries />
+	</playLog>
+	<currentyear>5504</currentyear>
+	<oldpawns />
+</RWShip>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Outfit ====== -->
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_KlingonWarrior</defName>
+		<label>klingon warrior armour</label>
+		<description>A full-body uniform worn by Starfleet, it's very lightly armoured underneath.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Klingon/Warrior/War_Male_south</texPath>
+		</graphicData>
+<statBases>
+      <MarketValue>1000</MarketValue>
+	  </statBases>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Klingon/Warrior/War</wornGraphicPath>
+			<tags Inherit="False">
+				<li>Klingon</li>
+				<li>Orion</li>
+				<li>Cardassian</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Middle</li>
+			</layers>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_KlingonUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ====== Robe ====== -->
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_KlingonRobe</defName>
+		<label>klingon robes</label>
+		<description>Robes commonly worn by Klingons.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Klingon/Robe/Robe_Male_south</texPath>
+		</graphicData>
+
+		<statBases Inherit="False">
+			<MaxHitPoints>1000</MaxHitPoints>
+			      <MarketValue>300</MarketValue>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Klingon/Robe/Robe</wornGraphicPath>
+			<tags Inherit="False">
+				<li>Klingon</li>
+				<li>Orion</li>
+				<li>Cardassian</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Shell</li>
+			</layers>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_KlingonUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<!-- ====== Sash ====== -->
+	
+	<ThingDef ParentName="StarTrekUniformBase">
+		<defName>O21_StarTrek_TNG_KlingonSash</defName>
+		<label>klingon baldric</label>
+		<description>A baldric was a wide, usually ornamental belt worn over one shoulder and around the waist that is typically used to carry weapons and/or denote rank.</description>
+		<graphicData>
+			<texPath>Things/Apparel/Klingon/Sash/Sash_Male_south</texPath>
+		</graphicData>
+
+		<statBases Inherit="False">
+			<MaxHitPoints>1000</MaxHitPoints>
+						      <MarketValue>200</MarketValue>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>1</Mass>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<apparel>
+			<wornGraphicPath>Things/Apparel/Klingon/Sash/Sash</wornGraphicPath>
+			<tags Inherit="False">
+				<li>Klingon</li>
+				<li>Orion</li>
+				<li>Cardassian</li>
+			</tags>
+			<layers Inherit="False">
+				<li>Belt</li>
+			</layers>
+		</apparel>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_KlingonUniforms</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="MeleeWeaponVulcanBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>O21_ST_Melee_Lirpa</defName>
+		<label>lirpa</label>
+		<description>The lirpa was a traditional Vulcan melee weapon, consisting of a metal staff with a fan-shaped blade on one end and a club on the other. The haft below the shaped blade had some Vulcan lettering on it.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Vulcan/Lirpa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.7</drawSize>	
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+		  <MarketValue>1000</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+
+		<techLevel>Spacer</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+        
+		<comps>
+			<li>
+				<compClass>O21Toolbox.WeaponExt.Comp_OversizedWeapon</compClass>
+			</li>
+		</comps>
+    <weaponTags>
+      <li>Federation</li>
+	  <li>Orion</li>
+    </weaponTags>
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>26</power>
+                <armorPenetration>0.65</armorPenetration>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	
+		<costList>
+			<Steel>40</Steel>
+			<Plasteel>60</Plasteel>
+		</costList>
+
+		<recipeMaker>
+			<researchPrerequisite>O21_ST_VulcanBlades</researchPrerequisite>
+			<recipeUsers>
+                <li>O21_ST_MatterReplicator</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef ParentName="MeleeWeaponVulcanBase">
+		<defName>O21_ST_Melee_ExecutionerSword</defName>
+		<label>executioner sword</label>
+		<description>The blade used by Vulcan executioners.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Vulcan/ExecutionerSword</texPath>
+			<drawSize>1.7</drawSize>	
+		</graphicData>
+
+		<statBases>
+			<WorkToMake>22000</WorkToMake>
+<MarketValue>600</MarketValue>
+			<Mass>2</Mass>
+		</statBases>
+
+		<techLevel>Spacer</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+        
+		<comps>
+			<li>
+				<compClass>O21Toolbox.WeaponExt.Comp_OversizedWeapon</compClass>
+			</li>
+		</comps>
+    <weaponTags>
+      <li>Cardassian</li>
+	  <li>Romulan</li>
+    </weaponTags>
+		<tools Inherit="False">
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>26</power>
+                <armorPenetration>0.65</armorPenetration>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

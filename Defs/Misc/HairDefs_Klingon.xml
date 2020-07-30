@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HairDef>
+		<defName>O21_ST_KlingonHorseshoe</defName>
+		<label>klingon horseshoe</label>
+		<hairGender>Male</hairGender>
+		<texPath>Things/Pawn/Klingon/Hair/K_Horseshoe</texPath>
+		<hairTags>
+			<li>Klingon</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>O21_ST_KlingonLong</defName>
+		<label>klingon long</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Pawn/Klingon/Hair/K_Long</texPath>
+		<hairTags>
+			<li>Klingon</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>O21_ST_KlingonPony</defName>
+		<label>klingon pony</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Pawn/Klingon/Hair/K_Pony</texPath>
+		<hairTags>
+			<li>Klingon</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>O21_ST_KlingonShort</defName>
+		<label>klingon short</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Pawn/Klingon/Hair/K_Short</texPath>
+		<hairTags>
+			<li>Klingon</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>O21_ST_KlingonShoulder</defName>
+		<label>klingon shoulder</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Pawn/Klingon/Hair/K_Shoulder</texPath>
+		<hairTags>
+			<li>Klingon</li>
+		</hairTags>
+	</HairDef>
+
+</Defs>

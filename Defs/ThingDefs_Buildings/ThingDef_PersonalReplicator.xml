@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Trek_PersonalReplicator</defName>
+		<label>food replicator</label>
+		<description>Small replicator designed for personal use in an individuals quarters. This model is only capable of replicating food and will be used on demand by pawns much like a Nutrient Paste Dispenser, if pawns aren't using it, you may need to store more power.</description>
+		<thingClass>O21Toolbox.CustomDispenser.Building_CustomDispenser</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Federation/Replicator_Pers</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(255,255,255)</color>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2.15,2.15)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+        <tickerType>Normal</tickerType>
+		<statBases>
+			<WorkToBuild>2200</WorkToBuild>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<building>
+			<isMealSource>true</isMealSource>
+			<forceShowRoomStats>true</forceShowRoomStats>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>80</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+            <O21_ST_RefinedDilithium>10</O21_ST_RefinedDilithium>
+		</costList>
+		<placeWorkers>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>O21_ST_Dilithium</li>
+		</researchPrerequisites>
+        <modExtensions>
+            <li Class="O21Toolbox.CustomDispenser.DefModExt_CustomDispenser">
+                <thingDefs>
+                    <li>MealSimple</li>
+                    <li>MealFine</li>
+                    <li>MealLavish</li>
+                    <li>MealSurvivalPack</li>
+                </thingDefs>
+                <dispenseSound>O21_ST_Sound_ReplicatorVOY</dispenseSound>
+                <requiresPower>True</requiresPower>
+                <powerPerUse>600</powerPerUse>
+            </li>
+        </modExtensions>
+	</ThingDef>
+
+</Defs>
