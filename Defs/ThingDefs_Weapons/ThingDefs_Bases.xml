@@ -199,8 +199,58 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_PhaserBeam_Stun</defName>
+		<label>phaser beam</label>
+
+        <modExtensions>
+            <li Class="O21Toolbox.Projectiles.DefModExt_HediffApplier">
+                <hediff>O21_ST_StunHediff</hediff>
+                <chanceToApply>1.0</chanceToApply>
+                <initialSeverity>0.5</initialSeverity>
+                <severityIncreasePerShot>0.4</severityIncreasePerShot>
+            </li>
+            <li Class="O21Toolbox.WeaponExt.DefModExt_VerbSwitchIcon">
+                <gizmoIcon>UI/GizmoIcons_Verbs/Stun</gizmoIcon>
+            </li>
+        </modExtensions>
+		
+		<projectile>
+			<damageAmountBase>0</damageAmountBase>
+			<stoppingPower>1.0</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
+		<defName>O21_Trek_PhaserBeam_StunWeak</defName>
+		<label>phaser beam</label>
+
+        <modExtensions>
+            <li Class="O21Toolbox.Projectiles.DefModExt_HediffApplier">
+                <hediff>O21_ST_StunHediff</hediff>
+                <chanceToApply>1.0</chanceToApply>
+                <initialSeverity>0.2</initialSeverity>
+                <severityIncreasePerShot>0.3</severityIncreasePerShot>
+            </li>
+            <li Class="O21Toolbox.WeaponExt.DefModExt_VerbSwitchIcon">
+                <gizmoIcon>UI/GizmoIcons_Verbs/Stun</gizmoIcon>
+            </li>
+        </modExtensions>
+		
+		<projectile>
+			<damageAmountBase>0</damageAmountBase>
+			<stoppingPower>1.0</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
 		<defName>O21_Trek_PhaserBeam_Weak</defName>
 		<label>phaser beam</label>
+
+        <modExtensions>
+            <li Class="O21Toolbox.WeaponExt.DefModExt_VerbSwitchIcon">
+                <gizmoIcon>UI/GizmoIcons_Verbs/Kill</gizmoIcon>
+            </li>
+        </modExtensions>
 		
 		<projectile>
 			<damageAmountBase>6</damageAmountBase>
@@ -210,6 +260,12 @@
 	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
 		<defName>O21_Trek_PhaserBeam_Normal</defName>
 		<label>phaser beam</label>
+
+        <modExtensions>
+            <li Class="O21Toolbox.WeaponExt.DefModExt_VerbSwitchIcon">
+                <gizmoIcon>UI/GizmoIcons_Verbs/Kill</gizmoIcon>
+            </li>
+        </modExtensions>
 		
 		<projectile>
 			<damageAmountBase>10</damageAmountBase>
@@ -219,6 +275,12 @@
 	<ThingDef ParentName="PhaserBeamProjectile" Class="O21Toolbox.Laser.LaserBeamDef">
 		<defName>O21_Trek_PhaserBeam_Strong</defName>
 		<label>phaser beam</label>
+
+        <modExtensions>
+            <li Class="O21Toolbox.WeaponExt.DefModExt_VerbSwitchIcon">
+                <gizmoIcon>UI/GizmoIcons_Verbs/Kill</gizmoIcon>
+            </li>
+        </modExtensions>
 		
 		<projectile>
 			<damageAmountBase>18</damageAmountBase>

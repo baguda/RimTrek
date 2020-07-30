@@ -24,6 +24,7 @@
 
 		<verbs>
 			<li>
+                <label>Kill</label>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>O21_Trek_PhaserBeam_Weak</defaultProjectile>
@@ -35,11 +36,26 @@
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
+			<li>
+                <label>Stun</label>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>O21_Trek_PhaserBeam_StunWeak</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>34</range>
+				<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>O21_ST_Sound_PhaserRifleFireTNG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
 		</verbs>
+		
     <weaponTags>
       <li>Federation</li>
 	  <li>Orion</li>
     </weaponTags>	
+	
 		<tools>
 			<li>
 				<label>stock</label>
@@ -59,7 +75,11 @@
 				<cooldownTime>2</cooldownTime>
 			</li>
 		</tools>
-	
+        <comps>
+            <li Class="O21Toolbox.WeaponExt.CompProperties_VerbSwitch">
+                <useCooldown>True</useCooldown>
+            </li>
+        </comps>	
 		<costList>
 			<Plasteel>40</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
