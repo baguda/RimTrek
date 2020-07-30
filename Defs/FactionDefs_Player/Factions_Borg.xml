@@ -15,7 +15,7 @@
     <factionIconPath>Things/Borg/Items/BorgHome</factionIconPath>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
     <factionNameMaker>NamerFactionBorg</factionNameMaker>
-    <settlementNameMaker>NamerSettlementBorg</settlementNameMaker>
+    <settlementNameMaker>NamerFactionBorg</settlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
     </startingResearchTags>
@@ -52,7 +52,7 @@
 	<li>Rural</li>
     </hairTags>
     <factionNameMaker>NamerFactionBorg</factionNameMaker>
-    <settlementNameMaker>NamerSettlementBorg</settlementNameMaker>
+    <settlementNameMaker>NamerFactionBorg</settlementNameMaker>
     <techLevel>Spacer</techLevel>
     <backstoryFilters>
       <li>
@@ -125,7 +125,7 @@
 	<li>Rural</li>
     </hairTags>
     <factionNameMaker>NamerFactionBorg</factionNameMaker>
-    <settlementNameMaker>NamerSettlementBorg</settlementNameMaker>
+    <settlementNameMaker>NamerFactionBorg</settlementNameMaker>
     <techLevel>Spacer</techLevel>
     <backstoryFilters>
       <li>
