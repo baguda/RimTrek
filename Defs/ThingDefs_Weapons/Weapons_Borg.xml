@@ -9,6 +9,9 @@
 	</graphicData>
     <smeltable>true</smeltable>
 	<repairEffect>Repair</repairEffect>
+    <menuHidden>True</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
 	<soundInteract>Interact_ChargeRifle</soundInteract>
     <thingCategories>
       <li>WeaponsRanged</li>
