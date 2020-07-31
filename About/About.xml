@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Rim Trek: Alpha Empires</name> <!-- Name in mod list -->
-  <packageId>Nolabritt.AlphaEmpires</packageId> <!-- author.modName --> 
+  <name>Rim Trek</name> <!-- Name in mod list -->
+  <packageId>Nolabritt.RimTrek</packageId> <!-- author.modName --> 
   <author>nolabritt</author>
   <!--
   <url>
