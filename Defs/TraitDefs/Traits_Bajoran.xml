@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>BajTer</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Bajoran Faith</label>
+        <description>{PAWN_nameDef} is a Bajoran from the alpha quadrant. Despite their history of terrorism, the federation considers the well-being of Bajorans like [PAWN_nameDef] to be super important!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

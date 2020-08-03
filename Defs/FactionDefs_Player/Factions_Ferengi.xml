@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>FerengiAlliancePlayer</defName>
+    <label>A Proud Ferengi House</label>
+    <description>A Ferengi city.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>PlayerFerengi</basicMemberKind>
+    <pawnSingular>Ferengi</pawnSingular>
+    <pawnsPlural>Ferengis</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <backstoryCategories><li>Ferengi</li></backstoryCategories>
+    <factionIconPath>World/FerengiBaseIcon</factionIconPath>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionFerengi</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>  
+	  <li>ShipRelated</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Rural</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+  <FactionDef>
+		<defName>FerengiAlly</defName>
+		<label>Ferengi Alliance</label>
+    <description>A stronghold of the Ferengi Alliance. They are a fiercely warlike species.</description>
+    <pawnsPlural>Ferengis</pawnsPlural>
+	<fixedName>The Ferengi Alliance</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Legate</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerFerengiUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionFerengi</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Ferengi</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>100</min>
+      <max>100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Ferengi_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <AFerengiColonist>5</AFerengiColonist>
+          <AFerengiSecurityGuard>9</AFerengiSecurityGuard>
+          <AFerengiRuler>10</AFerengiRuler>
+          <AFerengiRecruit>1</AFerengiRecruit>
+          <AFerengiHunter>5</AFerengiHunter>
+          <AFerengiCommando>5</AFerengiCommando>
+          <AFerengiCommandoElite>1</AFerengiCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <AFerengiTrader>1</AFerengiTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <AFerengiSecurityGuard>9</AFerengiSecurityGuard>
+          <AFerengiRecruit>1</AFerengiRecruit>
+          <AFerengiHunter>5</AFerengiHunter>
+          <AFerengiCommando>2</AFerengiCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <AFerengiColonist>1</AFerengiColonist>
+          <AFerengiSecurityGuard>8</AFerengiSecurityGuard>
+          <AFerengiRuler>1</AFerengiRuler>
+          <AFerengiRecruit>1</AFerengiRecruit>
+          <AFerengiHunter>5</AFerengiHunter>
+          <AFerengiCommando>5</AFerengiCommando>
+          <AFerengiCommandoElite>2</AFerengiCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <AFerengiColonist>2</AFerengiColonist>
+          <AFerengiSecurityGuard>5</AFerengiSecurityGuard>
+          <AFerengiRuler>1</AFerengiRuler>
+          <AFerengiRecruit>1</AFerengiRecruit>
+          <AFerengiHunter>5</AFerengiHunter>
+          <AFerengiCommando>3</AFerengiCommando>
+          <AFerengiCommandoElite>2</AFerengiCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/FerengiBaseIcon</settlementTexturePath>
+    <factionIconPath>World/FerengiBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+  <FactionDef>
+		<defName>FerengiEnemy</defName>
+		<label>Ferengi Alliance</label>
+    <description>A stronghold of the Ferengi Alliance. They are a fiercely warlike species.</description>
+    <pawnsPlural>Ferengis</pawnsPlural>
+	<fixedName>The Ferengi Alliance</fixedName>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Legate</leaderTitle>
+    <colorSpectrum>
+      <li>(1, 0.89, 0.44)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </startingGoodwill>
+    <pawnNameMaker>NamerFerengiUtility</pawnNameMaker>
+	<settlementNameMaker>NamerFactionFerengi</settlementNameMaker>
+	<techLevel>Spacer</techLevel>
+	<backstoryCategories><li>Ferengi</li></backstoryCategories>
+	<hairTags>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Ferengi_Standard</li>
+    </visitorTraderKinds>
+   <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-30</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+	<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <EFerengiColonist>5</EFerengiColonist>
+          <EFerengiSecurityGuard>9</EFerengiSecurityGuard>
+          <EFerengiRuler>10</EFerengiRuler>
+          <EFerengiRecruit>1</EFerengiRecruit>
+          <EFerengiHunter>5</EFerengiHunter>
+          <EFerengiCommando>5</EFerengiCommando>
+          <EFerengiCommandoElite>1</EFerengiCommandoElite>
+        </options>
+      </li>
+	  <li>
+      <kindDef>Trader</kindDef>
+        <traders>
+          <EFerengiTrader>1</EFerengiTrader>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <EFerengiSecurityGuard>9</EFerengiSecurityGuard>
+          <EFerengiRecruit>1</EFerengiRecruit>
+          <EFerengiHunter>5</EFerengiHunter>
+          <EFerengiCommando>2</EFerengiCommando>
+        </guards>
+      </li>
+	  <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <EFerengiColonist>1</EFerengiColonist>
+          <EFerengiSecurityGuard>8</EFerengiSecurityGuard>
+          <EFerengiRuler>1</EFerengiRuler>
+          <EFerengiRecruit>1</EFerengiRecruit>
+          <EFerengiHunter>5</EFerengiHunter>
+          <EFerengiCommando>5</EFerengiCommando>
+          <EFerengiCommandoElite>2</EFerengiCommandoElite>
+        </options>
+      </li>
+	  <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <EFerengiColonist>2</EFerengiColonist>
+          <EFerengiSecurityGuard>5</EFerengiSecurityGuard>
+          <EFerengiRuler>1</EFerengiRuler>
+          <EFerengiRecruit>1</EFerengiRecruit>
+          <EFerengiHunter>5</EFerengiHunter>
+          <EFerengiCommando>3</EFerengiCommando>
+          <EFerengiCommandoElite>2</EFerengiCommandoElite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/FerengiBaseIcon</settlementTexturePath>
+    <factionIconPath>World/FerengiBaseIcon</factionIconPath>
+	<apparelStuffFilter>
+		<thingDefs>
+			<li>Synthread</li>
+			<li>Hyperweave</li>
+		</thingDefs>
+	</apparelStuffFilter>
+  </FactionDef>
+
+</Defs>

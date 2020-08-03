@@ -13,7 +13,23 @@
   <BodyPartTagDef>
      <defName>Antenna</defName>
   </BodyPartTagDef>
- 
+    <BodyPartTagDef>
+    <defName>Lobes</defName>
+  </BodyPartTagDef>
+
+    <BodyPartDef>
+    <defName>FerengiLobes</defName>
+    <label>Ferengi Lobes</label>
+    <hitPoints>50</hitPoints>
+    <bleedRate>2</bleedRate>
+    <skinCovered>true</skinCovered>
+    <frostbiteVulnerability>3</frostbiteVulnerability>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>Lobes</li>
+    </tags>
+  </BodyPartDef>
+  
 <BodyPartDef> 
 	<defName>Antenna</defName>
     <label>Andorian antenna</label>

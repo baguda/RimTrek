@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>FedHum</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>utopian Human</label>
+        <description>{PAWN_nameDef} is a citizen of the United Federation of Planets. {PAWN_pronoun} knows that {PAWN_pronoun} is part of a bold project to remake mankind. {PAWN_pronoun} is #wokeAF!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+    <!--TraitDef>
+    <defName>TPHum</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>dissident Human</label>
+        <description>{PAWN_nameDef} is a dangerous radical. {PAWN_pronoun} believes in individual liberty and honoring the traditions of {PAWN_pronoun}'s people. {PAWN_pronoun} is an evil racist!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef-->
+  
+</Defs>

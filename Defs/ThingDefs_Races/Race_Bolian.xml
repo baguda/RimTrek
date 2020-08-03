@@ -2,7 +2,7 @@
 <Defs>
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Bolian">
-		<defName>O21_Alien_Bolian</defName>
+		<defName>Alien_Bolian</defName>
 		<label>Bolian</label>
 		<description>The Bolians were a humanoid species who were native to the planet Bolarus IX.</description>
 		<alienRace>
@@ -10,7 +10,12 @@
 				<maleGenderProbability>0.5</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<humanRecipeImport>true</humanRecipeImport>
-				<forcedRaceTraitEntries />
+				<forcedRaceTraitEntries>
+				  <li>
+					 <defName>BolBlood</defName>
+					 <chance>100</chance>
+				  </li>
+				</forcedRaceTraitEntries>
 				<disallowedTraits />
 				<chemicalSettings />
 				<factionRelations />	
@@ -62,7 +67,53 @@
 				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
 			</relationSettings>
 			<thoughtSettings />
-			<raceRestriction />
+			<raceRestriction>
+	<whiteTraitList>
+	<li>SpeedOffset</li>
+	<li>DrugDesire</li>
+	<li>NaturalMood</li>
+	<li>Nerves</li>
+	<li>Neurotic</li>
+	<li>Industriousness</li>
+	<li>PsychicSensitivity</li>	
+	<li>ShootingAccuracy</li>
+	<li>Beauty</li>
+	<li>Nudist</li>
+	<li>Immunity</li>
+	<li>Bloodlust</li>
+	<li>Kind</li>
+	<li>Psychopath</li>
+	<li>Cannibal</li>
+	<li>Abrasive</li>
+	<li>TooSmart</li>
+	<li>Brawler</li>
+	<li>Masochist</li>
+	<li>NightOwl</li>
+	<li>Jealous</li>
+	<li>Ascetic</li>
+	<li>Gay</li>
+	<li>Bisexual</li>
+	<li>Asexual</li>
+	<li>AnnoyingVoice</li>
+	<li>CreepyBreathing</li>
+	<li>Pyromaniac</li>
+	<li>Wimp</li>
+	<li>Nimble</li>
+	<li>FastLearner</li>
+	<li>SlowLearner</li>
+	<li>Undergrounder</li>
+	<li>Transhumanist</li>
+	<li>BodyPurist</li>
+	<li>DislikesMen</li>
+	<li>DislikesWomen</li>
+	<li>GreatMemory</li>
+	<li>Tough</li>
+	<li>TorturedArtist</li>
+	<li>Gourmand</li>
+	<li>QuickSleeper</li>
+	</whiteTraitList>
+        <onlyGetRaceRestrictedTraits>true</onlyGetRaceRestrictedTraits>
+      </raceRestriction>
 		</alienRace>
 		<statBases>
             <MarketValue>1750</MarketValue>
@@ -136,8 +187,9 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>80</lifeExpectancy>
 			<leatherDef>Leather_Bolian</leatherDef>
-            <nameCategory>HumanStandard</nameCategory>
-            <body>Human</body>
+	  <nameGenerator>NamerBolian</nameGenerator>
+	  <nameGeneratorFemale>NamerBolian</nameGeneratorFemale>
+            <body>Bolian</body>
             <baseBodySize>1</baseBodySize>
             <baseHealthScale>1</baseHealthScale>
             <foodType>OmnivoreHuman</foodType>
@@ -200,6 +252,98 @@
 				</li>
 			</lifeStageAges>
 		</race>
+<recipes>
+	<li>InstallArchotechEye</li>
+	<li>InstallArchotechArm</li>
+	<li>InstallArchotechLeg</li>
+	<li>InstallPowerClaw</li>
+	<li>InstallBionicEye</li>
+	<li>InstallBionicArm</li>
+	<li>InstallBionicLeg</li>
+	<li>InstallBionicSpine</li>
+	<li>InstallBionicHeart</li>
+	<li>InstallBionicStomach</li>
+	<li>InstallBionicEar</li>
+	<li>InstallSimpleProstheticArm</li>
+	<li>InstallSimpleProstheticLeg</li>
+	<li>InstallSimpleProstheticHeart</li>
+	<li>InstallCochlearImplant</li>
+	<li>InstallPegLeg</li>
+	<li>InstallWoodenFoot</li>
+	<li>InstallDenture</li>
+	<li>InstallJoywire</li>
+	<li>InstallPainstopper</li>
+	<li>InstallNaturalHeart</li>
+	<li>InstallNaturalLung</li>
+	<li>InstallNaturalKidney</li>
+	<li>InstallNaturalLiver</li>
+	<li>ExciseCarcinoma</li>
+	<li>AdministerMechSerumHealer</li>
+	<li>RemoveBodyPart</li>
+	<li>Euthanize</li>
+	<li>Anesthetize</li>
+</recipes>		
 	</AlienRace.ThingDef_AlienRace>
-	
+
+<AlienRace.RaceSettings>
+<defName>BolianRaceSettings</defName>
+<pawnKindSettings>
+<alienslavekinds>
+	<li>
+		<kindDefs>
+			<li>ABolianSlave</li>
+		</kindDefs>
+		<chance>50.0</chance>
+	</li>
+</alienslavekinds>
+<alienrefugeekinds>
+	<li>
+		<kindDefs>
+					<li>ABolianCommandoElite</li>
+					<li>ABolianCommando</li>
+					<li>ABolianHunter</li>
+					<li>ABolianRecruit</li>
+					<li>ABolianRuler</li>
+					<li>ABolianSecurityGuard</li>
+		</kindDefs>
+				<chance>45.0</chance>
+	</li>
+</alienrefugeekinds>
+<alienwandererkinds>
+	<li>
+	<pawnKindEntries>
+	<li>
+	<kindDefs>
+					<li>ABolianCommandoElite</li>
+					<li>ABolianCommando</li>
+					<li>ABolianHunter</li>
+					<li>ABolianRecruit</li>
+					<li>ABolianRuler</li>
+					<li>ABolianSecurityGuard</li>
+	</kindDefs>
+		<chance>45.0</chance>
+	</li>
+	</pawnKindEntries>
+	<factionDefs>
+		<li>FederationPlayer</li> 
+	</factionDefs>
+	</li>
+</alienwandererkinds>
+<startingColonists>
+<li>
+<pawnKindEntries>
+	<li>
+		<kindDefs>
+			<li>PlayerBolian</li>
+		</kindDefs>
+				<chance>45.0</chance>
+	</li>
+</pawnKindEntries>
+<factionDefs>
+	<li>FederationPlayer</li> 
+</factionDefs>
+</li>
+</startingColonists>
+</pawnKindSettings>
+</AlienRace.RaceSettings>	
 </Defs>

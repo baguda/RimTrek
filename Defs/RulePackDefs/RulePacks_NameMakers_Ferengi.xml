@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!-- ============================ Ferengi Names ========================== -->
+   
+  <RulePackDef>
+    <defName>NamerFerengiUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>FerFirstMale->NameBanks/Names_First_Ferengi_Male</li>
+        <li>FerFirstFemale->NameBanks/Names_First_Ferengi_Female</li>
+        <li>FerLast->NameBanks/Names_Last_Ferengi</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFerengiMale</defName>
+    <include>
+      <li>NamerFerengiUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FerFirstMale] [FerLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFerengiFemale</defName>
+    <include>
+      <li>NamerFerengiUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[FerFirstFemale] [FerLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerFactionFerengi</defName>
+	 <include>
+      <li>NamerFerengiUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->House of [FerLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+   <!-- ============================ Ocampa Names ========================== -->
+   
+  <RulePackDef>
+    <defName>NamerOcampaUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>OcaFirstMale->NameBanks/Names_First_Ocampa_Male</li>
+        <li>OcaFirstFemale->NameBanks/Names_First_Ocampa_Female</li>
+        <li>OcaLast->NameBanks/Names_Last_Ocampa</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerOcampaMale</defName>
+    <include>
+      <li>NamerOcampaUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[OcaFirstMale] [OcaLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerOcampaFemale</defName>
+    <include>
+      <li>NamerOcampaUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[OcaFirstFemale] [OcaLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

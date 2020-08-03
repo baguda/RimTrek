@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>BolBlood</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Bolian Biology</label>
+        <description>{PAWN_nameDef} is a Bolian from the alpha quadrant. {PAWN_pronoun} is an example of successful integration.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

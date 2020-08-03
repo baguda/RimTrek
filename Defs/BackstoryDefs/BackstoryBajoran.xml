@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <!--Bajoran Adult-->
+<AlienRace.BackstoryDef>
+
+    <defName>Bajoran_Honor</defName>
+    <title>Bajoran Honor Guard</title>
+    <titleShort>Honored</titleShort>
+    <baseDescription>[PAWN_nameDef] studied hard during their childhood and became a renowned member of the Bajoran honor guard.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+   
+ </AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>Bajoran_ICO</defName>
+    <title>Bajoran Ice Cutter Operator</title>
+    <titleShort>Operator</titleShort>
+    <baseDescription>[PAWN_nameDef] became a master at driving the Ice Cutter, the traditional vehicle of the Bajorans.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+   
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef>
+
+    <defName>Bajoran_HPainter</defName>
+    <title>Bajoran Hand Painter</title>
+    <titleShort>Hand-painter</titleShort>
+    <baseDescription>[PAWN_nameDef] studied hard during their childhood and became renowned painter.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Artistic</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+   
+ </AlienRace.BackstoryDef>
+ 
+ <AlienRace.BackstoryDef>
+
+    <defName>Bajoran_ICMember</defName>
+    <title>Bajoran Council Member</title>
+    <titleShort>Councilor</titleShort>
+    <baseDescription>[PAWN_nameDef] was a renowned politician and joined the Bajoran Imperial Council.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+   
+ </AlienRace.BackstoryDef>
+  
+   <!--Bajoran Child-->
+   
+<AlienRace.BackstoryDef>
+
+    <defName>Bajoran_AChild</defName>
+    <title>Bajoran Adopted Child</title>
+    <titleShort>Adopted</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on the moon of Andoria to a loving father and mother. They went missing during a trip into the frozen wastes of Andoria and [PAWN_pronoun] was adopted by a warrior and his wife.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Bajoran_CChild</defName>
+    <title>Bajoran Coma Child</title>
+    <titleShort>Coma-child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on  Andoria to a loving father and mother. After an accident with a phaser, [PAWN_pronoun] went into a coma for 3 years and awoke speaking Klingon.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Bajoran_Offworler</defName>
+    <title>Bajoran Offworlder</title>
+    <titleShort>Offworlder</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on a small colony in the Beta Quadrant. She wasraised by farmers, to be a farmer. </baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Bajoran_MCadet</defName>
+    <title>Bajoran Cadet</title>
+    <titleShort>Cadet</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Andoria and became a cadet at their first chance. [PAWN_pronoun] was taught how to fight hand-to-hand and with ranged weapons.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Bajoran</li>
+    </spawnCategories>
+</AlienRace.BackstoryDef>
+</Defs>

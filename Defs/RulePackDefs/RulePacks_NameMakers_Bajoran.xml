@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerBajoranUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>BajFirstMale->NameBanks/Names_First_Bajoran_Male</li>
+        <li>BajFirstFemale->NameBanks/Names_First_Bajoran_Female</li>
+        <li>BajLast->NameBanks/Names_Last_Bajoran</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerBajoranMale</defName>
+    <include>
+      <li>NamerBajoranUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[BajFirstMale] [BajLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerBajoranFemale</defName>
+    <include>
+      <li>NamerBajoranUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[BajFirstFemale] [BajLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

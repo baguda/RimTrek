@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>TrillRecep</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Trill Cooperation</label>
+        <description>{PAWN_nameDef} is a Trill from the alpha quadrant. {PAWN_pronoun} is very obedient.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

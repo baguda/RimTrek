@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   <!--Betazoid Adult-->
+
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Ambassador</defName>
+    <title>Betazoid Ambassador</title>
+    <titleShort>Ambassador</titleShort>
+    <baseDescription>[PAWN_nameDef] used their natural Betazoid telepathy to further a career in diplomacy.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+ 
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Counsellor</defName>
+    <title>Betazoid Counsellor</title>
+    <titleShort>Counsellor</titleShort>
+    <baseDescription>[PAWN_nameDef] used their natural Betazoid telepathy to assist others with their mental health.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Psychotic</defName>
+    <title>Betazoid Psychotic</title>
+    <titleShort>Psychotic</titleShort>
+    <baseDescription>[PAWN_nameDef] was mostly cut off from their Betazoid powers and this drove [PAWN_pronoun] mad.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+    <forcedTraits>
+           <li>
+			<defName>PsychicSensitivity</defName>
+			<degree>-1</degree>
+			<chance>100</chance>
+           </li>
+	</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Savant</defName>
+    <title>Betazoid Ambassador</title>
+    <titleShort>Ambassador</titleShort>
+    <baseDescription>[PAWN_nameDef] used their natural Betazoid telepathy to further a career in diplomacy.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+    <forcedTraits>
+           <li>
+			<defName>PsychicSensitivity</defName>
+			<degree>2</degree>
+			<chance>100</chance>
+           </li>
+	</forcedTraits>
+	
+</AlienRace.BackstoryDef>
+  
+   <!--Betazoid Child-->
+   
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Empath</defName>
+    <title>Betazoid Empath</title>
+    <titleShort>Empath</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Betazed and recieved their telephatic abilities at adolescence. [PAWN_nameDef] found [PAWN_pronoun] had an affinity for reading emotions.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Orphan</defName>
+    <title>Betazoid Orphan</title>
+    <titleShort>Orphan</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Betazed to two loving parents, however tragedy struck when they were killed in a freak turbolift accident. [PAWN_nameDef] was sent to live with their grandmother.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_NobleChild</defName>
+    <title>Betazoid Noble-child</title>
+    <titleShort>Noble-child</titleShort>
+    <baseDescription>[PAWN_nameDef] was born on Betazed to an elitist noble family. [PAWN_nameDef] did not learn to talk until she met her first off-worlder. [PAWN_pronoun] had a pet cat they cared for.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Betazoid_Thief</defName>
+    <title>Betazoid Thief</title>
+    <titleShort>Thief</titleShort>
+    <baseDescription>[PAWN_nameDef] was born used their telepathic powers to become an adept thief. [PAWN_pronoun] cared for plants in their spare time.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Betazoid</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+</Defs>

@@ -191,4 +191,42 @@
 		</stuffProps>
 	</ThingDef>	
 	
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Betazoid</defName>
+		<label>Betazoid leather</label>
+		<description>Tanned, dried, scraped Betazoid skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>	
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>Leather_Ferengi</defName>
+		<label>Ferengi leather</label>
+		<description>Tanned, dried, scraped Ferengi skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(143,194,211)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(184, 204, 237)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>		
+	
 </Defs>
