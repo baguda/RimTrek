@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>FerGreed</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Ferengi Greed</label>
+        <description>{PAWN_nameDef} is a Ferengi. {PAWN_nameDef} loves profit!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

@@ -1,60 +1,579 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef Name="BaseTrillPawnKind">
-		<defName>O21_Trill</defName>
-		<label>Trill</label>
-		<race>O21_Alien_Trill</race>
-		<combatPower>30</combatPower>
-		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
-		<isFighter>false</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<defaultFactionType>O21_TrillPlayerColony</defaultFactionType>
-		<backstoryCategories>
-			<li>Offworld</li>
-		</backstoryCategories>
-		<apparelTags>
-			<li>IndustrialBasic</li>
-		</apparelTags>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>350~600</apparelMoney>
-		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-		<techHediffsChance>0.03</techHediffsChance>
-		<techHediffsMoney>50~800</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-			<li>Simple</li>
-		</techHediffsTags>
-	</PawnKindDef>
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>PlayerTrill</defName>
+    <label>civilian</label>
+    <race>Alien_Trill</race>
+	<defaultFactionType>PlayerColony</defaultFactionType>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>450</min>
+      <max>500</max>
+    </weaponMoney>
+  </PawnKindDef>
 
-	<PawnKindDef Name="BaseTrillPawnKindTribal">
-		<defName>O21_TrillTribal</defName>
-		<label>Trill</label>
-		<race>O21_Alien_Trill</race>
-		<combatPower>30</combatPower>
-		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
-		<isFighter>false</isFighter>
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<forceNormalGearQuality>true</forceNormalGearQuality>
-		<defaultFactionType>O21_TrillPlayerTribe</defaultFactionType>
-		<backstoryCategories>
-			<li>Tribal</li>
-		</backstoryCategories>
-		<apparelTags>
-			<li>Neolithic</li>
-		</apparelTags>
-		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>200~200</apparelMoney>
-		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<techHediffsChance>0.02</techHediffsChance>
-		<techHediffsMoney>
-			<min>50</min>
-			<max>800</max>
-		</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-		</techHediffsTags>
-	</PawnKindDef>
+  <!-- Ally-->
+  <!-- ============================ Fed Civilians ========================== -->
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>ATrillColonist</defName>
+    <label>colonist</label>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>ATrillSlave</defName>
+    <label>slave</label>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
 
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>ATrillElite</defName>
+    <race>Alien_Trill</race>
+    <label>elite</label>
+    <labelPlural>elites</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>ATrillTrader</defName>
+    <label>colony trader</label>
+    <trader>true</trader>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>600</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Fed Security ========================== -->
+  
+  <PawnKindDef Name="ATrillSecurityGuard" ParentName="FedCivBase">
+    <defName>ATrillSecurityGuard</defName>
+    <label>security guard</label>
+    <race>Alien_Trill</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1300</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>130</min>
+        <max>300</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+    <!-- ============================ Fed Military ========================== -->
+  
+  <PawnKindDef ParentName="FedMilBase">
+    <defName>ATrillRecruit</defName>
+    <label>recruit</label>
+    <combatPower>70</combatPower>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ATrillHunter" ParentName="FedMilBase">
+    <defName>ATrillHunter</defName>
+    <label>hunter</label>
+    <race>Alien_Trill</race>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>150</min>
+            <max>250</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="ATrillCommando" ParentName="FedMilBase">
+    <defName>ATrillCommando</defName>
+    <label>commando</label>
+    <race>Alien_Trill</race>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>280</min>
+            <max>600</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ATrillCommandoElite" ParentName="ATrillCommando">
+     <defName>ATrillCommandoElite</defName>
+    <label>elite commando</label>
+    <race>Alien_Trill</race>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>420</min>
+            <max>680</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- Enemy-->
+  <!-- ============================ Fed Civilians ========================== -->
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>ETrillColonist</defName>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <label>colonist</label>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>400</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+    <PawnKindDef ParentName="FedCivBase">
+    <defName>ETrillSlave</defName>
+    <label>slave</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>0</min>
+      <max>0</max>
+    </weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>ETrillElite</defName>
+    <race>Alien_Trill</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <label>elite</label>
+    <labelPlural>elites</labelPlural>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>50</minGenerationAge>
+	<weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FedCivBase">
+    <defName>ETrillTrader</defName>
+    <label>colony trader</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <trader>true</trader>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+	<li>Trill</li>
+	</backstoryCategories>
+	<weaponMoney>
+      <min>600</min>
+      <max>1000</max>
+    </weaponMoney>
+  </PawnKindDef>
+  
+  <!-- ============================ Fed Security ========================== -->
+  
+  <PawnKindDef Name="ETrillSecurityGuard" ParentName="FedCivBase">
+    <defName>ETrillSecurityGuard</defName>
+    <label>security guard</label>
+    <race>Alien_Trill</race>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>30</maxGenerationAge>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>700</min>
+      <max>1200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1000</min>
+      <max>1300</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.001</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>130</min>
+        <max>300</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+    <!-- ============================ Fed Military ========================== -->
+  
+  <PawnKindDef ParentName="FedMilBase">
+    <defName>ETrillRecruit</defName>
+    <label>recruit</label>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>70</combatPower>
+    <race>Alien_Trill</race>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ETrillHunter" ParentName="FedMilBase">
+    <defName>ETrillHunter</defName>
+    <label>hunter</label>
+    <race>Alien_Trill</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>90</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>150</min>
+            <max>250</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="ETrillCommando" ParentName="FedMilBase">
+    <defName>ETrillCommando</defName>
+    <label>commando</label>
+    <race>Alien_Trill</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>135</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1200</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>280</min>
+            <max>600</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="ETrillCommandoElite" ParentName="ETrillCommando">
+     <defName>ETrillCommandoElite</defName>
+    <label>elite commando</label>
+    <race>Alien_Trill</race>
+	<defaultFactionType>FederationEnemy</defaultFactionType>
+    <combatPower>220</combatPower>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+	<backstoryCategories>
+		<li>Trill</li>
+	</backstoryCategories>
+    <weaponMoney>
+      <min>1600</min>
+      <max>2000</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>420</min>
+            <max>680</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>  
+  
 </Defs>

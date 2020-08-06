@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>AndFrig</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Frigid Andorian Attitude</label>
+        <description>{PAWN_nameDef} is an Andorian from the alpha quadrant. {PAWN_pronoun} is typically clannish and somewhat hostile towards outsiders. Luckily the Federation ruling class has decided that Andorians like {PAWN_nameDef} should move to Earth to help with the economy.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

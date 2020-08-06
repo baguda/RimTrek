@@ -100,7 +100,7 @@
           <AVulcanElite>1</AVulcanElite>
           <AFedHumRecruit>5</AFedHumRecruit>
           <AAndorianRecruit>5</AAndorianRecruit>
-		          <AVulcanRecruit>5</AVulcanRecruit>
+		  <AVulcanRecruit>5</AVulcanRecruit>
           <ATellariteRecruit>5</ATellariteRecruit>
           <AVulcanCommandoElite>1</AVulcanCommandoElite>
         </options>
@@ -130,7 +130,7 @@
           <AVulcanElite>1</AVulcanElite>
           <AFedHumRecruit>5</AFedHumRecruit>
           <AVulcanRecruit>5</AVulcanRecruit>
-		          <AAndorianRecruit>5</AAndorianRecruit>
+		  <AAndorianRecruit>5</AAndorianRecruit>
           <ATellariteRecruit>5</ATellariteRecruit>
           <AVulcanCommandoElite>1</AVulcanCommandoElite>
         </options>

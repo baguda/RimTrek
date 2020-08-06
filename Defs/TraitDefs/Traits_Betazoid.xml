@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>BetaEmo</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Betazoid Empathy</label>
+        <description>{PAWN_nameDef} is a Betazoid from the alpha quadrant. {PAWN_pronoun} is an expert on the minds of other people, and will not hesitate to get involved!</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

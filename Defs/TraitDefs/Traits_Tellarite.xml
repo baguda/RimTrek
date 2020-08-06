@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>TellLib</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>garrulous Tellarite</label>
+        <description>{PAWN_nameDef} is a Tellarite from the alpha quadrant. Tellarites love to argue. {PAWN_nameDef} loves to hear different opinions. However, now that some opinions are illegal, Tellarites like {PAWN_nameDef} are getting in trouble for learning about those opinions.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

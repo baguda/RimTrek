@@ -2,7 +2,7 @@
 <Defs>
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Bajoran">
-		<defName>O21_Alien_Bajoran</defName>
+		<defName>Alien_Bajoran</defName>
 		<label>Bajoran</label>
 		<description>The Bajorans (also known as the "Bajora") were a humanoid species native to the planet Bajor in the Alpha Quadrant. The Bajorans had one of the oldest and richest cultures in the quadrant, though in the 24th century, they suffered greatly at the hands of the Cardassian Union. With their liberation from the Cardassians and the discovery of the Bajoran wormhole in 2369, the Bajorans were thrust onto the interstellar stage.</description>
 		<alienRace>
@@ -10,7 +10,12 @@
 				<maleGenderProbability>0.5</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<humanRecipeImport>true</humanRecipeImport>
-				<forcedRaceTraitEntries />
+				<forcedRaceTraitEntries>
+				  <li>
+					 <defName>BajTer</defName>
+					 <chance>100</chance>
+				  </li>
+				</forcedRaceTraitEntries>
 				<disallowedTraits />
 				<chemicalSettings />
 				<factionRelations />	
@@ -43,7 +48,53 @@
 				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
 			</relationSettings>
 			<thoughtSettings />
-			<raceRestriction />
+			<raceRestriction>
+	<whiteTraitList>
+	<li>SpeedOffset</li>
+	<li>DrugDesire</li>
+	<li>NaturalMood</li>
+	<li>Nerves</li>
+	<li>Neurotic</li>
+	<li>Industriousness</li>
+	<li>PsychicSensitivity</li>	
+	<li>ShootingAccuracy</li>
+	<li>Beauty</li>
+	<li>Nudist</li>
+	<li>Immunity</li>
+	<li>Bloodlust</li>
+	<li>Kind</li>
+	<li>Psychopath</li>
+	<li>Cannibal</li>
+	<li>Abrasive</li>
+	<li>TooSmart</li>
+	<li>Brawler</li>
+	<li>Masochist</li>
+	<li>NightOwl</li>
+	<li>Jealous</li>
+	<li>Ascetic</li>
+	<li>Gay</li>
+	<li>Bisexual</li>
+	<li>Asexual</li>
+	<li>AnnoyingVoice</li>
+	<li>CreepyBreathing</li>
+	<li>Pyromaniac</li>
+	<li>Wimp</li>
+	<li>Nimble</li>
+	<li>FastLearner</li>
+	<li>SlowLearner</li>
+	<li>Undergrounder</li>
+	<li>Transhumanist</li>
+	<li>BodyPurist</li>
+	<li>DislikesMen</li>
+	<li>DislikesWomen</li>
+	<li>GreatMemory</li>
+	<li>Tough</li>
+	<li>TorturedArtist</li>
+	<li>Gourmand</li>
+	<li>QuickSleeper</li>
+	</whiteTraitList>
+        <onlyGetRaceRestrictedTraits>true</onlyGetRaceRestrictedTraits>
+      </raceRestriction>
 		</alienRace>
 		<statBases>
             <MarketValue>1750</MarketValue>
@@ -117,8 +168,9 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>80</lifeExpectancy>
 			<leatherDef>Leather_Bajoran</leatherDef>
-            <nameCategory>HumanStandard</nameCategory>
-            <body>Human</body>
+	  <nameGenerator>NamerBajoranMale</nameGenerator>
+	  <nameGeneratorFemale>NamerBajoranFemale</nameGeneratorFemale>
+            <body>Bajoran</body>
             <baseBodySize>1</baseBodySize>
             <baseHealthScale>1</baseHealthScale>
             <foodType>OmnivoreHuman</foodType>
@@ -181,6 +233,100 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		
+<recipes>
+	<li>InstallArchotechEye</li>
+	<li>InstallArchotechArm</li>
+	<li>InstallArchotechLeg</li>
+	<li>InstallPowerClaw</li>
+	<li>InstallBionicEye</li>
+	<li>InstallBionicArm</li>
+	<li>InstallBionicLeg</li>
+	<li>InstallBionicSpine</li>
+	<li>InstallBionicHeart</li>
+	<li>InstallBionicStomach</li>
+	<li>InstallBionicEar</li>
+	<li>InstallSimpleProstheticArm</li>
+	<li>InstallSimpleProstheticLeg</li>
+	<li>InstallSimpleProstheticHeart</li>
+	<li>InstallCochlearImplant</li>
+	<li>InstallPegLeg</li>
+	<li>InstallWoodenFoot</li>
+	<li>InstallDenture</li>
+	<li>InstallJoywire</li>
+	<li>InstallPainstopper</li>
+	<li>InstallNaturalHeart</li>
+	<li>InstallNaturalLung</li>
+	<li>InstallNaturalKidney</li>
+	<li>InstallNaturalLiver</li>
+	<li>ExciseCarcinoma</li>
+	<li>AdministerMechSerumHealer</li>
+	<li>RemoveBodyPart</li>
+	<li>Euthanize</li>
+	<li>Anesthetize</li>
+</recipes>
 	</AlienRace.ThingDef_AlienRace>
+
+<AlienRace.RaceSettings>
+<defName>BajoranRaceSettings</defName>
+<pawnKindSettings>
+<alienslavekinds>
+	<li>
+		<kindDefs>
+			<li>ABajoranSlave</li>
+		</kindDefs>
+		<chance>50.0</chance>
+	</li>
+</alienslavekinds>
+<alienrefugeekinds>
+	<li>
+		<kindDefs>
+					<li>ABajoranCommandoElite</li>
+					<li>ABajoranCommando</li>
+					<li>ABajoranHunter</li>
+					<li>ABajoranRecruit</li>
+					<li>ABajoranRuler</li>
+					<li>ABajoranSecurityGuard</li>
+		</kindDefs>
+				<chance>45.0</chance>
+	</li>
+</alienrefugeekinds>
+<alienwandererkinds>
+	<li>
+	<pawnKindEntries>
+	<li>
+	<kindDefs>
+					<li>ABajoranCommandoElite</li>
+					<li>ABajoranCommando</li>
+					<li>ABajoranHunter</li>
+					<li>ABajoranRecruit</li>
+					<li>ABajoranRuler</li>
+					<li>ABajoranSecurityGuard</li>
+	</kindDefs>
+		<chance>45.0</chance>
+	</li>
+	</pawnKindEntries>
+	<factionDefs>
+		<li>FederationPlayer</li> 
+	</factionDefs>
+	</li>
+</alienwandererkinds>
+<startingColonists>
+<li>
+<pawnKindEntries>
+	<li>
+		<kindDefs>
+			<li>PlayerBajoran</li>
+		</kindDefs>
+				<chance>45.0</chance>
+	</li>
+</pawnKindEntries>
+<factionDefs>
+	<li>FederationPlayer</li> 
+</factionDefs>
+</li>
+</startingColonists>
+</pawnKindSettings>
+</AlienRace.RaceSettings>		
 	
 </Defs>

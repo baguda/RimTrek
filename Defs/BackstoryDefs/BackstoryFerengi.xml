@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	   <!--Ferengi Adult-->
+	   
+<AlienRace.BackstoryDef>
+
+    <defName>Ferengi_Dancer</defName>
+    <title>Ferengi Exotic Dancer</title>
+    <titleShort>Dancer</titleShort>
+    <baseDescription>[PAWN_nameDef] found [PAWN_pronoun] had an affinity for erotic dancing.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	   <li>Ferengi</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>
+
+<AlienRace.BackstoryDef>
+
+    <defName>Ferengi_Crimelord</defName>
+    <title>Ferengi Crimelord</title>
+    <titleShort>Crimelord</titleShort>
+    <baseDescription>[PAWN_nameDef] killed their master and started a new Criminal Empire.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Ferengi</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>	 
+
+<AlienRace.BackstoryDef>
+
+    <defName>Ferengi_Majordomo</defName>
+    <title>Ferengi Majordomo</title>
+    <titleShort>Majordomo</titleShort>
+    <baseDescription>[PAWN_nameDef] worked their way to the top and became their Master's right-hand man. [PAWN_nameDef] found [PAWN_pronoun] had an affinity for socialising.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Ferengi</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>	 
+
+<AlienRace.BackstoryDef>
+
+    <defName>Ferengi_Grunt</defName>
+    <title>Ferengi Grunt</title>
+    <titleShort>Grunt</titleShort>
+    <baseDescription>[PAWN_nameDef] is not brite, but he has a capacity for violence.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>MFerengi</li>
+    </spawnCategories>
+	
+</AlienRace.BackstoryDef>	 
+ 
+ 
+	   <!--Ferengi Child-->
+	   
+ <AlienRace.BackstoryDef>
+			
+	<defName>Ferengi_Slave</defName>
+    <title>Ferengi Slave</title>
+    <titleShort>Slave</titleShort>
+    <baseDescription>[PAWN_nameDef] was sold as a slave on the black market. Being a child, [PAWN_pronoun] was used as a maid this led to [PAWN_pronoun] receiving no education.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Ferengi</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+			
+	<defName>Ferengi_Outlaw</defName>
+    <title>Ferengi Outlaw</title>
+    <titleShort>Outlaw</titleShort>
+    <baseDescription>[PAWN_nameDef] was raised to a life of crime. Being a child, [PAWN_pronoun] was able to get into places adults could not.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Ferengi</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+			
+	<defName>Ferengi_CChild</defName>
+    <title>Ferengi Crime-child</title>
+    <titleShort>Crime-child</titleShort>
+    <baseDescription>[PAWN_nameDef] was the only child to a very wealthy and powerful Crimelord.[PAWN_pronoun] was groomed to take over the 'family business'.
+</baseDescription>
+
+    <bodyTypeMale>Fat</bodyTypeMale>
+    <bodyTypeFemale>Fat</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Ferengi</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+ <AlienRace.BackstoryDef>
+			
+	<defName>Ferengi_Refugee</defName>
+    <title>Ferengi Refugee</title>
+    <titleShort>Refugee</titleShort>
+    <baseDescription>[PAWN_nameDef] narrowly escaped raiding pirates due to the sacrifice of her mother. [PAWN_pronoun] swears revenge on the ones who destroyed their village.
+</baseDescription>
+
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+	<li>Ferengi</li>
+    </spawnCategories>
+   
+</AlienRace.BackstoryDef>
+
+</Defs>

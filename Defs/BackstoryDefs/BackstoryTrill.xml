@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--Trill Adult -->
+  <AlienRace.BackstoryDef>
+
+    <defName>Trill_Scientist</defName>
+    <title>Trill Analyst</title>
+    <titleShort>Analyst</titleShort>
+    <baseDescription>[PAWN_nameDef] studied hard during their childhood and became a renowned scientist.
+</baseDescription>
+
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+    
+    
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+
+    <defName>Trill_Architect</defName>
+    <title>Trill Architect</title>
+    <titleShort>Architect</titleShort>
+    <baseDescription>[PAWN_nameDef] is quite adept at planning and even building said buildings.
+</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+    
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+
+    <defName>Trill_Vet</defName>
+    <title>Trill Veterinarian</title>
+    <titleShort>Vet</titleShort>
+    <baseDescription>[PAWN_nameDef] cared for the symbionts that would be given to future joined Trill.
+</baseDescription>
+
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Animals</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+    
+    
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+
+    <defName>Trill_Colony</defName>
+    <title>Trill Settler</title>
+    <titleShort>Coloniser</titleShort>
+    <baseDescription>[PAWN_nameDef] is part of the effort to explore and colonise for the Trill.
+</baseDescription>
+
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+    
+    
+  </AlienRace.BackstoryDef>
+  
+   
+    <AlienRace.BackstoryDef>
+
+    <defName>Trill_Joined</defName>
+    <title>Joined Trill</title>
+    <titleShort>Joined</titleShort>
+    <baseDescription>[PAWN_nameDef] studied fanatically during childhood and[PAWN_pronoun] was rewarded with a Symbiont. [PAWN_nameDef] took the surname of said symbiont and now claims the knowledge and memories of the symbiont's previous hosts.</baseDescription>
+
+	  <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+	<!--
+		<forcedHediffs>
+		<li>Trill_Joined_Hediff</li>
+	</forcedHediffs>
+    
+-->
+ 
+  </AlienRace.BackstoryDef>
+  
+   <!--Trill Child-->
+   
+ <AlienRace.BackstoryDef>
+
+    <defName>Trill_SpacerKid</defName>
+    <title>Trill Engineering Progidy </title>
+    <titleShort>Progidy</titleShort>
+    <baseDescription>[PAWN_nameDef] had a distinct, innate ability for engineering, [PAWN_pronoun] also learned to coordinate with others in building projects.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+    
+    
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef>
+
+    <defName>Trill_ColonyKid</defName>
+    <title>Trill Lost Child</title>
+    <titleShort>Lost</titleShort>
+    <baseDescription>[PAWN_nameDef] lost his parents while on holiday. [PAWN_pronoun] learned the ropes of growing, talking, and building from his saviours, a pirate gang that took him on.</baseDescription>
+
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Trill</li>
+    </spawnCategories>
+    
+    
+  </AlienRace.BackstoryDef>
+</Defs>

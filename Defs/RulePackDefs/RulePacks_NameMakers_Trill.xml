@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerTrillUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>TriFirstMale->NameBanks/Names_First_Trill_Male</li>
+        <li>TriFirstFemale->NameBanks/Names_First_Trill_Female</li>
+        <li>TriLast->NameBanks/Names_Last_Trill</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerTrillMale</defName>
+    <include>
+      <li>NamerTrillUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[TriFirstMale] [TriLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerTrillFemale</defName>
+    <include>
+      <li>NamerTrillUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[TriFirstFemale] [TriLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

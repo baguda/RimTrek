@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraitDef>
+    <defName>VulcanLog</defName>
+    <commonality>0.2</commonality>
+    <degreeDatas>
+      <li>
+        <label>Vulcan Logic</label>
+        <description>{PAWN_nameDef} is a Vulcan from the alpha quadrant. Vulcans are masters of logic, so {PAWN_pronoun} is clearly superior to all other races. Indeed, {PAWN_nameDef} is a member of the chosen race. Like other Vulcans, {PAWN_nameDef} prefers to live among his own, but {PAWN_pronoun} is kind enough to use {PAWN_pronoun}'s talents to help the humans despite their primitive ways.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>

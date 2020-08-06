@@ -31,6 +31,7 @@
   <FactionDef>
     <defName>BorgAlly</defName>
     <label>Borg Collective</label>
+    <fixedName>Borg Collective</fixedName>
     <description>A station built and maintained by the Borg for the assimilation of the planets humanoid populations.</description>
     <pawnsPlural>Borg</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -51,7 +52,6 @@
     <hairTags>
 	<li>Rural</li>
     </hairTags>
-    <factionNameMaker>NamerFactionBorg</factionNameMaker>
     <settlementNameMaker>NamerFactionBorg</settlementNameMaker>
     <techLevel>Spacer</techLevel>
     <backstoryFilters>
@@ -104,6 +104,7 @@
   <FactionDef>
     <defName>BorgEnemy</defName>
     <label>Borg Collective</label>
+    <fixedName>Borg Collective</fixedName>
     <description>A station built and maintained by the Borg for the assimilation of the planets humanoid populations.</description>
     <pawnsPlural>Borg</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -124,7 +125,6 @@
     <hairTags>
 	<li>Rural</li>
     </hairTags>
-    <factionNameMaker>NamerFactionBorg</factionNameMaker>
     <settlementNameMaker>NamerFactionBorg</settlementNameMaker>
     <techLevel>Spacer</techLevel>
     <backstoryFilters>

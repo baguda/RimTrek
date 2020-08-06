@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerBetazoidUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>BetaFirstMale->NameBanks/Names_First_Betazoid_Male</li>
+        <li>BetaFirstFemale->NameBanks/Names_First_Betazoid_Female</li>
+        <li>BetaLast->NameBanks/Names_Last_Betazoid</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>NamerBetazoidMale</defName>
+    <include>
+      <li>NamerBetazoidUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[BetaFirstMale] [BetaLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerBetazoidFemale</defName>
+    <include>
+      <li>NamerBetazoidUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[BetaFirstFemale] [BetaLast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
