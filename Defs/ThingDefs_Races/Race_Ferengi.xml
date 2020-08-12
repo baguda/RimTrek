@@ -32,7 +32,10 @@
                 </alienbodytypes>
 				<useGenderedHeads>true</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
-				<alienskincolorgen Class="ColorGenerator_Options">
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
 					<options>
 						<li>
                         <weight>5</weight>
@@ -47,8 +50,9 @@
                         <only>RGB(114, 66, 4)</only>
                     </li>
 					</options>
-				</alienskincolorgen>
-			<useSkincolorForHair>false</useSkincolorForHair>
+					</first>
+            </li>
+			</colorChannels>
 			</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>

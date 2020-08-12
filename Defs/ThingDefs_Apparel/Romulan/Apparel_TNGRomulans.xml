@@ -85,7 +85,7 @@
 				<li>Romulan</li>
 			</tags>
 			<layers Inherit="False">
-				<li>Belt</li>
+				<li>MiddleExtra</li>
 			</layers>
 		</apparel>
 
@@ -118,7 +118,7 @@
 				<li>Romulan</li>
 			</tags>
 			<layers Inherit="False">
-				<li>Belt</li>
+				<li>MiddleExtra</li>
 			</layers>
 		</apparel>
 

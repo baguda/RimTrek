@@ -36,9 +36,12 @@
 						<li>Male</li>
 						<li>Female</li>
 					</alienbodytypes>
-					<alienskincolorgen Class="ColorGenerator_Options" Inherit="False">
-						<options>
-							<li>
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options" Inherit="False">
+					<options>
+						<li>
 								<weight>10</weight>
 								<only>(176, 160, 135)</only>
 							</li>
@@ -51,15 +54,20 @@
 								<only>(156, 140, 117)</only>
 							</li>
 						</options>
-					</alienskincolorgen>
-					<alienhaircolorgen Class="ColorGenerator_Options" Inherit="False">
+					</first>
+				</li>
+					    <li>
+				<name>hair</name>
+				<first Class="ColorGenerator_Options" Inherit="False">
 						<options>
 							<li>
 								<weight>10</weight>
 								<only>(26, 26, 26)</only>
 							</li>
 						</options>
-					</alienhaircolorgen>
+					</first>
+					</li>
+					</colorChannels>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>

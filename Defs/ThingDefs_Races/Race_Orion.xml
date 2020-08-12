@@ -21,7 +21,10 @@
 			<alienPartGenerator>
 				<useGenderedHeads>true</useGenderedHeads>
 				<useGenderedBodies>false</useGenderedBodies>
-				<alienskincolorgen Class="ColorGenerator_Options">
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
 					<options>
 						<li>
                         <weight>5</weight>
@@ -36,8 +39,12 @@
                         <only>RGB(0,128,0)</only>
                     </li>
 					</options>
-				</alienskincolorgen>
-				<alienhaircolorgen Class="ColorGenerator_Options">
+				</first>
+				</li>
+
+					    <li>
+				<name>hair</name>
+				<first Class="ColorGenerator_Options">
                     <options>
                     <li>
                         <weight>5</weight>
@@ -48,8 +55,9 @@
                         <only>RGB(50,50,50)</only>
                     </li>
                     </options>
-            </alienhaircolorgen>
-			<useSkincolorForHair>false</useSkincolorForHair>
+					</first>
+            </li>
+			</colorChannels>
 			<alienbodytypes>
 				 <li>Fat</li>
 				 <li>Hulk</li>
@@ -290,35 +298,43 @@
 	<alienPartGenerator>
 	<useGenderedHeads>true</useGenderedHeads>
 	<useGenderedBodies>false</useGenderedBodies>
-	<alienskincolorgen Class="ColorGenerator_Options">
-		<options>
-			<li>
-			<weight>5</weight>
-			<only>RGB(144,238,144)</only>
-		</li>
-		<li>
-			<weight>5</weight>
-			<only>RGB(143,188,143)</only>
-		</li>
-		 <li>
-			<weight>5</weight>
-			<only>RGB(0,128,0)</only>
-		</li>
-		</options>
-	</alienskincolorgen>
-	<alienhaircolorgen Class="ColorGenerator_Options">
-		<options>
-		<li>
-			<weight>5</weight>
-			<only>RGB(128,0,0)</only>
-		</li>
-		<li>
-			<weight>5</weight>
-			<only>RGB(50,50,50)</only>
-		</li>
-		</options>
-	</alienhaircolorgen>
-	<useSkincolorForHair>false</useSkincolorForHair>		
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
+					<options>
+						<li>
+                        <weight>5</weight>
+                        <only>RGB(144,238,144)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGB(143,188,143)</only>
+                    </li>
+					 <li>
+                        <weight>5</weight>
+                        <only>RGB(0,128,0)</only>
+                    </li>
+					</options>
+				</first>
+				</li>
+
+					    <li>
+				<name>hair</name>
+				<first Class="ColorGenerator_Options">
+                    <options>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGB(128,0,0)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGB(50,50,50)</only>
+                    </li>
+                    </options>
+					</first>
+            </li>
+			</colorChannels>		
 	<alienbodytypes>
 		 <li>FemaleBB</li>
 		 <li>Female</li>

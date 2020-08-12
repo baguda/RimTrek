@@ -30,7 +30,10 @@
 						<li>Narrow_Pointy</li>
 						<li>Narrow_Wide</li>
 					</aliencrowntypes>
-					<alienskincolorgen Class="ColorGenerator_Options" Inherit="False">
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options" Inherit="False">
 						<options>
 							<li>
 								<weight>10</weight>
@@ -45,7 +48,9 @@
 								<only>(77, 149, 191)</only>
 							</li>
 						</options>
-					</alienskincolorgen>
+					</first>
+            </li>
+			</colorChannels>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
