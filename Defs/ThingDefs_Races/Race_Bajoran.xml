@@ -21,16 +21,79 @@
 				<factionRelations />	
 				<notXenophobistTowards />
 				<immuneToXenophobia>false</immuneToXenophobia>
-				<alienPartGenerator>
-					<aliencrowntypes Inherit="False">
-						<li>Average_Normal</li>
-						<li>Average_Wide</li>
-						<li>Average_Pointy</li>
-						<li>Narrow_Normal</li>
-						<li>Narrow_Pointy</li>
-						<li>Narrow_Wide</li>
-					</aliencrowntypes>
-				</alienPartGenerator>
+			<alienPartGenerator>
+				<useGenderedHeads>true</useGenderedHeads>
+				<useGenderedBodies>false</useGenderedBodies>
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
+					<options>
+						<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.722,0.541,0.388,1)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.878, 0.658, 0.471,1)</only>
+                    </li>
+					 <li>
+                        <weight>5</weight>
+                        <only>RGBA(1.000, 0.937, 0.835, 1.000)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.627, 0.322, 0.176,1.000)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.545, 0.271, 0.075,1.000)</only>
+                    </li>
+					</options>
+				</first>
+				</li>
+
+					    <li>
+				<name>hair</name>
+				<first Class="ColorGenerator_Options">
+                    <options>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.965,0.937,0.867,1)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.965,0.867,0.514,1)</only>
+                    </li>
+                    <li>
+                        <weight>2</weight>
+                        <only>RGBA(0.502,0.071,0.145,1)</only>
+                    </li>
+                    <li>
+                        <weight>6</weight>
+                        <only>RGBA(0.424,0.267,0.086,1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.925,0.69,0.239,1)</only>
+                    </li>
+                    <li>
+                        <weight>6</weight>
+                        <only>RGBA(0.173,0.161,0.141,1)</only>
+                    </li>
+                    <li>
+                        <weight>3</weight>
+                        <only>RGBA(0.835,0.404,0.067,1)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.965,0.902,0.737,1)</only>
+                    </li>
+                    </options>
+					</first>
+            </li>
+			</colorChannels>
+			</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
 				<li>

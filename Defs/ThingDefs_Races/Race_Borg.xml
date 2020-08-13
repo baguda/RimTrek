@@ -37,24 +37,29 @@
           </li>
     </forcedRaceTraitEntries>
 	
-	<alienPartGenerator>
-          <aliencrowntypes>
-            <li>Average_Normal</li>
-            <li>Average_Narrow</li>
-          </aliencrowntypes>
-          <alienbodytypes>
-            <li>Male</li>
-            <li>Thin</li>
-          </alienbodytypes>
-          <alienskincolorgen Class="ColorGenerator_Options">
-            <options>
-              <li>
-                <weight>10</weight>
-                <only>RGBA(0.65,0.62,0.67,1)</only>
-              </li>
-            </options>
-          </alienskincolorgen>
-       </alienPartGenerator>
+<alienPartGenerator>
+	  <aliencrowntypes>
+		<li>Average_Normal</li>
+		<li>Average_Narrow</li>
+	  </aliencrowntypes>
+	  <alienbodytypes>
+		<li>Male</li>
+		<li>Thin</li>
+	  </alienbodytypes>
+		<colorChannels>
+				<li>
+		<name>skin</name>
+		<first Class="ColorGenerator_Options">
+	<options>
+	  <li>
+		<weight>10</weight>
+		<only>RGBA(0.65,0.62,0.67,1)</only>
+	  </li>
+	</options>
+		</first>
+		</li>
+</colorChannels>
+</alienPartGenerator>
 	
 	<canLayDown>false</canLayDown>
 	

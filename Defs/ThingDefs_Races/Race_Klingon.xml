@@ -30,7 +30,10 @@
 						<li>Narrow_Pointy</li>
 						<li>Narrow_Wide</li>
 					</aliencrowntypes>
-				<alienskincolorgen Class="ColorGenerator_Options">
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
 					<options>
 						<li>
                         <weight>5</weight>
@@ -53,7 +56,29 @@
                         <only>RGB(158, 105, 71)</only>
                     </li>
 					</options>
-				</alienskincolorgen>					
+				</first>
+				</li>
+
+					    <li>
+				<name>hair</name>
+				<first Class="ColorGenerator_Options">
+                    <options>
+					 <li>
+                        <weight>5</weight>
+                        <only>RGB(13, 13, 13)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGB(102, 51, 0)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGB(55, 42, 34)</only>
+                    </li>
+                    </options>
+					</first>
+            </li>
+			</colorChannels>					
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>

@@ -21,15 +21,64 @@
 				<factionRelations />	
 				<notXenophobistTowards />
 				<immuneToXenophobia>false</immuneToXenophobia>
-				<alienPartGenerator>
-					<alienhaircolorgen Class="ColorGenerator_Options" Inherit="False">
-						<options>
-							<li>
-								<weight>10</weight>
-								<only>(26, 26, 26)</only>
-							</li>
-						</options>
-					</alienhaircolorgen>
+		<alienPartGenerator>				
+		<aliencrowntypes Inherit="False">
+			<li>Average_Normal</li>
+			<li>Average_Wide</li>
+			<li>Average_Pointy</li>
+			<li>Narrow_Normal</li>
+			<li>Narrow_Pointy</li>
+			<li>Narrow_Wide</li>
+		</aliencrowntypes>
+				<colorChannels>
+					    <li>
+				<name>skin</name>
+				<first Class="ColorGenerator_Options">
+					<options>
+						<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.722,0.541,0.388,1)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGBA(0.878, 0.658, 0.471,1)</only>
+                    </li>
+					 <li>
+                        <weight>5</weight>
+                        <only>RGBA(1.000, 0.937, 0.835, 1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.627, 0.322, 0.176, 1)</only>
+                    </li>
+					<li>
+                        <weight>5</weight>
+                        <only>RGBA(0.545, 0.271, 0.075, 1)</only>
+                    </li>
+					</options>
+				</first>
+				</li>
+
+					    <li>
+				<name>hair</name>
+				<first Class="ColorGenerator_Options">
+                    <options>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGB(34, 19, 25)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>RGB(122, 83, 75)</only>
+                    </li>
+                    <li>
+                        <weight>2</weight>
+                        <only>RGB(71, 48, 43)</only>
+                    </li>
+                    </options>
+					</first>
+            </li>
+			</colorChannels>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
